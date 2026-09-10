@@ -59,13 +59,16 @@ function renderHeader(activeNav = '') {
         <small>Rewa Divisional Cricket &bull; MPCA</small>
       </span>
     </a>
-    <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="nav" aria-label="Toggle menu"><svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><rect y="3" width="20" height="2" rx="1"/><rect y="9" width="20" height="2" rx="1"/><rect y="15" width="20" height="2" rx="1"/></svg></button>
+    <div class="header-ctrl-group">
+      <a class="header-search-btn desktop-only" href="https://rewa-cricket-division.vercel.app/tournaments/atal-bihari-vajpayee-memorial-tournament/" target="_blank" rel="noopener" aria-label="RDCA Live Match Center" title="RDCA Live Match Center">RDCA Center &rarr;</a>
+      <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="nav" aria-label="Toggle navigation menu"><svg width="22" height="22" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><rect y="3" width="20" height="2" rx="1"/><rect y="9" width="20" height="2" rx="1"/><rect y="15" width="20" height="2" rx="1"/></svg></button>
+    </div>
     <nav class="main-nav" data-nav id="nav" aria-label="Primary">
       <ul>
         ${navItems.map(item => `<li><a href="${item.path}" ${activeNav === item.key ? 'class="active"' : ''}>${item.name}</a></li>`).join('\n        ')}
+        <li class="mobile-only-nav-item"><a href="https://rewa-cricket-division.vercel.app/tournaments/atal-bihari-vajpayee-memorial-tournament/" target="_blank" rel="noopener" class="mobile-rdca-link">RDCA Live Match Center &rarr;</a></li>
       </ul>
     </nav>
-    <a class="header-search-btn" href="https://rewa-cricket-division.vercel.app/tournaments/atal-bihari-vajpayee-memorial-tournament/" target="_blank" rel="noopener" aria-label="RDCA Live Match Center" title="RDCA Live Match Center">RDCA Center &rarr;</a>
   </div>
 </header>`;
 }
