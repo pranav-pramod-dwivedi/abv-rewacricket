@@ -1,271 +1,450 @@
-# Atal Bihari Vajpayee Memorial Tournament
+# Atal Bihari Vajpayee Memorial Tournament — Complete Knowledge Base
 > Official invitational cricket championship of Vindhya Pradesh, sanctioned by Rewa Division Cricket Association (RDCA) and affiliated with Madhya Pradesh Cricket Association (MPCA).
 
 ## Overview
-- **Championship**: Atal Bihari Vajpayee Memorial Tournament (ABV Memorial Trophy)
-- **Circuit**: Rewa Division Cricket Association (RDCA) & Madhya Pradesh Cricket Association (MPCA)
-- **Reigning Champions (2026)**: Destroyers Cricket Club (Captain: Pranav Dwivedi)
-- **Rival Club**: Dread Eleven Cricket Club (Captain: Akhil Mishra)
-- **Venues**: Divisional Cricket Stadium, Neem Chauraha, Boda Bagh Road, Rewa, MP 486001 & APSU Stadium, Rewa
-- **Official Network**:
-  - Rewa Division Cricket Association (RDCA): https://rewa-cricket-division.vercel.app
-  - Destroyers Cricket Club (DES): https://destroyers-rewacricket.pages.dev
-  - Dread Eleven (DE): https://dread-eleven-rewacricket.pages.dev
-  - ABV Memorial Tournament (Official Portal): https://abv-rewacricket.pages.dev
-
-## Core Sections
-- [Championship Portal](https://abv-rewacricket.pages.dev/): Complete tournament overview, telemetry, past winners, and champions.
-- [The Derby Teams (2)](https://abv-rewacricket.pages.dev/teams/): The 2 founding clubs: Destroyers CC and Dread Eleven with all-time head-to-head records.
-- [Matches & Scorecards](https://abv-rewacricket.pages.dev/matches/): Official match hub redirecting to central RDCA ball-by-ball system.
-- [14 Regulatory Policies](https://abv-rewacricket.pages.dev/rules/): Official codes including Anti-Corruption, Anti-Doping, and Playing Conditions.
-- [Governing Council](https://abv-rewacricket.pages.dev/governing-council/): Executive leadership, technical committee, and anti-corruption officers.
-- [News & Circulars](https://abv-rewacricket.pages.dev/news/): Official press statements and tournament notices.
-- [Contact & Venues](https://abv-rewacricket.pages.dev/contact/): Divisional Cricket Stadium Neem Chauraha Rewa, MPCA phone numbers (+91 731 2543602), RDCA office, and ACU helpline (+91 7662 250011).
-
-## 14 Official Regulations
-- [Anti-Corruption Policy & Protocols](https://abv-rewacricket.pages.dev/rules/anti-corruption/): Mandatory anti-corruption code for players, match officials, and team personnel to safeguard against match-fixing, spot-fixing, and illegal betting.
-- [Anti-Doping Code](https://abv-rewacricket.pages.dev/rules/anti-doping/): WADA and NADA compliant anti-doping code ensuring fair athletic competition through rigorous in-competition and out-of-competition testing.
-- [Anti-Racism Policy](https://abv-rewacricket.pages.dev/rules/anti-racism/): Zero-tolerance framework prohibiting racial slurs, derogatory chants, or discrimination on the basis of race, colour, or ethnic origin.
-- [Anti-Discrimination Policy](https://abv-rewacricket.pages.dev/rules/anti-discrimination/): Affirmative commitment to equal dignity and fair treatment regardless of religion, caste, creed, region, disability, or socio-economic background.
-- [Suspected Illegal Bowling Action Policy & Guidelines](https://abv-rewacricket.pages.dev/rules/suspected-illegal-action/): Standardized procedure for reporting, scrutinizing, and biomechanically evaluating bowling actions exceeding the permissible 15-degree elbow extension limit.
-- [Match Playing Conditions (50 Overs & T20 Blast)](https://abv-rewacricket.pages.dev/rules/match-playing-conditions/): Complete playing regulations governing match duration, over rates, field restrictions, powerplays, DRS reviews, ball specifications, and tie-breakers.
-- [PMOA (Players & Match Officials Area) Minimum Standards](https://abv-rewacricket.pages.dev/rules/pmoa-minimum-standards/): Mandatory security cordon and communication blackout safeguarding the integrity of dressing rooms, dugouts, and match officials' facilities.
-- [Code of Conduct for Match Officials](https://abv-rewacricket.pages.dev/rules/code-of-conduct-match-officials/): Standards of professionalism, impartiality, physical fitness, conflict of interest disclosure, and report writing for umpires and match referees.
-- [Code of Conduct for Players and Team Officials](https://abv-rewacricket.pages.dev/rules/code-of-conduct-players/): Comprehensive 4-tier disciplinary framework penalizing dissent, ball-tampering, abusive language, equipment damage, and physical assault.
-- [Clothing and Equipment Regulations](https://abv-rewacricket.pages.dev/rules/clothing-and-equipment/): Standardization of coloured clothing, uniform design, sponsor logo dimensions, protective gear safety standards, and bat gauge compliance.
-- [News Access Regulations](https://abv-rewacricket.pages.dev/rules/news-access-regulations/): Rules governing the access, capture, editing, and distribution of match footage, audio, and news by non-rights holder media networks.
-- [Image Use Terms & Photography Guidelines](https://abv-rewacricket.pages.dev/rules/image-use-terms/): Legal terms licensing still photographic imagery for accredited journalists and strictly forbidding commercial merchandise exploitation.
-- [Media Accreditation Terms and Conditions](https://abv-rewacricket.pages.dev/rules/media-accreditation/): Application protocol, eligibility criteria, bib collection, and venue privileges for print, electronic, and digital journalists.
-- [Ticket Terms and Conditions](https://abv-rewacricket.pages.dev/rules/ticket-terms-and-conditions/): Conditions of entry, prohibited articles, spectator code of conduct, rain-check refund policy, and stadium evacuation protocols.
-
-
-## Complete 14 Governance Policies Clauses
-
-### Anti-Corruption Policy & Protocols (Integrity & Ethics)
-Effective Date: 1 January 2026
-
-#### 1. Prohibited Conduct
-No participant shall fix, contrive, or improperly influence the result, progress, conduct or any aspect of any tournament match. Receiving or seeking any bribe, gift, or consideration in return for non-performance or disclosure of inside information is strictly prohibited.
-
-#### 2. Mandatory Reporting of Approaches
-Every player, official, or team staff member approached by any person to engage in corrupt conduct must report the approach to the Anti-Corruption Unit (ACU) within 24 hours. Failure to report carries an automatic minimum 1-year ban.
-
-#### 3. Prohibition on Betting & Inside Information
-All participants are strictly barred from betting directly or indirectly on any match in the tournament, or providing pitch, selection, or tactical information to third parties prior to public toss announcement.
-
-#### 4. ACU Powers of Investigation
-The Tournament Anti-Corruption Officer is empowered to request itemized phone records, bank statements, electronic devices, and summon participants for recorded interviews.
-
-#### 5. Sanction Framework
-Sanctions range from a minimum 2-year ban for betting offenses up to a lifetime ban from all RDCA, MPCA, and BCCI-sanctioned cricket for proven match manipulation.
-
-### Anti-Doping Code (Integrity & Ethics)
-Effective Date: 1 January 2026
-
-#### 1. Strict Liability Principle
-It is each athlete's personal duty to ensure that no prohibited substance enters his or her body. Athletes are responsible for any prohibited substance or its metabolites found in their samples.
-
-#### 2. Prohibited List
-The tournament adopts the current World Anti-Doping Agency (WADA) Prohibited List, covering anabolic agents, peptide hormones, beta-2 agonists, diuretics, and stimulants.
-
-#### 3. Testing Protocols
-Doping control officers may conduct random or targeted urine and blood sample collection at any match venue (APSU Stadium, Neem Chauraha Stadium, Martand Ground) immediately following match completion.
-
-#### 4. Therapeutic Use Exemptions (TUE)
-Players requiring prescribed medication containing prohibited substances must submit a formal TUE application to the Tournament Medical Board at least 21 days before competing.
-
-#### 5. Disciplinary Sanctions
-First violation results in a mandatory 2 to 4-year suspension. Aggravating circumstances or intentional tampering result in lifetime disqualification.
-
-### Anti-Racism Policy (Inclusion & Social Conduct)
-Effective Date: 1 January 2026
-
-#### 1. Zero Tolerance Mandate
-The Atal Bihari Vajpayee Memorial Tournament operates a strict zero-tolerance policy towards racist behaviour by players, coaching staff, venue personnel, or spectators.
-
-#### 2. On-Field Violations
-Any player uttering racist slurs or making offensive gestures will be immediately charged under Level 3 of the Code of Conduct, incurring an immediate minimum 4-match suspension.
-
-#### 3. Spectator Conduct & Stadium Eviction
-Spectators engaging in racist chants, insults, or harassment will be immediately ejected from the stadium by venue security and handed over to local police authorities under relevant Indian Penal Code provisions.
-
-#### 4. Match Official Responsibility
-Umpires possess the authority to pause match proceedings if crowd abuse persists, and instruct the ground announcer to issue formal public warnings before restarting.
-
-### Anti-Discrimination Policy (Inclusion & Social Conduct)
-Effective Date: 1 January 2026
-
-#### 1. Equal Opportunity
-All players, officials, and academy candidates shall be evaluated solely on merit, skill, fitness, and conduct without bias based on religion, caste, linguistic background, or state of origin.
-
-#### 2. Harassment & Bullying
-Verbal intimidation, derogatory nicknames, or exclusionary dressing-room behaviour aimed at a participant's socio-cultural identity will trigger immediate inquiry by the Disciplinary Committee.
-
-#### 3. Grievance Redressal Mechanism
-Any registered individual may lodge a confidential discrimination complaint to the Tournament Ombudsman within 14 days of an incident. Inquiries must be completed within 10 days.
-
-### Suspected Illegal Bowling Action Policy & Guidelines (Technical Regulations)
-Effective Date: 1 January 2026
-
-#### 1. Legal Bowling Action Definition
-A bowling action is deemed legal if the bowler's elbow joint does not extend by more than 15 degrees from the moment the bowling arm reaches horizontal until the release of the ball.
-
-#### 2. Match Official Reporting
-If both on-field umpires or the TV umpire suspect a bowler's action, they must submit an official Match Officials' Report to the Match Referee within 2 hours of match conclusion.
-
-#### 3. Warning & Video Review
-Upon the first report, the bowler and team management receive official footage. The player may continue bowling for 14 days pending laboratory assessment at an accredited biomechanics center.
-
-#### 4. Suspension from Bowling
-If scientific analysis confirms an elbow extension exceeding 15 degrees, or upon a second formal reporting during the tournament, the player is suspended from bowling in all tournament fixtures until cleared.
-
-#### 5. Remedial Coaching
-Suspended bowlers may undergo remedial coaching with certified RDCA/MPCA bowling consultants before applying for independent re-testing.
-
-### Match Playing Conditions (50 Overs & T20 Blast) (Field of Play)
-Effective Date: 1 January 2026
-
-#### 1. Ball Specifications
-All white-ball matches are conducted using four-piece certified SG White Club/Tournament turf balls. In 50-over matches, two new balls are used per innings, one from each end.
-
-#### 2. Powerplay & Fielding Restrictions (T20)
-Overs 1-6: Mandatory Powerplay (maximum 2 fielders outside 30-yard circle). Overs 7-20: Maximum 5 fielders outside the circle. Maximum 4 overs per bowler.
-
-#### 3. Powerplay Restrictions (50 Overs)
-P1 (Overs 1-10): Mandatory (max 2 fielders outside). P2 (Overs 11-40): Max 4 fielders outside. P3 (Overs 41-50): Max 5 fielders outside. Maximum 10 overs per bowler.
-
-#### 4. Over Rates & Penalties
-Teams must complete 20 overs within 85 minutes. If a team fails to start the final over by the scheduled cut-off time, one additional fielder must be brought inside the 30-yard circle for the remainder of the innings.
-
-#### 5. Super Over Protocol
-In the event of a tied match, a Super Over will be played. If the Super Over is tied, subsequent Super Overs will be played until a clear winner emerges.
-
-#### 6. Rain Interruption & VJD Method
-A minimum of 5 overs per side in T20 and 20 overs per side in 50 overs must be bowled to constitute a result. Revised targets are calculated using the certified VJD / DLS mathematical software.
-
-### PMOA (Players & Match Officials Area) Minimum Standards (Integrity & Security)
-Effective Date: 1 January 2026
-
-#### 1. Defined Area Boundaries
-The PMOA encompasses player dressing rooms, dugouts, viewing terraces, match referee suites, umpire change rooms, and designated tunnel passageways.
-
-#### 2. Electronic Device Ban
-All mobile phones, smart watches, laptops, two-way radios, and transmission equipment must be deposited with the Tournament Anti-Corruption Manager 60 minutes before the toss.
-
-#### 3. Access Accreditation
-Only personnel holding valid PMOA accreditation badges (players, coach, physio, doctor, match officials) are permitted entry. Visitors must register in the official PMOA logbook.
-
-#### 4. CCTV Surveillance
-Entry doors and corridors leading to PMOA suites are monitored by 24-hour recorded CCTV feeds under the custody of the Chief Security Officer.
-
-### Code of Conduct for Match Officials (Officiating & Governance)
-Effective Date: 1 January 2026
-
-#### 1. Impartiality & Integrity
-Officials must execute their duties with complete neutrality and never express bias or favouritism towards any team or athlete.
-
-#### 2. Conflict of Interest
-Officials must disclose any commercial, familial, or personal relationship with competing clubs or players prior to appointment.
-
-#### 3. Media & Public Comment
-Umpires and referees are forbidden from discussing decisions, player behaviour, or pitch conditions with media representatives or on social media platforms.
-
-#### 4. Post-Match Telemetry Reports
-The Match Referee must submit the complete official scorecard, pitch rating, over-rate tally, and captain's assessment within 12 hours of match finish.
-
-### Code of Conduct for Players and Team Officials (Discipline & On-field Behavior)
-Effective Date: 1 January 2026
-
-#### 1. Level 1 Offenses
-Excessive appealing, aggressive hand gestures, kicking the boundary rope, dissent at umpire decisions. Sanction: Official reprimand up to 50% match fee fine.
-
-#### 2. Level 2 Offenses
-Serious dissent, obscene language directed at an opponent, throwing the ball deliberately near a player, ball tampering. Sanction: 50% to 100% match fee fine and/or 1-match suspension.
-
-#### 3. Level 3 Offenses
-Intimidation of match officials, threatening physical assault against opponents or spectators. Sanction: 2 to 4-match suspension.
-
-#### 4. Level 4 Offenses
-Physical assault on the field, acts of violence, refusal to play, bringing the tournament into grave disrepute. Sanction: 1-year suspension up to permanent tournament expulsion.
-
-#### 5. Hearing Procedure
-Level 2, 3, and 4 charges are adjudicated by the Match Referee in an on-venue hearing conducted within 24 hours of match conclusion with right of legal representation.
-
-### Clothing and Equipment Regulations (Technical Regulations)
-Effective Date: 1 January 2026
-
-#### 1. Uniform & Colour Standards
-All players in a team must wear identical coloured jerseys and trousers. White jerseys are strictly forbidden in white-ball day-night or day encounters.
-
-#### 2. Jersey Numbers & Names
-Player name must appear in uppercase across the upper back (minimum 6cm height). Player jersey number must appear centered below (minimum 25cm height).
-
-#### 3. Sponsor Logo Dimensions
-Principal chest sponsor logo cannot exceed 250 sq cm. Sleeve sponsor logos cannot exceed 65 sq cm each. Non-commercial club emblems cannot exceed 50 sq cm.
-
-#### 4. Protective Gear Safety (BS 7928:2013)
-Helmets worn while batting against pace bowlers or wicket-keeping up to the stumps must strictly comply with the British Standard BS 7928:2013 specification.
-
-#### 5. Bat Dimensions Gauge Test
-All bats must pass through the official bat gauge: maximum width 10.8 cm, maximum depth 6.7 cm, and maximum edge 4.0 cm.
-
-### News Access Regulations (Media & Broadcast)
-Effective Date: 1 January 2026
-
-#### 1. Fair Dealing Window
-Non-rights holder broadcast networks may use up to 90 seconds of match footage per news bulletin, with a maximum of 6 minutes across a 24-hour broadcast cycle.
-
-#### 2. Live In-Play Blackout
-No non-rights holder may broadcast or stream live or near-live moving video footage from the stadium during the continuance of a match.
-
-#### 3. Credit & Courtesy Obligation
-All match clips utilized in news broadcasts must carry an on-screen courtesy bug: 'Footage Courtesy: Atal Bihari Vajpayee Memorial Tournament / RDCA'.
-
-#### 4. Digital & Social Media Restrictions
-Video clips may not be posted natively to third-party social media handles without formal digital sub-licensing authorization.
-
-### Image Use Terms & Photography Guidelines (Media & Broadcast)
-Effective Date: 1 January 2026
-
-#### 1. Editorial Usage Only
-Photographs taken inside tournament stadiums by accredited photographers may be utilized strictly for editorial news reporting and sports journalism.
-
-#### 2. Prohibition on Commercial Merchandising
-Images cannot be sold, sublicensed, or reproduced on commercial posters, digital trading cards, NFT assets, apparel, or promotional endorsements without written consent.
-
-#### 3. Player Image Rights
-The collective image rights of participating athletes remain protected under the Tournament Participant Agreement and statutory Indian personality rights law.
-
-### Media Accreditation Terms and Conditions (Media & Broadcast)
-Effective Date: 1 January 2026
-
-#### 1. Accreditation Application
-Journalists and photojournalists must submit official accreditation requests with editor endorsement at least 7 days before opening match day.
-
-#### 2. Identification Bibs
-Pitch-side photojournalists must wear the official high-visibility numbered bib at all times while in the photographers' trench.
-
-#### 3. Press Conference Etiquette
-Accredited media must observe professional decorum during post-match press conferences and follow the moderation of the Press Officer.
-
-#### 4. Revocation of Accreditation
-The Tournament Governing Council reserves the right to immediately revoke accreditation for breaches of PMOA rules or unauthorized streaming.
-
-### Ticket Terms and Conditions (Spectator & Stadium Admission)
-Effective Date: 1 January 2026
-
-#### 1. Condition of Entry
-Possession of a valid ticket, pass, or digital QR code entitles the holder entry into the specified enclosure of the stadium. Admission is revocable at the discretion of venue management.
-
-#### 2. Prohibited Articles
-Glass bottles, metal cans, firecrackers, laser pointers, weapons, alcoholic beverages, commercial recording cameras, and political banners are strictly barred at turnstiles.
-
-#### 3. Spectator Conduct
-Spectators must occupy only the allocated stand or seat. Entering the field of play, throwing objects onto the turf, or using abusive language will lead to immediate arrest and prosecution.
-
-#### 4. Rain Check & Refund Policy
-If play is abandoned without a single ball bowled on the match date, tickets are eligible for full refund within 7 working days. If 5 overs or more are completed, no refund is payable.
-
-#### 5. Search & Surveillance Consent
-Ticket holders consent to physical baggage inspection, body frisking by security personnel, and being recorded by stadium CCTV cameras.
-
+- **Tournament**: Atal Bihari Vajpayee Memorial Tournament (ABV Memorial Trophy)
+- **Sanctioning Body**: Rewa Division Cricket Association (RDCA) & Madhya Pradesh Cricket Association (MPCA)
+- **Format**: Mixed Format (T20 and 50-Over Matches)
+- **History**: 6 Annual Editions (2021 to 2026), 34 Bilateral Derby Clashes
+- **Series Championship Standings**: Tied Level at 3–3
+  - Dread Eleven (3 Titles): 2021 (5–2), 2022 (4–3), 2023 (3–2) under captain Akhil Mishra
+  - Destroyers Cricket Club (3 Titles): 2024 (4–1), 2025 (5–0), 2026 (3–2) under captain Pranav Dwivedi
+- **2026 Champions**: Destroyers Cricket Club (def. Dread Eleven by 12 runs in the 2026 Championship Final)
+- **Official Venues**:
+  - Divisional Cricket Stadium, Neem Chauraha, Boda Bagh Road, Rewa, MP 486001
+  - Awadhesh Pratap Singh University (APSU) Stadium, Rewa
+  - Martand School Ground No. 3, Rewa
+
+## All-Time Combined Player Leaderboards (Both Teams)
+### Leading Run Scorers
+1. **Pranav Dwivedi** (Destroyers CC): 1435 runs | Batting Avg: 57.4 | Strike Rate: 146.4 | Fifties: 14 | Hundreds: 1
+2. **Akhil Mishra** (Dread Eleven): 1378 runs | Batting Avg: 44.5 | Strike Rate: 130 | Fifties: 12 | Hundreds: 1
+3. **Anant Verma** (Destroyers CC): 782 runs | Batting Avg: 39.1 | Strike Rate: 134.2 | Fifties: 6 | Hundreds: 0
+4. **Sagar Pratap Singh** (Destroyers CC): 694 runs | Batting Avg: 34.7 | Strike Rate: 128.5 | Fifties: 5 | Hundreds: 0
+5. **Aditya Shrivastava** (Dread Eleven): 612 runs | Batting Avg: 30.6 | Strike Rate: 122.4 | Fifties: 4 | Hundreds: 0
+
+### Leading Wicket Takers
+1. **Pranav Dwivedi** (Destroyers CC): 66 wickets | Bowling Avg: 16.3 | Economy Rate: 5.48 | BBI: 8/39
+2. **Aditya Shrivastava** (Dread Eleven): 49 wickets | Bowling Avg: 21.2 | Economy Rate: 5.76 | BBI: 5/32
+3. **Somil Khan** (Destroyers CC): 42 wickets | Bowling Avg: 19.8 | Economy Rate: 5.62 | BBI: 5/24
+4. **Akhil Mishra** (Dread Eleven): 38 wickets | Bowling Avg: 61.1 | Economy Rate: 5.92 | BBI: 4/28
+5. **Harshit Patel** (Destroyers CC): 34 wickets | Bowling Avg: 22.1 | Economy Rate: 6.04 | BBI: 4/18
+
+## Tournament Telemetry (34 Matches)
+- Total Matches: 34
+- Total Runs Scored: 10,842
+- Total Wickets Fallen: 498
+- Boundaries: 946 Fours, 312 Sixes
+- Highest Team Total: 284/5 (Destroyers CC vs Dread Eleven, 2025 Season at APS Ground)
+- Lowest Team Total: 98 all out (Dread Eleven vs Destroyers CC, 2023 Season)
+- Individual Centuries: 2
+- Individual Fifties: 42
+- Best Bowling in an Innings: 8/39 by Pranav Dwivedi (Destroyers CC)
+
+## Complete 34-Match Archive
+### Match #34: 2026 Championship Final (2026 Season — 50 Overs)
+- **Date**: 2026-09-20
+- **Venue**: APS Ground Rewa
+- **Teams**: Destroyers Cricket Club vs Dread Eleven
+- **Result**: Destroyers won by 12 runs
+- **Details**: Destroyers won by 12 runs at APS Ground Rewa. Official RDCA scorecard archived.
+- **Official RDCA Scorecard**: https://rewa-cricket-division.vercel.app/matches/destroyers-vs-dread-eleven-2026-09-20/
+
+### Match #33: 50 Overs Derby Clash (2026 Season — 50 Overs)
+- **Date**: 2026-09-16
+- **Venue**: Martand School Ground No. 3
+- **Teams**: Destroyers Cricket Club vs Dread Eleven
+- **Result**: Destroyers won by 4 wickets
+- **Details**: Destroyers won by 4 wickets at Martand School Ground No. 3. Official RDCA scorecard archived.
+- **Official RDCA Scorecard**: https://rewa-cricket-division.vercel.app/matches/destroyers-vs-dread-eleven-2026-09-16/
+
+### Match #32: 50 Overs Derby Clash (2026 Season — 50 Overs)
+- **Date**: 2026-09-12
+- **Venue**: APS Ground Rewa
+- **Teams**: Destroyers Cricket Club vs Dread Eleven
+- **Result**: Dread Eleven won by 19 runs
+- **Details**: Dread Eleven won by 19 runs at APS Ground Rewa. Official RDCA scorecard archived.
+- **Official RDCA Scorecard**: https://rewa-cricket-division.vercel.app/matches/destroyers-vs-dread-eleven-2026-09-12/
+
+### Match #31: T20 Derby Clash (2026 Season — T20)
+- **Date**: 2026-09-08
+- **Venue**: Martand School Ground No. 3
+- **Teams**: Destroyers Cricket Club vs Dread Eleven
+- **Result**: Destroyers won by 7 wickets
+- **Details**: Destroyers won by 7 wickets at Martand School Ground No. 3. Official RDCA scorecard archived.
+- **Official RDCA Scorecard**: https://rewa-cricket-division.vercel.app/matches/destroyers-vs-dread-eleven-2026-09-08/
+
+### Match #30: 2026 Series Opener (T20) (2026 Season — T20)
+- **Date**: 2026-09-05
+- **Venue**: APS Ground Rewa
+- **Teams**: Destroyers Cricket Club vs Dread Eleven
+- **Result**: Dread Eleven won by 14 runs
+- **Details**: Dread Eleven won by 14 runs at APS Ground Rewa. Official RDCA scorecard archived.
+- **Official RDCA Scorecard**: https://rewa-cricket-division.vercel.app/matches/destroyers-vs-dread-eleven-2026-09-05/
+
+### Match #29: 2025 Championship Final (2025 Season — 50 Overs)
+- **Date**: 2025-09-20
+- **Venue**: APS Ground Rewa
+- **Teams**: Destroyers Cricket Club vs Dread Eleven
+- **Result**: Destroyers won by 34 runs
+- **Details**: Destroyers won by 34 runs at APS Ground Rewa. Official RDCA scorecard archived.
+- **Official RDCA Scorecard**: https://rewa-cricket-division.vercel.app/matches/destroyers-vs-dread-eleven-2025-09-20/
+
+### Match #28: 50 Overs Derby Clash (2025 Season — 50 Overs)
+- **Date**: 2025-09-16
+- **Venue**: Martand School Ground No. 3
+- **Teams**: Destroyers Cricket Club vs Dread Eleven
+- **Result**: Destroyers won by 5 wickets
+- **Details**: Destroyers won by 5 wickets at Martand School Ground No. 3. Official RDCA scorecard archived.
+- **Official RDCA Scorecard**: https://rewa-cricket-division.vercel.app/matches/destroyers-vs-dread-eleven-2025-09-16/
+
+### Match #27: 50 Overs Derby Clash (2025 Season — 50 Overs)
+- **Date**: 2025-09-12
+- **Venue**: APS Ground Rewa
+- **Teams**: Destroyers Cricket Club vs Dread Eleven
+- **Result**: Destroyers won by 45 runs
+- **Details**: Destroyers won by 45 runs at APS Ground Rewa. Official RDCA scorecard archived.
+- **Official RDCA Scorecard**: https://rewa-cricket-division.vercel.app/matches/destroyers-vs-dread-eleven-2025-09-12/
+
+### Match #26: T20 Derby Clash (2025 Season — T20)
+- **Date**: 2025-09-08
+- **Venue**: Martand School Ground No. 3
+- **Teams**: Destroyers Cricket Club vs Dread Eleven
+- **Result**: Destroyers won by 6 wickets
+- **Details**: Destroyers won by 6 wickets at Martand School Ground No. 3. Official RDCA scorecard archived.
+- **Official RDCA Scorecard**: https://rewa-cricket-division.vercel.app/matches/destroyers-vs-dread-eleven-2025-09-08/
+
+### Match #25: 2025 Series Opener (T20) (2025 Season — T20)
+- **Date**: 2025-09-05
+- **Venue**: APS Ground Rewa
+- **Teams**: Destroyers Cricket Club vs Dread Eleven
+- **Result**: Destroyers won by 22 runs
+- **Details**: Destroyers won by 22 runs at APS Ground Rewa. Official RDCA scorecard archived.
+- **Official RDCA Scorecard**: https://rewa-cricket-division.vercel.app/matches/destroyers-vs-dread-eleven-2025-09-05/
+
+### Match #24: 2024 Championship Final (2024 Season — 50 Overs)
+- **Date**: 2024-09-20
+- **Venue**: APS Ground Rewa
+- **Teams**: Destroyers Cricket Club vs Dread Eleven
+- **Result**: Dread Eleven won by 8 runs
+- **Details**: Dread Eleven won by 8 runs at APS Ground Rewa. Official RDCA scorecard archived.
+- **Official RDCA Scorecard**: https://rewa-cricket-division.vercel.app/matches/de-vs-des-2024-09-20/
+
+### Match #23: 50 Overs Derby Clash (2024 Season — 50 Overs)
+- **Date**: 2024-09-16
+- **Venue**: APS Ground Rewa
+- **Teams**: Destroyers Cricket Club vs Dread Eleven
+- **Result**: Dread Eleven won by 18 runs
+- **Details**: Dread Eleven won by 18 runs at APS Ground Rewa. Official RDCA scorecard archived.
+- **Official RDCA Scorecard**: https://rewa-cricket-division.vercel.app/matches/de-vs-des-2024-09-16/
+
+### Match #22: 50 Overs Derby Clash (2024 Season — 50 Overs)
+- **Date**: 2024-09-12
+- **Venue**: APS Ground Rewa
+- **Teams**: Destroyers Cricket Club vs Dread Eleven
+- **Result**: Dread Eleven won by 2 runs
+- **Details**: Dread Eleven won by 2 runs at APS Ground Rewa. Official RDCA scorecard archived.
+- **Official RDCA Scorecard**: https://rewa-cricket-division.vercel.app/matches/de-vs-des-2024-09-12/
+
+### Match #21: 50 Overs Derby Clash (2024 Season — 50 Overs)
+- **Date**: 2024-09-08
+- **Venue**: APS Ground Rewa
+- **Teams**: Destroyers Cricket Club vs Dread Eleven
+- **Result**: Dread Eleven won by 5 runs
+- **Details**: Dread Eleven won by 5 runs at APS Ground Rewa. Official RDCA scorecard archived.
+- **Official RDCA Scorecard**: https://rewa-cricket-division.vercel.app/matches/de-vs-des-2024-09-08/
+
+### Match #20: 2024 Series Opener (50 Overs) (2024 Season — 50 Overs)
+- **Date**: 2024-09-05
+- **Venue**: APS Ground Rewa
+- **Teams**: Destroyers Cricket Club vs Dread Eleven
+- **Result**: Destroyers won by 1 wickets
+- **Details**: Destroyers won by 1 wickets at APS Ground Rewa. Official RDCA scorecard archived.
+- **Official RDCA Scorecard**: https://rewa-cricket-division.vercel.app/matches/de-vs-des-2024-09-05/
+
+### Match #19: 2023 Championship Final (2023 Season — 50 Overs)
+- **Date**: 2023-09-20
+- **Venue**: APS Ground Rewa
+- **Teams**: Destroyers Cricket Club vs Dread Eleven
+- **Result**: Destroyers won by 3 wickets
+- **Details**: Destroyers won by 3 wickets at APS Ground Rewa. Official RDCA scorecard archived.
+- **Official RDCA Scorecard**: https://rewa-cricket-division.vercel.app/matches/de-vs-des-2023-09-20/
+
+### Match #18: 50 Overs Derby Clash (2023 Season — 50 Overs)
+- **Date**: 2023-09-16
+- **Venue**: APS Ground Rewa
+- **Teams**: Destroyers Cricket Club vs Dread Eleven
+- **Result**: Dread Eleven won by 42 runs
+- **Details**: Dread Eleven won by 42 runs at APS Ground Rewa. Official RDCA scorecard archived.
+- **Official RDCA Scorecard**: https://rewa-cricket-division.vercel.app/matches/de-vs-des-2023-09-16/
+
+### Match #17: 50 Overs Derby Clash (2023 Season — 50 Overs)
+- **Date**: 2023-09-12
+- **Venue**: APS Ground Rewa
+- **Teams**: Destroyers Cricket Club vs Dread Eleven
+- **Result**: Dread Eleven won by 27 runs
+- **Details**: Dread Eleven won by 27 runs at APS Ground Rewa. Official RDCA scorecard archived.
+- **Official RDCA Scorecard**: https://rewa-cricket-division.vercel.app/matches/de-vs-des-2023-09-12/
+
+### Match #16: 50 Overs Derby Clash (2023 Season — 50 Overs)
+- **Date**: 2023-09-08
+- **Venue**: APS Ground Rewa
+- **Teams**: Destroyers Cricket Club vs Dread Eleven
+- **Result**: Destroyers won by 0 wickets
+- **Details**: Destroyers won by 0 wickets at APS Ground Rewa. Official RDCA scorecard archived.
+- **Official RDCA Scorecard**: https://rewa-cricket-division.vercel.app/matches/de-vs-des-2023-09-08/
+
+### Match #15: 2023 Series Opener (50 Overs) (2023 Season — 50 Overs)
+- **Date**: 2023-09-05
+- **Venue**: APS Ground Rewa
+- **Teams**: Destroyers Cricket Club vs Dread Eleven
+- **Result**: Destroyers won by 0 wickets
+- **Details**: Destroyers won by 0 wickets at APS Ground Rewa. Official RDCA scorecard archived.
+- **Official RDCA Scorecard**: https://rewa-cricket-division.vercel.app/matches/de-vs-des-2023-09-05/
+
+### Match #14: 2022 Championship Final (2022 Season — 50 Overs)
+- **Date**: 2022-09-18
+- **Venue**: APS Ground Rewa
+- **Teams**: Destroyers Cricket Club vs Dread Eleven
+- **Result**: Dread Eleven won by 54 runs
+- **Details**: Dread Eleven won by 54 runs at APS Ground Rewa. Official RDCA scorecard archived.
+- **Official RDCA Scorecard**: https://rewa-cricket-division.vercel.app/matches/de-vs-des-2022-09-18/
+
+### Match #13: 50 Overs Derby Clash (2022 Season — 50 Overs)
+- **Date**: 2022-09-14
+- **Venue**: APS Ground Rewa
+- **Teams**: Destroyers Cricket Club vs Dread Eleven
+- **Result**: Destroyers won by 1 wickets
+- **Details**: Destroyers won by 1 wickets at APS Ground Rewa. Official RDCA scorecard archived.
+- **Official RDCA Scorecard**: https://rewa-cricket-division.vercel.app/matches/de-vs-des-2022-09-14/
+
+### Match #12: 50 Overs Derby Clash (2022 Season — 50 Overs)
+- **Date**: 2022-09-10
+- **Venue**: APS Ground Rewa
+- **Teams**: Destroyers Cricket Club vs Dread Eleven
+- **Result**: Dread Eleven won by 37 runs
+- **Details**: Dread Eleven won by 37 runs at APS Ground Rewa. Official RDCA scorecard archived.
+- **Official RDCA Scorecard**: https://rewa-cricket-division.vercel.app/matches/de-vs-des-2022-09-10/
+
+### Match #11: 50 Overs Derby Clash (2022 Season — 50 Overs)
+- **Date**: 2022-09-07
+- **Venue**: APS Ground Rewa
+- **Teams**: Destroyers Cricket Club vs Dread Eleven
+- **Result**: Dread Eleven won by 0 runs
+- **Details**: Dread Eleven won by 0 runs at APS Ground Rewa. Official RDCA scorecard archived.
+- **Official RDCA Scorecard**: https://rewa-cricket-division.vercel.app/matches/de-vs-des-2022-09-07/
+
+### Match #10: 50 Overs Derby Clash (2022 Season — 50 Overs)
+- **Date**: 2022-09-04
+- **Venue**: APS Ground Rewa
+- **Teams**: Destroyers Cricket Club vs Dread Eleven
+- **Result**: Destroyers won by 2 wickets
+- **Details**: Destroyers won by 2 wickets at APS Ground Rewa. Official RDCA scorecard archived.
+- **Official RDCA Scorecard**: https://rewa-cricket-division.vercel.app/matches/de-vs-des-2022-09-04/
+
+### Match #9: T20 Derby Clash (2022 Season — T20)
+- **Date**: 2022-08-12
+- **Venue**: APS Ground Rewa
+- **Teams**: Destroyers Cricket Club vs Dread Eleven
+- **Result**: Destroyers won by 0 wickets
+- **Details**: Destroyers won by 0 wickets at APS Ground Rewa. Official RDCA scorecard archived.
+- **Official RDCA Scorecard**: https://rewa-cricket-division.vercel.app/matches/de-vs-des-2022-08-12/
+
+### Match #8: 2022 Series Opener (T20) (2022 Season — T20)
+- **Date**: 2022-08-10
+- **Venue**: APS Ground Rewa
+- **Teams**: Destroyers Cricket Club vs Dread Eleven
+- **Result**: Destroyers won by 3 wickets
+- **Details**: Destroyers won by 3 wickets at APS Ground Rewa. Official RDCA scorecard archived.
+- **Official RDCA Scorecard**: https://rewa-cricket-division.vercel.app/matches/de-vs-des-2022-08-10/
+
+### Match #7: 2021 Championship Final (2021 Season — T20)
+- **Date**: 2021-08-28
+- **Venue**: APS Ground Rewa
+- **Teams**: Destroyers Cricket Club vs Dread Eleven
+- **Result**: Dread Eleven won by 14 runs
+- **Details**: Dread Eleven won by 14 runs at APS Ground Rewa. Official RDCA scorecard archived.
+- **Official RDCA Scorecard**: https://rewa-cricket-division.vercel.app/matches/de-vs-des-2021-08-28/
+
+### Match #6: T20 Derby Clash (2021 Season — T20)
+- **Date**: 2021-08-20
+- **Venue**: APS Ground Rewa
+- **Teams**: Destroyers Cricket Club vs Dread Eleven
+- **Result**: Destroyers won by 2 wickets
+- **Details**: Destroyers won by 2 wickets at APS Ground Rewa. Official RDCA scorecard archived.
+- **Official RDCA Scorecard**: https://rewa-cricket-division.vercel.app/matches/de-vs-des-2021-08-20/
+
+### Match #5: T20 Derby Clash (2021 Season — T20)
+- **Date**: 2021-08-15
+- **Venue**: APS Ground Rewa
+- **Teams**: Destroyers Cricket Club vs Dread Eleven
+- **Result**: Destroyers won by 5 wickets
+- **Details**: Destroyers won by 5 wickets at APS Ground Rewa. Official RDCA scorecard archived.
+- **Official RDCA Scorecard**: https://rewa-cricket-division.vercel.app/matches/de-vs-des-2021-08-15/
+
+### Match #4: T20 Derby Clash (2021 Season — T20)
+- **Date**: 2021-08-11
+- **Venue**: APS Ground Rewa
+- **Teams**: Destroyers Cricket Club vs Dread Eleven
+- **Result**: Destroyers won by 3 wickets
+- **Details**: Destroyers won by 3 wickets at APS Ground Rewa. Official RDCA scorecard archived.
+- **Official RDCA Scorecard**: https://rewa-cricket-division.vercel.app/matches/de-vs-des-2021-08-11/
+
+### Match #3: T20 Derby Clash (2021 Season — T20)
+- **Date**: 2021-08-07
+- **Venue**: APS Ground Rewa
+- **Teams**: Destroyers Cricket Club vs Dread Eleven
+- **Result**: Dread Eleven won by 20 runs
+- **Details**: Dread Eleven won by 20 runs at APS Ground Rewa. Official RDCA scorecard archived.
+- **Official RDCA Scorecard**: https://rewa-cricket-division.vercel.app/matches/de-vs-des-2021-08-07/
+
+### Match #2: T20 Derby Clash (2021 Season — T20)
+- **Date**: 2021-08-04
+- **Venue**: APS Ground Rewa
+- **Teams**: Destroyers Cricket Club vs Dread Eleven
+- **Result**: Destroyers won by 2 wickets
+- **Details**: Destroyers won by 2 wickets at APS Ground Rewa. Official RDCA scorecard archived.
+- **Official RDCA Scorecard**: https://rewa-cricket-division.vercel.app/matches/de-vs-des-2021-08-04/
+
+### Match #1: 2021 Series Opener (T20) (2021 Season — T20)
+- **Date**: 2021-08-01
+- **Venue**: APS Ground Rewa
+- **Teams**: Destroyers Cricket Club vs Dread Eleven
+- **Result**: Destroyers won by 3 wickets
+- **Details**: Destroyers won by 3 wickets at APS Ground Rewa. Official RDCA scorecard archived.
+- **Official RDCA Scorecard**: https://rewa-cricket-division.vercel.app/matches/de-vs-des-2021-08-01/
+
+## 14 Statutory Governance Codes & Regulations
+### Regulation 1: Anti-Corruption Policy & Protocols (Integrity & Ethics)
+- **Summary**: Mandatory anti-corruption code for players, match officials, and team personnel to safeguard against match-fixing, spot-fixing, and illegal betting.
+- **Clauses**:
+  - **undefined**: undefined
+  - **undefined**: undefined
+  - **undefined**: undefined
+  - **undefined**: undefined
+  - **undefined**: undefined
+
+### Regulation 2: Anti-Doping Code (Integrity & Ethics)
+- **Summary**: WADA and NADA compliant anti-doping code ensuring fair athletic competition through rigorous in-competition and out-of-competition testing.
+- **Clauses**:
+  - **undefined**: undefined
+  - **undefined**: undefined
+  - **undefined**: undefined
+  - **undefined**: undefined
+  - **undefined**: undefined
+
+### Regulation 3: Anti-Racism Policy (Inclusion & Social Conduct)
+- **Summary**: Zero-tolerance framework prohibiting racial slurs, derogatory chants, or discrimination on the basis of race, colour, or ethnic origin.
+- **Clauses**:
+  - **undefined**: undefined
+  - **undefined**: undefined
+  - **undefined**: undefined
+  - **undefined**: undefined
+
+### Regulation 4: Anti-Discrimination Policy (Inclusion & Social Conduct)
+- **Summary**: Affirmative commitment to equal dignity and fair treatment regardless of religion, caste, creed, region, disability, or socio-economic background.
+- **Clauses**:
+  - **undefined**: undefined
+  - **undefined**: undefined
+  - **undefined**: undefined
+
+### Regulation 5: Suspected Illegal Bowling Action Policy & Guidelines (Technical Regulations)
+- **Summary**: Standardized procedure for reporting, scrutinizing, and biomechanically evaluating bowling actions exceeding the permissible 15-degree elbow extension limit.
+- **Clauses**:
+  - **undefined**: undefined
+  - **undefined**: undefined
+  - **undefined**: undefined
+  - **undefined**: undefined
+  - **undefined**: undefined
+
+### Regulation 6: Match Playing Conditions (50 Overs & T20 Blast) (Field of Play)
+- **Summary**: Complete playing regulations governing match duration, over rates, field restrictions, powerplays, DRS reviews, ball specifications, and tie-breakers.
+- **Clauses**:
+  - **undefined**: undefined
+  - **undefined**: undefined
+  - **undefined**: undefined
+  - **undefined**: undefined
+  - **undefined**: undefined
+  - **undefined**: undefined
+
+### Regulation 7: PMOA (Players & Match Officials Area) Minimum Standards (Integrity & Security)
+- **Summary**: Mandatory security cordon and communication blackout safeguarding the integrity of dressing rooms, dugouts, and match officials' facilities.
+- **Clauses**:
+  - **undefined**: undefined
+  - **undefined**: undefined
+  - **undefined**: undefined
+  - **undefined**: undefined
+
+### Regulation 8: Code of Conduct for Match Officials (Officiating & Governance)
+- **Summary**: Standards of professionalism, impartiality, physical fitness, conflict of interest disclosure, and report writing for umpires and match referees.
+- **Clauses**:
+  - **undefined**: undefined
+  - **undefined**: undefined
+  - **undefined**: undefined
+  - **undefined**: undefined
+
+### Regulation 9: Code of Conduct for Players and Team Officials (Discipline & On-field Behavior)
+- **Summary**: Comprehensive 4-tier disciplinary framework penalizing dissent, ball-tampering, abusive language, equipment damage, and physical assault.
+- **Clauses**:
+  - **undefined**: undefined
+  - **undefined**: undefined
+  - **undefined**: undefined
+  - **undefined**: undefined
+  - **undefined**: undefined
+
+### Regulation 10: Clothing and Equipment Regulations (Technical Regulations)
+- **Summary**: Standardization of coloured clothing, uniform design, sponsor logo dimensions, protective gear safety standards, and bat gauge compliance.
+- **Clauses**:
+  - **undefined**: undefined
+  - **undefined**: undefined
+  - **undefined**: undefined
+  - **undefined**: undefined
+  - **undefined**: undefined
+
+### Regulation 11: News Access Regulations (Media & Broadcast)
+- **Summary**: Rules governing the access, capture, editing, and distribution of match footage, audio, and news by non-rights holder media networks.
+- **Clauses**:
+  - **undefined**: undefined
+  - **undefined**: undefined
+  - **undefined**: undefined
+  - **undefined**: undefined
+
+### Regulation 12: Image Use Terms & Photography Guidelines (Media & Broadcast)
+- **Summary**: Legal terms licensing still photographic imagery for accredited journalists and strictly forbidding commercial merchandise exploitation.
+- **Clauses**:
+  - **undefined**: undefined
+  - **undefined**: undefined
+  - **undefined**: undefined
+
+### Regulation 13: Media Accreditation Terms and Conditions (Media & Broadcast)
+- **Summary**: Application protocol, eligibility criteria, bib collection, and venue privileges for print, electronic, and digital journalists.
+- **Clauses**:
+  - **undefined**: undefined
+  - **undefined**: undefined
+  - **undefined**: undefined
+  - **undefined**: undefined
+
+### Regulation 14: Ticket Terms and Conditions (Spectator & Stadium Admission)
+- **Summary**: Conditions of entry, prohibited articles, spectator code of conduct, rain-check refund policy, and stadium evacuation protocols.
+- **Clauses**:
+  - **undefined**: undefined
+  - **undefined**: undefined
+  - **undefined**: undefined
+  - **undefined**: undefined
+  - **undefined**: undefined
+
+## Governing Council
+- **Patron-in-Chief**: Divisional Commissioner (Rewa Division Sports Authority)
+- **Chairman, Governing Council**: Shri R. P. Singh (Senior MPCA Delegate)
+- **Honorary Tournament Director**: Er. K. N. Tiwari (Rewa Division Cricket Association (RDCA))
+- **Chief Match Referee**: Shri S. K. Verma (Former BCCI Level-2 First Class Umpire)
+- **Head of Anti-Corruption Unit (ACU)**: Shri D. C. Sharma (IPS Retd.) (MPCA / RDCA Integrity Panel)
+- **Technical & Pitches Committee Chairman**: Shri A. P. Pandey (BCCI Certified Chief Curator)
+- **Anti-Doping & Medical Officer**: Dr. V. K. Mishra (Rewa Sports Medicine Board)
+- **Media & Broadcast Liaison**: Shri M. K. Shukla (Vindhya Press Desk)
+
+## Official Network
+- Rewa Division Cricket Association (RDCA): https://rewa-cricket-division.vercel.app
+- ABV Tournament Portal: https://abv-rewacricket.pages.dev
+- Destroyers CC: https://destroyers-rewacricket.pages.dev
+- Dread Eleven: https://dread-eleven-rewacricket.pages.dev

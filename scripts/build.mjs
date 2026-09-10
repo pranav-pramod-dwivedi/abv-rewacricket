@@ -1242,6 +1242,7 @@ function build404Page() {
 function buildSeoFiles() {
   const allUrls = [
     '/',
+    '/stats/',
     '/teams/',
     '/matches/',
     '/rules/',
@@ -1256,8 +1257,8 @@ function buildSeoFiles() {
 ${allUrls.map(u => `  <url>
     <loc>${SITE_URL}${u}</loc>
     <lastmod>2026-09-11</lastmod>
-    <changefreq>${u === '/' ? 'weekly' : 'monthly'}</changefreq>
-    <priority>${u === '/' ? '1.0' : u.startsWith('/rules/') ? '0.7' : '0.8'}</priority>
+    <changefreq>${u === '/' || u === '/stats/' ? 'weekly' : 'monthly'}</changefreq>
+    <priority>${u === '/' ? '1.0' : u === '/stats/' || u === '/matches/' ? '0.9' : u.startsWith('/rules/') ? '0.7' : '0.8'}</priority>
   </url>`).join('\n')}
 </urlset>`;
   fs.writeFileSync(path.join(rootDir, 'sitemap.xml'), sitemapXml, 'utf-8');
@@ -1265,6 +1266,32 @@ ${allUrls.map(u => `  <url>
 
   const robotsTxt = `User-agent: *
 Allow: /
+
+# AI Crawlers & LLM Agents
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
 Sitemap: ${SITE_URL}/sitemap.xml
 `;
   fs.writeFileSync(path.join(rootDir, 'robots.txt'), robotsTxt, 'utf-8');
@@ -1274,21 +1301,88 @@ Sitemap: ${SITE_URL}/sitemap.xml
 > The premier annual invitational cricket championship of Vindhya Pradesh, sanctioned by the Rewa Division Cricket Association (RDCA) and affiliated with the Madhya Pradesh Cricket Association (MPCA).
 
 ## Primary Documentation
-- [Tournament Home](${SITE_URL}/)
-- [The Derby Teams](${SITE_URL}/teams/)
-- [Match Archive (34 Matches)](${SITE_URL}/matches/)
-- [Official Regulations (14 Codes)](${SITE_URL}/rules/)
-- [Governing Council](${SITE_URL}/governing-council/)
-- [News & Media Releases](${SITE_URL}/news/)
-- [Contact & Venues](${SITE_URL}/contact/)
+- [Tournament Home](${SITE_URL}/): Championship summary, 3–3 titles deadlock, telemetry, and 2026 champions.
+- [Tournament Leaderboards & Records](${SITE_URL}/stats/): Official consolidated player statistics combining Destroyers CC and Dread Eleven across 34 matches.
+- [The Derby Teams (2)](${SITE_URL}/teams/): The two participating marquee clubs: Destroyers CC and Dread Eleven.
+- [Match Archive (34 Matches)](${SITE_URL}/matches/): Complete 34-match fixture history with direct scorecard links to the official RDCA archive.
+- [Official Regulations (14 Codes)](${SITE_URL}/rules/): Statutory tournament regulations including Anti-Corruption, Anti-Doping, and Playing Conditions.
+- [Governing Council](${SITE_URL}/governing-council/): Executive leadership, technical committee, and match officials.
+- [News & Media Releases](${SITE_URL}/news/): Official circulars, bulletins, and tournament announcements.
+- [Contact & Venues](${SITE_URL}/contact/): Divisional Cricket Stadium Neem Chauraha Rewa, MPCA and RDCA official contacts.
 
-## Official Franchise Portals
+## Official Network
 - [Destroyers Cricket Club](${teams[0].website})
 - [Dread Eleven](${teams[1].website})
 - [Rewa Cricket Division (RDCA Central)](https://rewa-cricket-division.vercel.app)
 `;
   fs.writeFileSync(path.join(rootDir, 'llms.txt'), llmsTxt, 'utf-8');
   console.log('Built: llms.txt');
+
+  const topBat = tournament.topPerformers.batting;
+  const topBowl = tournament.topPerformers.bowling;
+  const num = tournament.seasonInNumbers;
+
+  const llmsFullTxt = `# Atal Bihari Vajpayee Memorial Tournament — Complete Knowledge Base
+> Official invitational cricket championship of Vindhya Pradesh, sanctioned by Rewa Division Cricket Association (RDCA) and affiliated with Madhya Pradesh Cricket Association (MPCA).
+
+## Overview
+- **Tournament**: Atal Bihari Vajpayee Memorial Tournament (ABV Memorial Trophy)
+- **Sanctioning Body**: Rewa Division Cricket Association (RDCA) & Madhya Pradesh Cricket Association (MPCA)
+- **Format**: Mixed Format (T20 and 50-Over Matches)
+- **History**: 6 Annual Editions (2021 to 2026), 34 Bilateral Derby Clashes
+- **Series Championship Standings**: Tied Level at 3–3
+  - Dread Eleven (3 Titles): 2021 (5–2), 2022 (4–3), 2023 (3–2) under captain Akhil Mishra
+  - Destroyers Cricket Club (3 Titles): 2024 (4–1), 2025 (5–0), 2026 (3–2) under captain Pranav Dwivedi
+- **2026 Champions**: Destroyers Cricket Club (def. Dread Eleven by 12 runs in the 2026 Championship Final)
+- **Official Venues**:
+  - Divisional Cricket Stadium, Neem Chauraha, Boda Bagh Road, Rewa, MP 486001
+  - Awadhesh Pratap Singh University (APSU) Stadium, Rewa
+  - Martand School Ground No. 3, Rewa
+
+## All-Time Combined Player Leaderboards (Both Teams)
+### Leading Run Scorers
+${topBat.map((b, i) => `${i + 1}. **${b.name}** (${b.team}): ${b.runs} runs | Batting Avg: ${b.average} | Strike Rate: ${b.strikeRate} | Fifties: ${b.fifties} | Hundreds: ${b.hundreds}`).join('\n')}
+
+### Leading Wicket Takers
+${topBowl.map((b, i) => `${i + 1}. **${b.name}** (${b.team}): ${b.wickets} wickets | Bowling Avg: ${b.average} | Economy Rate: ${b.economy} | BBI: ${b.bestBowling}`).join('\n')}
+
+## Tournament Telemetry (34 Matches)
+- Total Matches: 34
+- Total Runs Scored: 10,842
+- Total Wickets Fallen: 498
+- Boundaries: 946 Fours, 312 Sixes
+- Highest Team Total: 284/5 (Destroyers CC vs Dread Eleven, 2025 Season at APS Ground)
+- Lowest Team Total: 98 all out (Dread Eleven vs Destroyers CC, 2023 Season)
+- Individual Centuries: 2
+- Individual Fifties: 42
+- Best Bowling in an Innings: 8/39 by Pranav Dwivedi (Destroyers CC)
+
+## Complete 34-Match Archive
+${allMatchesData.map((m, i) => `### Match #${34 - i}: ${m.title} (${m.season} Season — ${m.format})
+- **Date**: ${m.date}
+- **Venue**: ${m.venue}
+- **Teams**: ${m.team1} vs ${m.team2}
+- **Result**: ${m.result}
+- **Details**: ${m.details}
+- **Official RDCA Scorecard**: https://rewa-cricket-division.vercel.app/matches/${m.slug}/`).join('\n\n')}
+
+## 14 Statutory Governance Codes & Regulations
+${rules.map((r, i) => `### Regulation ${i + 1}: ${r.title} (${r.category})
+- **Summary**: ${r.summary}
+- **Clauses**:
+${r.clauses.map(c => `  - **${c.title}**: ${c.text}`).join('\n')}`).join('\n\n')}
+
+## Governing Council
+${tournament.governingCouncil.map(m => `- **${m.role}**: ${m.name} (${m.affiliation})`).join('\n')}
+
+## Official Network
+- Rewa Division Cricket Association (RDCA): https://rewa-cricket-division.vercel.app
+- ABV Tournament Portal: https://abv-rewacricket.pages.dev
+- Destroyers CC: https://destroyers-rewacricket.pages.dev
+- Dread Eleven: https://dread-eleven-rewacricket.pages.dev
+`;
+  fs.writeFileSync(path.join(rootDir, 'llms-full.txt'), llmsFullTxt, 'utf-8');
+  console.log('Built: llms-full.txt');
 
   const manifestJson = {
     "name": "Atal Bihari Vajpayee Memorial Tournament",
@@ -1308,6 +1402,44 @@ Sitemap: ${SITE_URL}/sitemap.xml
   };
   fs.writeFileSync(path.join(rootDir, 'manifest.json'), JSON.stringify(manifestJson, null, 2), 'utf-8');
   console.log('Built: manifest.json');
+
+  const headersContent = `/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+/llms.txt
+  Access-Control-Allow-Origin: *
+  Content-Type: text/plain; charset=utf-8
+  Cache-Control: public, max-age=3600
+
+/llms-full.txt
+  Access-Control-Allow-Origin: *
+  Content-Type: text/plain; charset=utf-8
+  Cache-Control: public, max-age=3600
+
+/sitemap.xml
+  Content-Type: application/xml; charset=utf-8
+
+/public/*
+  Cache-Control: public, max-age=31536000, immutable
+`;
+  fs.writeFileSync(path.join(rootDir, '_headers'), headersContent, 'utf-8');
+  console.log('Built: _headers');
+
+  const redirectsContent = `/rule/* /rules/:splat 301
+/team/* /teams/:splat 301
+/council /governing-council 301
+/live /matches 302
+/scorecard /matches 302
+/scorecards /matches 302
+/leaderboard /stats 301
+/leaderboards /stats 301
+/records /stats 301
+`;
+  fs.writeFileSync(path.join(rootDir, '_redirects'), redirectsContent, 'utf-8');
+  console.log('Built: _redirects');
 }
 
 // Master Build Function

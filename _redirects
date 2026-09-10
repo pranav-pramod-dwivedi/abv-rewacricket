@@ -4,3 +4,6 @@
 /live /matches 302
 /scorecard /matches 302
 /scorecards /matches 302
+/leaderboard /stats 301
+/leaderboards /stats 301
+/records /stats 301

@@ -2,15 +2,16 @@
 > The premier annual invitational cricket championship of Vindhya Pradesh, sanctioned by the Rewa Division Cricket Association (RDCA) and affiliated with the Madhya Pradesh Cricket Association (MPCA).
 
 ## Primary Documentation
-- [Tournament Home](https://abv-rewacricket.pages.dev/)
-- [The Derby Teams](https://abv-rewacricket.pages.dev/teams/)
-- [Match Archive (34 Matches)](https://abv-rewacricket.pages.dev/matches/)
-- [Official Regulations (14 Codes)](https://abv-rewacricket.pages.dev/rules/)
-- [Governing Council](https://abv-rewacricket.pages.dev/governing-council/)
-- [News & Media Releases](https://abv-rewacricket.pages.dev/news/)
-- [Contact & Venues](https://abv-rewacricket.pages.dev/contact/)
+- [Tournament Home](https://abv-rewacricket.pages.dev/): Championship summary, 3–3 titles deadlock, telemetry, and 2026 champions.
+- [Tournament Leaderboards & Records](https://abv-rewacricket.pages.dev/stats/): Official consolidated player statistics combining Destroyers CC and Dread Eleven across 34 matches.
+- [The Derby Teams (2)](https://abv-rewacricket.pages.dev/teams/): The two participating marquee clubs: Destroyers CC and Dread Eleven.
+- [Match Archive (34 Matches)](https://abv-rewacricket.pages.dev/matches/): Complete 34-match fixture history with direct scorecard links to the official RDCA archive.
+- [Official Regulations (14 Codes)](https://abv-rewacricket.pages.dev/rules/): Statutory tournament regulations including Anti-Corruption, Anti-Doping, and Playing Conditions.
+- [Governing Council](https://abv-rewacricket.pages.dev/governing-council/): Executive leadership, technical committee, and match officials.
+- [News & Media Releases](https://abv-rewacricket.pages.dev/news/): Official circulars, bulletins, and tournament announcements.
+- [Contact & Venues](https://abv-rewacricket.pages.dev/contact/): Divisional Cricket Stadium Neem Chauraha Rewa, MPCA and RDCA official contacts.
 
-## Official Franchise Portals
+## Official Network
 - [Destroyers Cricket Club](https://destroyers-rewacricket.pages.dev)
 - [Dread Eleven](https://dread-eleven-rewacricket.pages.dev)
 - [Rewa Cricket Division (RDCA Central)](https://rewa-cricket-division.vercel.app)
