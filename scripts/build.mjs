@@ -39,7 +39,7 @@ function renderHeader(activeNav = '') {
     <div class="container nav-inner">
       <a href="${SITE_URL}/" class="brand" aria-label="ABV Memorial Tournament Home">
         <div class="brand-emblem">
-          <img src="${SITE_URL}/public/images/trophy.svg" alt="ABV Trophy Emblem" width="26" height="26">
+          <img src="/public/images/trophy.svg" alt="ABV Trophy Emblem" width="26" height="26">
         </div>
         <div class="brand-text">
           <div class="brand-title">ABV Memorial Tournament</div>
@@ -156,19 +156,19 @@ function renderHtmlPage({ title, description, canonicalUrl, activeNav = '', body
   <meta property="og:title" content="${title}">
   <meta property="og:description" content="${description}">
   <meta property="og:url" content="${canonicalUrl}">
-  <meta property="og:image" content="${SITE_URL}/public/images/trophy.svg">
+  <meta property="og:image" content="/public/images/trophy.svg">
   <meta property="og:site_name" content="Atal Bihari Vajpayee Memorial Tournament">
   
   <!-- Twitter -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="${title}">
   <meta name="twitter:description" content="${description}">
-  <meta name="twitter:image" content="${SITE_URL}/public/images/trophy.svg">
+  <meta name="twitter:image" content="/public/images/trophy.svg">
 
-  <link rel="icon" type="image/svg+xml" href="${SITE_URL}/public/images/trophy.svg">
+  <link rel="icon" type="image/svg+xml" href="/public/images/trophy.svg">
   <link rel="manifest" href="${SITE_URL}/manifest.json">
-  <link rel="stylesheet" href="${SITE_URL}/public/css/styles.css">
-  <script defer src="${SITE_URL}/public/js/app.js"></script>
+  <link rel="stylesheet" href="/public/css/styles.css">
+  <script defer src="/public/js/app.js"></script>
   ${jsonLd}
 </head>
 <body>
@@ -210,7 +210,7 @@ function buildHomePage() {
     <section class="champions-banner" aria-labelledby="champions-title">
       <div class="champions-header">
         <div class="champions-tag">
-          <img src="${SITE_URL}/public/images/trophy.svg" alt="Trophy" width="20" height="20">
+          <img src="/public/images/trophy.svg" alt="Trophy" width="20" height="20">
           Reigning Champions &bull; 2026 Title Holders
         </div>
         <div>
@@ -242,7 +242,7 @@ function buildHomePage() {
         <div class="champions-trophy-display">
           <div style="text-align: center;">
             <div style="width: 80px; height: 80px; margin: 0 auto 0.75rem; background: #0c1626; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 2px solid #3b82f6;">
-              <img src="${SITE_URL}/public/images/des.svg" alt="Destroyers CC Emblem" width="50" height="50">
+              <img src="/public/images/des.svg" alt="Destroyers CC Emblem" width="50" height="50">
             </div>
             <div style="font-weight: 700; color: #fff; font-size: 0.95rem;">Destroyers CC</div>
             <div style="font-size: 0.75rem; color: var(--accent-gold-light);">Champions (164/7)</div>
@@ -251,7 +251,7 @@ function buildHomePage() {
           <div style="font-size: 1.5rem; font-weight: 800; color: var(--text-muted);">VS</div>
           <div style="text-align: center;">
             <div style="width: 80px; height: 80px; margin: 0 auto 0.75rem; background: #0c1626; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 2px solid #ef4444;">
-              <img src="${SITE_URL}/public/images/de.svg" alt="Dread Eleven Emblem" width="50" height="50">
+              <img src="/public/images/de.svg" alt="Dread Eleven Emblem" width="50" height="50">
             </div>
             <div style="font-weight: 700; color: #fff; font-size: 0.95rem;">Dread Eleven</div>
             <div style="font-size: 0.75rem; color: #fca5a5;">Runners-up (152/9)</div>
@@ -319,7 +319,7 @@ function buildHomePage() {
           <div class="team-card" style="--team-accent: ${t.primaryColor}; text-align: left; align-items: flex-start; padding: 2rem;">
             <div style="display: flex; align-items: center; gap: 1.25rem; width: 100%; margin-bottom: 1.25rem;">
               <div class="team-logo-frame" style="margin-bottom: 0;">
-                <img src="${SITE_URL}/public/images/${t.id}.svg" alt="${t.name} Logo" width="54" height="54">
+                <img src="/public/images/${t.id}.svg" alt="${t.name} Logo" width="54" height="54">
               </div>
               <div>
                 <h3 class="team-name" style="font-size: 1.35rem; margin-bottom: 0.25rem;">${t.name}</h3>
@@ -609,7 +609,7 @@ function buildHomePage() {
     "name": "Atal Bihari Vajpayee Memorial Tournament",
     "alternateName": ["ABV Memorial Trophy", "ABV Tournament Rewa"],
     "url": `${SITE_URL}/`,
-    "logo": `${SITE_URL}/public/images/trophy.svg`,
+    "logo": `/public/images/trophy.svg`,
     "description": "Official portal of the Atal Bihari Vajpayee Memorial Tournament in Rewa, Madhya Pradesh. Official rules, season telemetry, past champions, and participating teams.",
     "parentOrganization": {
       "@type": "SportsOrganization",
@@ -708,7 +708,7 @@ function buildTeamsPage() {
         <div class="team-card" style="--team-accent: ${t.primaryColor}; text-align: left; align-items: flex-start; padding: 2.25rem;">
           <div style="display: flex; align-items: center; gap: 1.25rem; width: 100%; margin-bottom: 1.5rem;">
             <div class="team-logo-frame" style="margin-bottom: 0; width: 72px; height: 72px;">
-              <img src="${SITE_URL}/public/images/${t.id}.svg" alt="${t.name} Logo" width="50" height="50">
+              <img src="/public/images/${t.id}.svg" alt="${t.name} Logo" width="50" height="50">
             </div>
             <div>
               <h2 class="team-name" style="font-size: 1.5rem; margin-bottom: 0.25rem;">${t.name}</h2>
@@ -756,7 +756,7 @@ function buildTeamsPage() {
         "@type": "SportsTeam",
         "name": t.name,
         "url": t.website,
-        "logo": `${SITE_URL}/public/images/${t.id}.svg`,
+        "logo": `/public/images/${t.id}.svg`,
         "athlete": {
           "@type": "Person",
           "name": t.captain,
@@ -840,7 +840,7 @@ function buildMatchesPage() {
         <div class="performer-card" style="padding: 2rem;">
           <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.25rem;">
             <div style="width: 60px; height: 60px; background: #0c1626; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 2px solid #3b82f6;">
-              <img src="${SITE_URL}/public/images/des.svg" alt="Destroyers CC" width="38" height="38">
+              <img src="/public/images/des.svg" alt="Destroyers CC" width="38" height="38">
             </div>
             <div>
               <h3 style="font-size: 1.3rem; font-weight: 700; color: #fff;">Destroyers Cricket Club</h3>
@@ -858,7 +858,7 @@ function buildMatchesPage() {
         <div class="performer-card" style="padding: 2rem;">
           <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.25rem;">
             <div style="width: 60px; height: 60px; background: #0c1626; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 2px solid #ef4444;">
-              <img src="${SITE_URL}/public/images/de.svg" alt="Dread Eleven" width="38" height="38">
+              <img src="/public/images/de.svg" alt="Dread Eleven" width="38" height="38">
             </div>
             <div>
               <h3 style="font-size: 1.3rem; font-weight: 700; color: #fff;">Dread Eleven Cricket Club</h3>
