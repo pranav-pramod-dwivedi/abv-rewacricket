@@ -29,15 +29,35 @@
   "@context": "https://schema.org",
   "@type": "SportsOrganization",
   "name": "Atal Bihari Vajpayee Memorial Tournament",
-  "alternateName": "ABV Memorial Trophy",
+  "alternateName": [
+    "ABV Memorial Trophy",
+    "ABV Tournament Rewa"
+  ],
   "url": "https://abv-rewacricket.pages.dev/",
   "logo": "https://abv-rewacricket.pages.dev/public/images/trophy.svg",
-  "description": "Official portal of the Atal Bihari Vajpayee Memorial Tournament in Rewa, Madhya Pradesh. Comprehensive rules, participating teams, past winners, and season telemetry.",
+  "description": "Official portal of the Atal Bihari Vajpayee Memorial Tournament in Rewa, Madhya Pradesh. Official rules, season telemetry, past champions, and participating teams.",
   "parentOrganization": {
     "@type": "SportsOrganization",
     "name": "Rewa Division Cricket Association (RDCA)",
     "url": "https://rewa-cricket-division.vercel.app"
   },
+  "member": [
+    {
+      "@type": "SportsTeam",
+      "name": "Destroyers Cricket Club",
+      "url": "https://destroyers-rewacricket.pages.dev"
+    },
+    {
+      "@type": "SportsTeam",
+      "name": "Dread Eleven Cricket Club",
+      "url": "https://dread-eleven-rewacricket.pages.dev"
+    }
+  ],
+  "sameAs": [
+    "https://rewa-cricket-division.vercel.app/tournaments/atal-bihari-vajpayee-memorial-tournament/",
+    "https://destroyers-rewacricket.pages.dev",
+    "https://dread-eleven-rewacricket.pages.dev"
+  ],
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Divisional Cricket Stadium, Neem Chauraha, Boda Bagh Road",
@@ -53,12 +73,14 @@
   
   <div class="top-bar">
     <div class="container top-bar-inner">
-      <div>
-        <span>Official Portal of Atal Bihari Vajpayee Memorial Tournament &bull; Sanctioned by RDCA &amp; MPCA</span>
+      <div style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
+        <span><strong>Official Portal:</strong> Atal Bihari Vajpayee Memorial Tournament &bull; RDCA &amp; MPCA</span>
       </div>
       <div class="top-bar-links">
-        <a href="https://abv-rewacricket.pages.dev/rules/anti-corruption/">ACU Integrity Hotline: +91 7662 250011</a>
-        <a href="https://rewa-cricket-division.vercel.app" target="_blank" rel="noopener">RDCA Central Portal &rarr;</a>
+        <a href="https://rewa-cricket-division.vercel.app" target="_blank" rel="noopener">RDCA Central ↗</a>
+        <a href="https://destroyers-rewacricket.pages.dev" target="_blank" rel="noopener">Destroyers CC ↗</a>
+        <a href="https://dread-eleven-rewacricket.pages.dev" target="_blank" rel="noopener">Dread Eleven ↗</a>
+        <a href="https://abv-rewacricket.pages.dev/rules/anti-corruption/" style="color: var(--accent-gold-light);">ACU Hotline: +91 7662 250011</a>
       </div>
     </div>
   </div>
@@ -77,8 +99,8 @@
       <nav>
         <ul class="nav-links">
           <li><a href="https://abv-rewacricket.pages.dev/" class="nav-link active">Home</a></li>
-          <li><a href="https://abv-rewacricket.pages.dev/teams/" class="nav-link ">Teams</a></li>
-          <li><a href="https://abv-rewacricket.pages.dev/matches/" class="nav-link ">Matches</a></li>
+          <li><a href="https://abv-rewacricket.pages.dev/teams/" class="nav-link ">Teams (2)</a></li>
+          <li><a href="https://abv-rewacricket.pages.dev/matches/" class="nav-link ">Matches &amp; RDCA</a></li>
           <li><a href="https://abv-rewacricket.pages.dev/rules/" class="nav-link ">Rules &amp; Regulations</a></li>
           <li><a href="https://abv-rewacricket.pages.dev/governing-council/" class="nav-link ">Governing Council</a></li>
           <li><a href="https://abv-rewacricket.pages.dev/news/" class="nav-link ">News</a></li>
@@ -100,7 +122,7 @@
       </p>
       <div class="hero-actions">
         <a href="https://abv-rewacricket.pages.dev/matches/" class="btn btn-primary">Live Match Center &rarr;</a>
-        <a href="https://abv-rewacricket.pages.dev/teams/" class="btn btn-outline">Participating Teams (12)</a>
+        <a href="https://abv-rewacricket.pages.dev/teams/" class="btn btn-outline">The Rivalry: 2 Teams</a>
         <a href="https://abv-rewacricket.pages.dev/rules/" class="btn btn-outline">14 Official Regulations</a>
       </div>
     </div>
@@ -132,10 +154,10 @@
           </p>
           <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
             <a href="https://destroyers-rewacricket.pages.dev" target="_blank" rel="noopener" class="btn btn-primary" style="font-size: 0.85rem; padding: 0.5rem 1rem;">
-              Visit Destroyers CC Portal &rarr;
+              Visit Destroyers CC Portal ↗
             </a>
-            <a href="https://abv-rewacricket.pages.dev/matches/" class="btn btn-outline" style="font-size: 0.85rem; padding: 0.5rem 1rem;">
-              Match Scorecard Notice
+            <a href="https://dread-eleven-rewacricket.pages.dev" target="_blank" rel="noopener" class="btn btn-outline" style="font-size: 0.85rem; padding: 0.5rem 1rem;">
+              Visit Dread Eleven Stadium ↗
             </a>
           </div>
         </div>
@@ -147,14 +169,16 @@
             </div>
             <div style="font-weight: 700; color: #fff; font-size: 0.95rem;">Destroyers CC</div>
             <div style="font-size: 0.75rem; color: var(--accent-gold-light);">Champions (164/7)</div>
+            <div style="font-size: 0.7rem; color: var(--text-muted); margin-top: 0.25rem;">19 Derby Wins</div>
           </div>
-          <div style="font-size: 1.5rem; font-weight: 800; color: var(--text-muted);">DEF.</div>
+          <div style="font-size: 1.5rem; font-weight: 800; color: var(--text-muted);">VS</div>
           <div style="text-align: center;">
             <div style="width: 80px; height: 80px; margin: 0 auto 0.75rem; background: #0c1626; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 2px solid #ef4444;">
               <img src="https://abv-rewacricket.pages.dev/public/images/de.svg" alt="Dread Eleven Emblem" width="50" height="50">
             </div>
             <div style="font-weight: 700; color: #fff; font-size: 0.95rem;">Dread Eleven</div>
             <div style="font-size: 0.75rem; color: #fca5a5;">Runners-up (152/9)</div>
+            <div style="font-size: 0.7rem; color: var(--text-muted); margin-top: 0.25rem;">15 Derby Wins</div>
           </div>
         </div>
       </div>
@@ -200,6 +224,75 @@
           <div class="telemetry-label">Best Bowling Figures</div>
           <div class="telemetry-sub">Pranav Dwivedi, Destroyers CC</div>
         </div>
+      </div>
+    </section>
+
+    <!-- The 2 Competing Teams (Bilateral Derby Showcase) -->
+    <section class="section">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">The Founding Derby Teams (2)</h2>
+          <p class="section-subtitle">The historic Rewa rivalry contested exclusively between Destroyers CC and Dread Eleven</p>
+        </div>
+        <a href="https://abv-rewacricket.pages.dev/teams/" class="btn btn-outline">Explore Head-to-Head &rarr;</a>
+      </div>
+
+      <div class="performer-grid">
+        
+          <div class="team-card" style="--team-accent: #f56f00; text-align: left; align-items: flex-start; padding: 2rem;">
+            <div style="display: flex; align-items: center; gap: 1.25rem; width: 100%; margin-bottom: 1.25rem;">
+              <div class="team-logo-frame" style="margin-bottom: 0;">
+                <img src="https://abv-rewacricket.pages.dev/public/images/des.svg" alt="Destroyers Cricket Club Logo" width="54" height="54">
+              </div>
+              <div>
+                <h3 class="team-name" style="font-size: 1.35rem; margin-bottom: 0.25rem;">Destroyers Cricket Club</h3>
+                <div class="team-city">Rewa, Madhya Pradesh &bull; <strong>Captain:</strong> Pranav Dwivedi</div>
+              </div>
+            </div>
+            <div class="team-titles" style="align-self: flex-start; margin-bottom: 1rem;">3 Titles (2024, 2025, 2026 Reigning Champions)</div>
+            <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem;">
+              The reigning three-time champion powerhouse of the Atal Bihari Vajpayee Memorial Tournament, captained by premier all-rounder Pranav Dwivedi. Renowned for disciplined tactical bowling, explosive middle-order aggression, and a dominant 19-15 series rivalry record.
+            </p>
+            <div style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.5rem;">
+              <strong>Home Grounds:</strong> Divisional Cricket Stadium, Neem Chauraha / APSU Stadium
+            </div>
+            <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; width: 100%;">
+              <a href="https://destroyers-rewacricket.pages.dev" target="_blank" rel="noopener" class="btn btn-primary" style="flex: 1; justify-content: center; font-size: 0.85rem;">
+                Official Club Portal ↗
+              </a>
+              <a href="https://destroyers-rewacricket.pages.dev/matches" target="_blank" rel="noopener" class="btn btn-outline" style="font-size: 0.85rem;">
+                Match Scorecards ↗
+              </a>
+            </div>
+          </div>
+        
+          <div class="team-card" style="--team-accent: #d4ff00; text-align: left; align-items: flex-start; padding: 2rem;">
+            <div style="display: flex; align-items: center; gap: 1.25rem; width: 100%; margin-bottom: 1.25rem;">
+              <div class="team-logo-frame" style="margin-bottom: 0;">
+                <img src="https://abv-rewacricket.pages.dev/public/images/de.svg" alt="Dread Eleven Cricket Club Logo" width="54" height="54">
+              </div>
+              <div>
+                <h3 class="team-name" style="font-size: 1.35rem; margin-bottom: 0.25rem;">Dread Eleven Cricket Club</h3>
+                <div class="team-city">Rewa, Madhya Pradesh &bull; <strong>Captain:</strong> Akhil Mishra</div>
+              </div>
+            </div>
+            <div class="team-titles" style="align-self: flex-start; margin-bottom: 1rem;">3 Titles (2021, 2022, 2023 Champions)</div>
+            <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem;">
+              The fierce, relentless arch-rivals of Destroyers CC, captained by top-order talisman Akhil Mishra. Inaugural winners of the tournament with three consecutive titles from 2021 to 2023, playing an aggressive, high-octane brand of cricket.
+            </p>
+            <div style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.5rem;">
+              <strong>Home Grounds:</strong> Martand School Ground No. 3 / Neem Chauraha Stadium
+            </div>
+            <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; width: 100%;">
+              <a href="https://dread-eleven-rewacricket.pages.dev" target="_blank" rel="noopener" class="btn btn-primary" style="flex: 1; justify-content: center; font-size: 0.85rem;">
+                Official Club Portal ↗
+              </a>
+              <a href="https://dread-eleven-rewacricket.pages.dev/matches" target="_blank" rel="noopener" class="btn btn-outline" style="font-size: 0.85rem;">
+                Match Scorecards ↗
+              </a>
+            </div>
+          </div>
+        
       </div>
     </section>
 
@@ -472,96 +565,6 @@
       </div>
     </section>
 
-    <!-- Participating Teams Grid Preview -->
-    <section class="section">
-      <div class="section-header">
-        <div>
-          <h2 class="section-title">Participating Teams &amp; Franchises</h2>
-          <p class="section-subtitle">Premier domestic and franchise clubs affiliated with the tournament</p>
-        </div>
-        <a href="https://abv-rewacricket.pages.dev/teams/" class="btn btn-outline">View All 12 Teams &rarr;</a>
-      </div>
-
-      <div class="teams-grid">
-        
-          <div class="team-card" style="--team-accent: #f9cd05;">
-            <div class="team-logo-frame">
-              <img src="https://abv-rewacricket.pages.dev/public/images/csk.svg" alt="Chennai Super Kings Logo" width="54" height="54">
-            </div>
-            <h3 class="team-name">Chennai Super Kings</h3>
-            <div class="team-city">Chennai, Tamil Nadu</div>
-            <div class="team-titles">5 Titles (2010, 2011, 2018, 2021, 2023)</div>
-            <a href="https://www.chennaisuperkings.com" target="_blank" rel="noopener" class="team-website-btn">
-              Official Website &rarr;
-            </a>
-          </div>
-        
-          <div class="team-card" style="--team-accent: #004c97;">
-            <div class="team-logo-frame">
-              <img src="https://abv-rewacricket.pages.dev/public/images/dc.svg" alt="Delhi Capitals Logo" width="54" height="54">
-            </div>
-            <h3 class="team-name">Delhi Capitals</h3>
-            <div class="team-city">New Delhi, Delhi</div>
-            <div class="team-titles">Runners-up (2020)</div>
-            <a href="https://www.delhicapitals.in" target="_blank" rel="noopener" class="team-website-btn">
-              Official Website &rarr;
-            </a>
-          </div>
-        
-          <div class="team-card" style="--team-accent: #1b2133;">
-            <div class="team-logo-frame">
-              <img src="https://abv-rewacricket.pages.dev/public/images/gt.svg" alt="Gujarat Titans Logo" width="54" height="54">
-            </div>
-            <h3 class="team-name">Gujarat Titans</h3>
-            <div class="team-city">Ahmedabad, Gujarat</div>
-            <div class="team-titles">1 Title (2022 Champions, 2023 Finalists)</div>
-            <a href="https://www.gujarattitansipl.com" target="_blank" rel="noopener" class="team-website-btn">
-              Official Website &rarr;
-            </a>
-          </div>
-        
-          <div class="team-card" style="--team-accent: #3a225d;">
-            <div class="team-logo-frame">
-              <img src="https://abv-rewacricket.pages.dev/public/images/kkr.svg" alt="Kolkata Knight Riders Logo" width="54" height="54">
-            </div>
-            <h3 class="team-name">Kolkata Knight Riders</h3>
-            <div class="team-city">Kolkata, West Bengal</div>
-            <div class="team-titles">3 Titles (2012, 2014, 2024)</div>
-            <a href="https://www.kkr.in" target="_blank" rel="noopener" class="team-website-btn">
-              Official Website &rarr;
-            </a>
-          </div>
-        
-          <div class="team-card" style="--team-accent: #005792;">
-            <div class="team-logo-frame">
-              <img src="https://abv-rewacricket.pages.dev/public/images/lsg.svg" alt="Lucknow Super Giants Logo" width="54" height="54">
-            </div>
-            <h3 class="team-name">Lucknow Super Giants</h3>
-            <div class="team-city">Lucknow, Uttar Pradesh</div>
-            <div class="team-titles">Playoffs (2022, 2023)</div>
-            <a href="https://www.lucknowsupergiants.in" target="_blank" rel="noopener" class="team-website-btn">
-              Official Website &rarr;
-            </a>
-          </div>
-        
-          <div class="team-card" style="--team-accent: #004ba0;">
-            <div class="team-logo-frame">
-              <img src="https://abv-rewacricket.pages.dev/public/images/mi.svg" alt="Mumbai Indians Logo" width="54" height="54">
-            </div>
-            <h3 class="team-name">Mumbai Indians</h3>
-            <div class="team-city">Mumbai, Maharashtra</div>
-            <div class="team-titles">5 Titles (2013, 2015, 2017, 2019, 2020)</div>
-            <a href="https://www.mumbaiindians.com" target="_blank" rel="noopener" class="team-website-btn">
-              Official Website &rarr;
-            </a>
-          </div>
-        
-      </div>
-      <div style="text-align: center; margin-top: 2rem;">
-        <a href="https://abv-rewacricket.pages.dev/teams/" class="btn btn-primary">Browse All 12 Participating Teams (with logos &amp; websites) &rarr;</a>
-      </div>
-    </section>
-
     <!-- 14 Official Rules & Governance Regulations -->
     <section class="section">
       <div class="section-header">
@@ -667,45 +670,6 @@
       </div>
     </section>
 
-    <!-- Governing Council -->
-    <section class="section">
-      <div class="section-header">
-        <div>
-          <h2 class="section-title">Governing Council &amp; Administration</h2>
-          <p class="section-subtitle">Executive oversight committee ensuring fair play, logistics, and regulatory compliance</p>
-        </div>
-        <a href="https://abv-rewacricket.pages.dev/governing-council/" class="btn btn-outline">Full Council Directory &rarr;</a>
-      </div>
-
-      <div class="council-grid">
-        
-          <div class="council-card">
-            <div class="council-role">Patron-in-Chief</div>
-            <h3 class="council-name">Divisional Commissioner</h3>
-            <div class="council-affil">Rewa Division Sports Authority</div>
-          </div>
-        
-          <div class="council-card">
-            <div class="council-role">Chairman, Governing Council</div>
-            <h3 class="council-name">Shri R. P. Singh</h3>
-            <div class="council-affil">Senior MPCA Delegate</div>
-          </div>
-        
-          <div class="council-card">
-            <div class="council-role">Honorary Tournament Director</div>
-            <h3 class="council-name">Er. K. N. Tiwari</h3>
-            <div class="council-affil">Rewa Division Cricket Association (RDCA)</div>
-          </div>
-        
-          <div class="council-card">
-            <div class="council-role">Chief Match Referee</div>
-            <h3 class="council-name">Shri S. K. Verma</h3>
-            <div class="council-affil">Former BCCI Level-2 First Class Umpire</div>
-          </div>
-        
-      </div>
-    </section>
-
     <!-- Official Contact Information -->
     <section class="section" style="border: none;">
       <div class="section-header">
@@ -771,30 +735,28 @@
         <div class="footer-col">
           <h4>Atal Bihari Vajpayee Memorial Tournament</h4>
           <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.25rem;">
-            The premier invitational cricket championship of Vindhya Pradesh, honoring former Prime Minister Shri Atal Bihari Vajpayee. Officially sanctioned by the Rewa Division Cricket Association (RDCA) and affiliated with Madhya Pradesh Cricket Association (MPCA).
+            The premier invitational cricket championship of Vindhya Pradesh, honoring former Prime Minister Shri Atal Bihari Vajpayee. Contested through the iconic 34-match derby rivalry between Destroyers Cricket Club and Dread Eleven. Officially sanctioned by the Rewa Division Cricket Association (RDCA) and affiliated with Madhya Pradesh Cricket Association (MPCA).
           </p>
           <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
             <span class="champions-stats-badge" style="background: rgba(217, 119, 6, 0.15); border-color: var(--accent-gold); color: var(--accent-gold-light);">RDCA Affiliated</span>
             <span class="champions-stats-badge">MPCA Governance</span>
-            <span class="champions-stats-badge" style="background: rgba(59, 130, 246, 0.15); border-color: #3b82f6; color: #93c5fd;">BCCI Code Compliant</span>
+            <span class="champions-stats-badge" style="background: rgba(59, 130, 246, 0.15); border-color: #3b82f6; color: #93c5fd;">BCCI Compliant</span>
           </div>
         </div>
 
         <div class="footer-col">
-          <h4>Tournament Navigation</h4>
+          <h4>Official Rewa Cricket Network</h4>
           <ul>
-            <li><a href="https://abv-rewacricket.pages.dev/">Championship Overview</a></li>
-            <li><a href="https://abv-rewacricket.pages.dev/teams/">Participating Teams (12)</a></li>
-            <li><a href="https://abv-rewacricket.pages.dev/matches/">Matches &amp; RDCA Redirect</a></li>
-            <li><a href="https://abv-rewacricket.pages.dev/rules/">14 Regulatory Policies</a></li>
-            <li><a href="https://abv-rewacricket.pages.dev/governing-council/">Governing Council</a></li>
-            <li><a href="https://abv-rewacricket.pages.dev/news/">Official Press &amp; Circulars</a></li>
-            <li><a href="https://abv-rewacricket.pages.dev/contact/">Headquarters &amp; Contact</a></li>
+            <li><a href="https://rewa-cricket-division.vercel.app" target="_blank" rel="noopener" style="color: var(--accent-gold-light); font-weight: 700;">RDCA Central Portal ↗</a></li>
+            <li><a href="https://rewa-cricket-division.vercel.app/tournaments/atal-bihari-vajpayee-memorial-tournament/" target="_blank" rel="noopener">RDCA Tournament Fixtures ↗</a></li>
+            <li><a href="https://destroyers-rewacricket.pages.dev" target="_blank" rel="noopener" style="color: #f59e0b; font-weight: 700;">Destroyers CC Portal (2026 Champs) ↗</a></li>
+            <li><a href="https://dread-eleven-rewacricket.pages.dev" target="_blank" rel="noopener" style="color: #a3e635; font-weight: 700;">Dread Eleven Digital Stadium ↗</a></li>
+            <li><a href="https://abv-rewacricket.pages.dev/" style="color: #fff; font-weight: 600;">ABV Tournament Official Portal (Here)</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
-          <h4>Key Regulations</h4>
+          <h4>14 Regulatory Codes</h4>
           <ul>
             <li><a href="https://abv-rewacricket.pages.dev/rules/anti-corruption/">Anti-Corruption Code</a></li>
             <li><a href="https://abv-rewacricket.pages.dev/rules/anti-doping/">Anti-Doping Code</a></li>
@@ -807,9 +769,9 @@
         </div>
 
         <div class="footer-col">
-          <h4>Administrative Contacts</h4>
+          <h4>Administrative Headquarters</h4>
           <p style="color: var(--text-secondary); margin-bottom: 0.75rem;">
-            <strong>Rewa Venue:</strong><br>
+            <strong>Match Venue:</strong><br>
             Divisional Cricket Stadium, Neem Chauraha, Boda Bagh Road, Rewa, MP 486001 (Near Neem Chauraha Hanuman Mandir)
           </p>
           <p style="color: var(--text-secondary); margin-bottom: 0.75rem;">
@@ -827,7 +789,7 @@
         <div>
           &copy; 2021&ndash;2026 Atal Bihari Vajpayee Memorial Tournament Committee &bull; All Rights Reserved.
         </div>
-        <div style="display: flex; gap: 1rem;">
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
           <a href="https://abv-rewacricket.pages.dev/rules/image-use-terms/">Image Terms</a>
           <a href="https://abv-rewacricket.pages.dev/rules/media-accreditation/">Media Terms</a>
           <a href="https://abv-rewacricket.pages.dev/rules/news-access-regulations/">News Access</a>

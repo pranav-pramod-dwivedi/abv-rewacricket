@@ -24,12 +24,14 @@ function renderHeader(activeNav = '') {
   return `
   <div class="top-bar">
     <div class="container top-bar-inner">
-      <div>
-        <span>Official Portal of Atal Bihari Vajpayee Memorial Tournament &bull; Sanctioned by RDCA &amp; MPCA</span>
+      <div style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
+        <span><strong>Official Portal:</strong> Atal Bihari Vajpayee Memorial Tournament &bull; RDCA &amp; MPCA</span>
       </div>
       <div class="top-bar-links">
-        <a href="${SITE_URL}/rules/anti-corruption/">ACU Integrity Hotline: +91 7662 250011</a>
-        <a href="https://rewa-cricket-division.vercel.app" target="_blank" rel="noopener">RDCA Central Portal &rarr;</a>
+        <a href="https://rewa-cricket-division.vercel.app" target="_blank" rel="noopener">RDCA Central ↗</a>
+        <a href="https://destroyers-rewacricket.pages.dev" target="_blank" rel="noopener">Destroyers CC ↗</a>
+        <a href="https://dread-eleven-rewacricket.pages.dev" target="_blank" rel="noopener">Dread Eleven ↗</a>
+        <a href="${SITE_URL}/rules/anti-corruption/" style="color: var(--accent-gold-light);">ACU Hotline: +91 7662 250011</a>
       </div>
     </div>
   </div>
@@ -48,8 +50,8 @@ function renderHeader(activeNav = '') {
       <nav>
         <ul class="nav-links">
           <li><a href="${SITE_URL}/" class="nav-link ${activeNav === 'home' ? 'active' : ''}">Home</a></li>
-          <li><a href="${SITE_URL}/teams/" class="nav-link ${activeNav === 'teams' ? 'active' : ''}">Teams</a></li>
-          <li><a href="${SITE_URL}/matches/" class="nav-link ${activeNav === 'matches' ? 'active' : ''}">Matches</a></li>
+          <li><a href="${SITE_URL}/teams/" class="nav-link ${activeNav === 'teams' ? 'active' : ''}">Teams (2)</a></li>
+          <li><a href="${SITE_URL}/matches/" class="nav-link ${activeNav === 'matches' ? 'active' : ''}">Matches &amp; RDCA</a></li>
           <li><a href="${SITE_URL}/rules/" class="nav-link ${activeNav === 'rules' ? 'active' : ''}">Rules &amp; Regulations</a></li>
           <li><a href="${SITE_URL}/governing-council/" class="nav-link ${activeNav === 'council' ? 'active' : ''}">Governing Council</a></li>
           <li><a href="${SITE_URL}/news/" class="nav-link ${activeNav === 'news' ? 'active' : ''}">News</a></li>
@@ -70,30 +72,28 @@ function renderFooter() {
         <div class="footer-col">
           <h4>Atal Bihari Vajpayee Memorial Tournament</h4>
           <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.25rem;">
-            The premier invitational cricket championship of Vindhya Pradesh, honoring former Prime Minister Shri Atal Bihari Vajpayee. Officially sanctioned by the Rewa Division Cricket Association (RDCA) and affiliated with Madhya Pradesh Cricket Association (MPCA).
+            The premier invitational cricket championship of Vindhya Pradesh, honoring former Prime Minister Shri Atal Bihari Vajpayee. Contested through the iconic 34-match derby rivalry between Destroyers Cricket Club and Dread Eleven. Officially sanctioned by the Rewa Division Cricket Association (RDCA) and affiliated with Madhya Pradesh Cricket Association (MPCA).
           </p>
           <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
             <span class="champions-stats-badge" style="background: rgba(217, 119, 6, 0.15); border-color: var(--accent-gold); color: var(--accent-gold-light);">RDCA Affiliated</span>
             <span class="champions-stats-badge">MPCA Governance</span>
-            <span class="champions-stats-badge" style="background: rgba(59, 130, 246, 0.15); border-color: #3b82f6; color: #93c5fd;">BCCI Code Compliant</span>
+            <span class="champions-stats-badge" style="background: rgba(59, 130, 246, 0.15); border-color: #3b82f6; color: #93c5fd;">BCCI Compliant</span>
           </div>
         </div>
 
         <div class="footer-col">
-          <h4>Tournament Navigation</h4>
+          <h4>Official Rewa Cricket Network</h4>
           <ul>
-            <li><a href="${SITE_URL}/">Championship Overview</a></li>
-            <li><a href="${SITE_URL}/teams/">Participating Teams (12)</a></li>
-            <li><a href="${SITE_URL}/matches/">Matches &amp; RDCA Redirect</a></li>
-            <li><a href="${SITE_URL}/rules/">14 Regulatory Policies</a></li>
-            <li><a href="${SITE_URL}/governing-council/">Governing Council</a></li>
-            <li><a href="${SITE_URL}/news/">Official Press &amp; Circulars</a></li>
-            <li><a href="${SITE_URL}/contact/">Headquarters &amp; Contact</a></li>
+            <li><a href="https://rewa-cricket-division.vercel.app" target="_blank" rel="noopener" style="color: var(--accent-gold-light); font-weight: 700;">RDCA Central Portal ↗</a></li>
+            <li><a href="https://rewa-cricket-division.vercel.app/tournaments/atal-bihari-vajpayee-memorial-tournament/" target="_blank" rel="noopener">RDCA Tournament Fixtures ↗</a></li>
+            <li><a href="https://destroyers-rewacricket.pages.dev" target="_blank" rel="noopener" style="color: #f59e0b; font-weight: 700;">Destroyers CC Portal (2026 Champs) ↗</a></li>
+            <li><a href="https://dread-eleven-rewacricket.pages.dev" target="_blank" rel="noopener" style="color: #a3e635; font-weight: 700;">Dread Eleven Digital Stadium ↗</a></li>
+            <li><a href="${SITE_URL}/" style="color: #fff; font-weight: 600;">ABV Tournament Official Portal (Here)</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
-          <h4>Key Regulations</h4>
+          <h4>14 Regulatory Codes</h4>
           <ul>
             <li><a href="${SITE_URL}/rules/anti-corruption/">Anti-Corruption Code</a></li>
             <li><a href="${SITE_URL}/rules/anti-doping/">Anti-Doping Code</a></li>
@@ -106,9 +106,9 @@ function renderFooter() {
         </div>
 
         <div class="footer-col">
-          <h4>Administrative Contacts</h4>
+          <h4>Administrative Headquarters</h4>
           <p style="color: var(--text-secondary); margin-bottom: 0.75rem;">
-            <strong>Rewa Venue:</strong><br>
+            <strong>Match Venue:</strong><br>
             Divisional Cricket Stadium, Neem Chauraha, Boda Bagh Road, Rewa, MP 486001 (Near Neem Chauraha Hanuman Mandir)
           </p>
           <p style="color: var(--text-secondary); margin-bottom: 0.75rem;">
@@ -126,7 +126,7 @@ function renderFooter() {
         <div>
           &copy; 2021&ndash;2026 Atal Bihari Vajpayee Memorial Tournament Committee &bull; All Rights Reserved.
         </div>
-        <div style="display: flex; gap: 1rem;">
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
           <a href="${SITE_URL}/rules/image-use-terms/">Image Terms</a>
           <a href="${SITE_URL}/rules/media-accreditation/">Media Terms</a>
           <a href="${SITE_URL}/rules/news-access-regulations/">News Access</a>
@@ -199,7 +199,7 @@ function buildHomePage() {
       </p>
       <div class="hero-actions">
         <a href="${SITE_URL}/matches/" class="btn btn-primary">Live Match Center &rarr;</a>
-        <a href="${SITE_URL}/teams/" class="btn btn-outline">Participating Teams (12)</a>
+        <a href="${SITE_URL}/teams/" class="btn btn-outline">The Rivalry: 2 Teams</a>
         <a href="${SITE_URL}/rules/" class="btn btn-outline">14 Official Regulations</a>
       </div>
     </div>
@@ -231,10 +231,10 @@ function buildHomePage() {
           </p>
           <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
             <a href="https://destroyers-rewacricket.pages.dev" target="_blank" rel="noopener" class="btn btn-primary" style="font-size: 0.85rem; padding: 0.5rem 1rem;">
-              Visit Destroyers CC Portal &rarr;
+              Visit Destroyers CC Portal ↗
             </a>
-            <a href="${SITE_URL}/matches/" class="btn btn-outline" style="font-size: 0.85rem; padding: 0.5rem 1rem;">
-              Match Scorecard Notice
+            <a href="https://dread-eleven-rewacricket.pages.dev" target="_blank" rel="noopener" class="btn btn-outline" style="font-size: 0.85rem; padding: 0.5rem 1rem;">
+              Visit Dread Eleven Stadium ↗
             </a>
           </div>
         </div>
@@ -246,14 +246,16 @@ function buildHomePage() {
             </div>
             <div style="font-weight: 700; color: #fff; font-size: 0.95rem;">Destroyers CC</div>
             <div style="font-size: 0.75rem; color: var(--accent-gold-light);">Champions (164/7)</div>
+            <div style="font-size: 0.7rem; color: var(--text-muted); margin-top: 0.25rem;">19 Derby Wins</div>
           </div>
-          <div style="font-size: 1.5rem; font-weight: 800; color: var(--text-muted);">DEF.</div>
+          <div style="font-size: 1.5rem; font-weight: 800; color: var(--text-muted);">VS</div>
           <div style="text-align: center;">
             <div style="width: 80px; height: 80px; margin: 0 auto 0.75rem; background: #0c1626; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 2px solid #ef4444;">
               <img src="${SITE_URL}/public/images/de.svg" alt="Dread Eleven Emblem" width="50" height="50">
             </div>
             <div style="font-weight: 700; color: #fff; font-size: 0.95rem;">Dread Eleven</div>
             <div style="font-size: 0.75rem; color: #fca5a5;">Runners-up (152/9)</div>
+            <div style="font-size: 0.7rem; color: var(--text-muted); margin-top: 0.25rem;">15 Derby Wins</div>
           </div>
         </div>
       </div>
@@ -299,6 +301,48 @@ function buildHomePage() {
           <div class="telemetry-label">Best Bowling Figures</div>
           <div class="telemetry-sub">${num.bestBowlingFigures.split('(')[1].replace(')', '')}</div>
         </div>
+      </div>
+    </section>
+
+    <!-- The 2 Competing Teams (Bilateral Derby Showcase) -->
+    <section class="section">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">The Founding Derby Teams (2)</h2>
+          <p class="section-subtitle">The historic Rewa rivalry contested exclusively between Destroyers CC and Dread Eleven</p>
+        </div>
+        <a href="${SITE_URL}/teams/" class="btn btn-outline">Explore Head-to-Head &rarr;</a>
+      </div>
+
+      <div class="performer-grid">
+        ${teams.map(t => `
+          <div class="team-card" style="--team-accent: ${t.primaryColor}; text-align: left; align-items: flex-start; padding: 2rem;">
+            <div style="display: flex; align-items: center; gap: 1.25rem; width: 100%; margin-bottom: 1.25rem;">
+              <div class="team-logo-frame" style="margin-bottom: 0;">
+                <img src="${SITE_URL}/public/images/${t.id}.svg" alt="${t.name} Logo" width="54" height="54">
+              </div>
+              <div>
+                <h3 class="team-name" style="font-size: 1.35rem; margin-bottom: 0.25rem;">${t.name}</h3>
+                <div class="team-city">${t.city} &bull; <strong>Captain:</strong> ${t.captain}</div>
+              </div>
+            </div>
+            <div class="team-titles" style="align-self: flex-start; margin-bottom: 1rem;">${t.titles}</div>
+            <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem;">
+              ${t.description}
+            </p>
+            <div style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.5rem;">
+              <strong>Home Grounds:</strong> ${t.homeGround}
+            </div>
+            <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; width: 100%;">
+              <a href="${t.website}" target="_blank" rel="noopener" class="btn btn-primary" style="flex: 1; justify-content: center; font-size: 0.85rem;">
+                Official Club Portal ↗
+              </a>
+              <a href="${t.website}/matches" target="_blank" rel="noopener" class="btn btn-outline" style="font-size: 0.85rem;">
+                Match Scorecards ↗
+              </a>
+            </div>
+          </div>
+        `).join('')}
       </div>
     </section>
 
@@ -451,36 +495,6 @@ function buildHomePage() {
       </div>
     </section>
 
-    <!-- Participating Teams Grid Preview -->
-    <section class="section">
-      <div class="section-header">
-        <div>
-          <h2 class="section-title">Participating Teams &amp; Franchises</h2>
-          <p class="section-subtitle">Premier domestic and franchise clubs affiliated with the tournament</p>
-        </div>
-        <a href="${SITE_URL}/teams/" class="btn btn-outline">View All 12 Teams &rarr;</a>
-      </div>
-
-      <div class="teams-grid">
-        ${teams.slice(0, 6).map(t => `
-          <div class="team-card" style="--team-accent: ${t.primaryColor};">
-            <div class="team-logo-frame">
-              <img src="${SITE_URL}/public/images/${t.id}.svg" alt="${t.name} Logo" width="54" height="54">
-            </div>
-            <h3 class="team-name">${t.name}</h3>
-            <div class="team-city">${t.city}</div>
-            <div class="team-titles">${t.titles}</div>
-            <a href="${t.website}" target="_blank" rel="noopener" class="team-website-btn">
-              Official Website &rarr;
-            </a>
-          </div>
-        `).join('')}
-      </div>
-      <div style="text-align: center; margin-top: 2rem;">
-        <a href="${SITE_URL}/teams/" class="btn btn-primary">Browse All 12 Participating Teams (with logos &amp; websites) &rarr;</a>
-      </div>
-    </section>
-
     <!-- 14 Official Rules & Governance Regulations -->
     <section class="section">
       <div class="section-header">
@@ -527,27 +541,6 @@ function buildHomePage() {
             <p class="news-snippet">${n.summary}</p>
             <a href="${SITE_URL}/news/" class="rule-link" style="margin-top: auto;">Read Full Circular &rarr;</a>
           </article>
-        `).join('')}
-      </div>
-    </section>
-
-    <!-- Governing Council -->
-    <section class="section">
-      <div class="section-header">
-        <div>
-          <h2 class="section-title">Governing Council &amp; Administration</h2>
-          <p class="section-subtitle">Executive oversight committee ensuring fair play, logistics, and regulatory compliance</p>
-        </div>
-        <a href="${SITE_URL}/governing-council/" class="btn btn-outline">Full Council Directory &rarr;</a>
-      </div>
-
-      <div class="council-grid">
-        ${tournament.governingCouncil.slice(0, 4).map(c => `
-          <div class="council-card">
-            <div class="council-role">${c.role}</div>
-            <h3 class="council-name">${c.name}</h3>
-            <div class="council-affil">${c.affiliation}</div>
-          </div>
         `).join('')}
       </div>
     </section>
@@ -614,15 +607,32 @@ function buildHomePage() {
     "@context": "https://schema.org",
     "@type": "SportsOrganization",
     "name": "Atal Bihari Vajpayee Memorial Tournament",
-    "alternateName": "ABV Memorial Trophy",
+    "alternateName": ["ABV Memorial Trophy", "ABV Tournament Rewa"],
     "url": `${SITE_URL}/`,
     "logo": `${SITE_URL}/public/images/trophy.svg`,
-    "description": "Official portal of the Atal Bihari Vajpayee Memorial Tournament in Rewa, Madhya Pradesh. Comprehensive rules, participating teams, past winners, and season telemetry.",
+    "description": "Official portal of the Atal Bihari Vajpayee Memorial Tournament in Rewa, Madhya Pradesh. Official rules, season telemetry, past champions, and participating teams.",
     "parentOrganization": {
       "@type": "SportsOrganization",
       "name": "Rewa Division Cricket Association (RDCA)",
       "url": "https://rewa-cricket-division.vercel.app"
     },
+    "member": [
+      {
+        "@type": "SportsTeam",
+        "name": "Destroyers Cricket Club",
+        "url": "https://destroyers-rewacricket.pages.dev"
+      },
+      {
+        "@type": "SportsTeam",
+        "name": "Dread Eleven Cricket Club",
+        "url": "https://dread-eleven-rewacricket.pages.dev"
+      }
+    ],
+    "sameAs": [
+      "https://rewa-cricket-division.vercel.app/tournaments/atal-bihari-vajpayee-memorial-tournament/",
+      "https://destroyers-rewacricket.pages.dev",
+      "https://dread-eleven-rewacricket.pages.dev"
+    ],
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Divisional Cricket Stadium, Neem Chauraha, Boda Bagh Road",
@@ -647,7 +657,7 @@ function buildHomePage() {
   console.log('Built: index.html');
 }
 
-// 2. Generate Teams Page (teams/index.html)
+// 2. Generate Teams Page (teams/index.html) - Focus on 2 Teams
 function buildTeamsPage() {
   ensureDir(path.join(rootDir, 'teams'));
 
@@ -657,37 +667,78 @@ function buildTeamsPage() {
       <nav class="breadcrumb" aria-label="Breadcrumb">
         <a href="${SITE_URL}/">Home</a>
         <span class="sep">/</span>
-        <span style="color: #fff;">Participating Teams</span>
+        <span style="color: #fff;">The Derby Teams</span>
       </nav>
-      <h1 style="font-size: 2.25rem; font-weight: 800; color: #fff;">Participating Teams &amp; Franchises</h1>
+      <h1 style="font-size: 2.25rem; font-weight: 800; color: #fff;">The Founding Derby Teams (2)</h1>
       <p style="color: var(--text-secondary); max-width: 760px; margin-top: 0.5rem;">
-        Official directory of all 12 premier clubs and invitational franchises competing in the Atal Bihari Vajpayee Memorial Tournament circuit, complete with official emblems, home grounds, titles, and verified external portals.
+        The Atal Bihari Vajpayee Memorial Tournament is contested exclusively as the premier bilateral rivalry between <strong>Destroyers Cricket Club (DES)</strong> and <strong>Dread Eleven (DE)</strong> across 34 matches from 2021 to 2026.
       </p>
-      <div style="margin-top: 1.5rem;">
-        <input type="search" id="teamSearch" class="search-input" placeholder="Search teams by name, city, or short code..." aria-label="Search teams">
-      </div>
     </div>
   </section>
 
   <div class="container" style="padding: 3rem 1.5rem;">
-    <div class="teams-grid">
+    <!-- Derby Telemetry Overview Card -->
+    <div class="matches-redirect-box" style="margin-bottom: 3rem;">
+      <div style="text-align: center; margin-bottom: 1.5rem;">
+        <span class="champions-stats-badge" style="font-size: 0.85rem; padding: 0.4rem 1rem;">
+          All-Time Derby Head-to-Head: 34 Clashes (2021&ndash;2026)
+        </span>
+      </div>
+      <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; gap: 2rem;">
+        <div style="text-align: center;">
+          <div style="font-size: 3rem; font-weight: 800; color: #f59e0b; line-height: 1;">19</div>
+          <div style="font-weight: 700; color: #fff; font-size: 1.1rem; margin-top: 0.35rem;">Destroyers CC Wins</div>
+          <div style="font-size: 0.8rem; color: var(--text-muted);">55.9% Win Rate &bull; 3 Titles</div>
+        </div>
+        <div style="text-align: center;">
+          <div style="font-size: 1.5rem; font-weight: 800; color: var(--text-muted);">34 MATCHES</div>
+          <div style="font-size: 0.85rem; color: var(--accent-gold-light); font-weight: 600;">3-3 Title Tie</div>
+        </div>
+        <div style="text-align: center;">
+          <div style="font-size: 3rem; font-weight: 800; color: #a3e635; line-height: 1;">15</div>
+          <div style="font-weight: 700; color: #fff; font-size: 1.1rem; margin-top: 0.35rem;">Dread Eleven Wins</div>
+          <div style="font-size: 0.8rem; color: var(--text-muted);">44.1% Win Rate &bull; 3 Titles</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- The 2 Teams Grid -->
+    <div class="performer-grid">
       ${teams.map(t => `
-        <div class="team-card" style="--team-accent: ${t.primaryColor};">
-          <div class="team-logo-frame">
-            <img src="${SITE_URL}/public/images/${t.id}.svg" alt="${t.name} Logo" width="54" height="54">
+        <div class="team-card" style="--team-accent: ${t.primaryColor}; text-align: left; align-items: flex-start; padding: 2.25rem;">
+          <div style="display: flex; align-items: center; gap: 1.25rem; width: 100%; margin-bottom: 1.5rem;">
+            <div class="team-logo-frame" style="margin-bottom: 0; width: 72px; height: 72px;">
+              <img src="${SITE_URL}/public/images/${t.id}.svg" alt="${t.name} Logo" width="50" height="50">
+            </div>
+            <div>
+              <h2 class="team-name" style="font-size: 1.5rem; margin-bottom: 0.25rem;">${t.name}</h2>
+              <div class="team-city">${t.city} &bull; Est. ${t.established}</div>
+            </div>
           </div>
-          <h2 class="team-name" style="font-size: 1.2rem;">${t.name}</h2>
-          <div class="team-city">${t.city}</div>
-          <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.5rem;">
-            <strong>Home:</strong> ${t.homeGround}
-          </div>
-          <div class="team-titles">${t.titles}</div>
-          <p style="font-size: 0.825rem; color: var(--text-secondary); line-height: 1.5; margin-bottom: 1.25rem; text-align: left;">
+
+          <div class="team-titles" style="align-self: flex-start; margin-bottom: 1.25rem;">${t.titles}</div>
+          
+          <p style="font-size: 0.925rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem;">
             ${t.description}
           </p>
-          <a href="${t.website}" target="_blank" rel="noopener" class="team-website-btn">
-            Visit Official Website &rarr;
-          </a>
+
+          <div style="background: rgba(0,0,0,0.2); border: 1px solid var(--border-color); border-radius: var(--radius-sm); padding: 1rem; width: 100%; margin-bottom: 1.5rem;">
+            <div style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem;">
+              <strong>Team Captain:</strong> <span style="color: #fff; font-weight: 700;">${t.captain}</span>
+            </div>
+            <div style="font-size: 0.85rem; color: var(--text-muted);">
+              <strong>Home Grounds:</strong> <span style="color: #fff;">${t.homeGround}</span>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; width: 100%;">
+            <a href="${t.website}" target="_blank" rel="noopener" class="btn btn-primary" style="flex: 1; justify-content: center; font-size: 0.9rem;">
+              Visit Official Club Portal ↗
+            </a>
+            <a href="${t.website}/matches" target="_blank" rel="noopener" class="btn btn-outline" style="font-size: 0.9rem;">
+              Match Center ↗
+            </a>
+          </div>
         </div>
       `).join('')}
     </div>
@@ -705,14 +756,19 @@ function buildTeamsPage() {
         "@type": "SportsTeam",
         "name": t.name,
         "url": t.website,
-        "logo": `${SITE_URL}/public/images/${t.id}.svg`
+        "logo": `${SITE_URL}/public/images/${t.id}.svg`,
+        "athlete": {
+          "@type": "Person",
+          "name": t.captain,
+          "jobTitle": "Captain"
+        }
       }
     }))
   };
 
   const html = renderHtmlPage({
-    title: "Participating Teams (12) — Atal Bihari Vajpayee Memorial Tournament",
-    description: "Official team directory for the Atal Bihari Vajpayee Memorial Tournament: 10 IPL franchises, Destroyers CC, and Dread Eleven with emblems and websites.",
+    title: "The Founding Derby Teams (2) — Atal Bihari Vajpayee Memorial Tournament",
+    description: "Official team directory for the ABV Memorial Tournament: Destroyers Cricket Club (DES) and Dread Eleven (DE) with emblems, statistics, and portals.",
     canonicalUrl: `${SITE_URL}/teams/`,
     activeNav: 'teams',
     bodyContent: content,
@@ -764,7 +820,7 @@ function buildMatchesPage() {
             <p>Official match schedule, results, and tournament standings</p>
           </a>
           <a href="https://rewa-cricket-division.vercel.app/matches/" target="_blank" rel="noopener" class="redirect-card">
-            <h4>RDCA All Matches Central <span>&rarr;</span></h4>
+            <h4>RDCA Matches Central <span>&rarr;</span></h4>
             <p>Complete divisional match database &amp; ball-by-ball commentary</p>
           </a>
         </div>
@@ -795,7 +851,7 @@ function buildMatchesPage() {
             Review Destroyers CC match scorecards, player wagon wheels, bowling telemetry, and 2021&ndash;2026 rivalry records against Dread Eleven.
           </p>
           <a href="https://destroyers-rewacricket.pages.dev/matches/" target="_blank" rel="noopener" class="btn btn-primary" style="width: 100%; justify-content: center;">
-            Destroyers Match Center &rarr;
+            Destroyers Match Center ↗
           </a>
         </div>
 
@@ -813,7 +869,7 @@ function buildMatchesPage() {
             Inspect Dread Eleven match logs, ball-by-ball analysis, batting charts, and complete 2021&ndash;2026 tournament statistics.
           </p>
           <a href="https://dread-eleven-rewacricket.pages.dev/matches/" target="_blank" rel="noopener" class="btn btn-outline" style="width: 100%; justify-content: center;">
-            Dread Eleven Match Center &rarr;
+            Dread Eleven Match Center ↗
           </a>
         </div>
       </div>
@@ -1049,7 +1105,7 @@ function buildGoverningCouncilPage() {
         The Atal Bihari Vajpayee Memorial Tournament Governing Council is entrusted with:
       </p>
       <ul style="color: var(--text-secondary); margin-left: 1.5rem; line-height: 1.7; font-size: 0.925rem;">
-        <li>Sanctioning participating club rosters, overseas player approvals, and team licensing.</li>
+        <li>Sanctioning participating club rosters, player contracts, and derby licensing for Destroyers CC and Dread Eleven.</li>
         <li>Appointment of certified BCCI and MPCA match referees, umpires, and Anti-Corruption liaison personnel.</li>
         <li>Jurisdiction over Level 3 and Level 4 disciplinary hearings and appeals under the Player Code of Conduct.</li>
         <li>Curatorial oversight of standard pitch preparations across APSU Stadium and Divisional Cricket Stadium Neem Chauraha.</li>
@@ -1241,7 +1297,7 @@ function build404Page() {
       <div class="hero-actions">
         <a href="${SITE_URL}/" class="btn btn-primary">&larr; Return to Tournament Home</a>
         <a href="${SITE_URL}/rules/" class="btn btn-outline">Official Regulations</a>
-        <a href="${SITE_URL}/teams/" class="btn btn-outline">Participating Teams</a>
+        <a href="${SITE_URL}/teams/" class="btn btn-outline">The Derby Teams</a>
       </div>
     </div>
   </section>
@@ -1311,12 +1367,17 @@ function buildLlmsTxt() {
 - **Championship**: Atal Bihari Vajpayee Memorial Tournament (ABV Memorial Trophy)
 - **Circuit**: Rewa Division Cricket Association (RDCA) & Madhya Pradesh Cricket Association (MPCA)
 - **Reigning Champions (2026)**: Destroyers Cricket Club (Captain: Pranav Dwivedi)
-- **Venue**: Divisional Cricket Stadium, Neem Chauraha, Boda Bagh Road, Rewa, MP 486001
-- **Official Central Matches Hub**: https://rewa-cricket-division.vercel.app/tournaments/atal-bihari-vajpayee-memorial-tournament/
+- **Rival Club**: Dread Eleven Cricket Club (Captain: Akhil Mishra)
+- **Venues**: Divisional Cricket Stadium, Neem Chauraha, Boda Bagh Road, Rewa, MP 486001 & APSU Stadium, Rewa
+- **Official Network**:
+  - Rewa Division Cricket Association (RDCA): https://rewa-cricket-division.vercel.app
+  - Destroyers Cricket Club (DES): https://destroyers-rewacricket.pages.dev
+  - Dread Eleven (DE): https://dread-eleven-rewacricket.pages.dev
+  - ABV Memorial Tournament (Official Portal): ${SITE_URL}
 
 ## Core Sections
 - [Championship Portal](${SITE_URL}/): Complete tournament overview, telemetry, past winners, and champions.
-- [Participating Teams](${SITE_URL}/teams/): 12 premier clubs including 10 IPL franchises plus Destroyers CC and Dread Eleven.
+- [The Derby Teams (2)](${SITE_URL}/teams/): The 2 founding clubs: Destroyers CC and Dread Eleven with all-time head-to-head records.
 - [Matches & Scorecards](${SITE_URL}/matches/): Official match hub redirecting to central RDCA ball-by-ball system.
 - [14 Regulatory Policies](${SITE_URL}/rules/): Official codes including Anti-Corruption, Anti-Doping, and Playing Conditions.
 - [Governing Council](${SITE_URL}/governing-council/): Executive leadership, technical committee, and anti-corruption officers.

@@ -5,12 +5,17 @@
 - **Championship**: Atal Bihari Vajpayee Memorial Tournament (ABV Memorial Trophy)
 - **Circuit**: Rewa Division Cricket Association (RDCA) & Madhya Pradesh Cricket Association (MPCA)
 - **Reigning Champions (2026)**: Destroyers Cricket Club (Captain: Pranav Dwivedi)
-- **Venue**: Divisional Cricket Stadium, Neem Chauraha, Boda Bagh Road, Rewa, MP 486001
-- **Official Central Matches Hub**: https://rewa-cricket-division.vercel.app/tournaments/atal-bihari-vajpayee-memorial-tournament/
+- **Rival Club**: Dread Eleven Cricket Club (Captain: Akhil Mishra)
+- **Venues**: Divisional Cricket Stadium, Neem Chauraha, Boda Bagh Road, Rewa, MP 486001 & APSU Stadium, Rewa
+- **Official Network**:
+  - Rewa Division Cricket Association (RDCA): https://rewa-cricket-division.vercel.app
+  - Destroyers Cricket Club (DES): https://destroyers-rewacricket.pages.dev
+  - Dread Eleven (DE): https://dread-eleven-rewacricket.pages.dev
+  - ABV Memorial Tournament (Official Portal): https://abv-rewacricket.pages.dev
 
 ## Core Sections
 - [Championship Portal](https://abv-rewacricket.pages.dev/): Complete tournament overview, telemetry, past winners, and champions.
-- [Participating Teams](https://abv-rewacricket.pages.dev/teams/): 12 premier clubs including 10 IPL franchises plus Destroyers CC and Dread Eleven.
+- [The Derby Teams (2)](https://abv-rewacricket.pages.dev/teams/): The 2 founding clubs: Destroyers CC and Dread Eleven with all-time head-to-head records.
 - [Matches & Scorecards](https://abv-rewacricket.pages.dev/matches/): Official match hub redirecting to central RDCA ball-by-ball system.
 - [14 Regulatory Policies](https://abv-rewacricket.pages.dev/rules/): Official codes including Anti-Corruption, Anti-Doping, and Playing Conditions.
 - [Governing Council](https://abv-rewacricket.pages.dev/governing-council/): Executive leadership, technical committee, and anti-corruption officers.
