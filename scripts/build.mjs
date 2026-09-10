@@ -20,17 +20,20 @@ function ensureDir(dirPath) {
   }
 }
 
+// Clean vector arrow for external links
+const extIcon = '<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;margin-left:0.25rem"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>';
+
 function renderHeader(activeNav = '') {
   return `
   <div class="top-bar">
     <div class="container">
       <div>
-        <span><strong>Official Tournament Portal:</strong> Atal Bihari Vajpayee Memorial Trophy &bull; RDCA &amp; MPCA</span>
+        <span><img src="/public/images/logo-rewa-official.jpg" alt="RDCA Official District Seal" width="18" height="18" style="border-radius:50%;display:inline-block;vertical-align:middle;margin-right:0.4rem;border:1px solid var(--accent)"><strong>Official Tournament Portal:</strong> Atal Bihari Vajpayee Memorial Trophy &bull; RDCA &amp; MPCA</span>
       </div>
       <div class="top-bar-links">
-        <a href="https://rewa-cricket-division.vercel.app" target="_blank" rel="noopener">RDCA Central ↗</a>
-        <a href="https://destroyers-rewacricket.pages.dev" target="_blank" rel="noopener">Destroyers CC ↗</a>
-        <a href="https://dread-eleven-rewacricket.pages.dev" target="_blank" rel="noopener">Dread Eleven ↗</a>
+        <a href="https://rewa-cricket-division.vercel.app" target="_blank" rel="noopener">RDCA Central ${extIcon}</a>
+        <a href="https://destroyers-rewacricket.pages.dev" target="_blank" rel="noopener">Destroyers CC ${extIcon}</a>
+        <a href="https://dread-eleven-rewacricket.pages.dev" target="_blank" rel="noopener">Dread Eleven ${extIcon}</a>
         <a href="/rules/anti-corruption/" style="color: var(--accent); font-weight: 600;">ACU Hotline: +91 7662 250011</a>
       </div>
     </div>
@@ -39,14 +42,16 @@ function renderHeader(activeNav = '') {
     <div class="container header-inner">
       <a class="brand" href="/" aria-label="Atal Bihari Vajpayee Memorial Tournament — Home">
         <div class="brand-emblem-wrap">
-          <img src="/public/images/trophy.svg" alt="ABV Trophy Emblem" width="26" height="26">
+          <img src="/public/images/trophy.svg" alt="ABV Tournament Seal" width="30" height="30">
         </div>
         <span class="brand-text">
           <strong>ABV Memorial Tournament</strong>
           <small>Rewa Divisional Cricket &bull; MPCA</small>
         </span>
       </a>
-      <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="nav" aria-label="Toggle menu">&#9776;</button>
+      <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="nav" aria-label="Toggle menu">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><rect y="3" width="20" height="2" rx="1"/><rect y="9" width="20" height="2" rx="1"/><rect y="15" width="20" height="2" rx="1"/></svg>
+      </button>
       <nav class="main-nav" data-nav id="nav" aria-label="Primary">
         <ul>
           <li><a href="/" class="${activeNav === 'home' ? 'active' : ''}">Home</a></li>
@@ -56,7 +61,7 @@ function renderHeader(activeNav = '') {
           <li><a href="/governing-council/" class="${activeNav === 'council' ? 'active' : ''}">Governing Council</a></li>
           <li><a href="/news/" class="${activeNav === 'news' ? 'active' : ''}">News</a></li>
           <li><a href="/contact/" class="${activeNav === 'contact' ? 'active' : ''}">Contact</a></li>
-          <li><a href="https://rewa-cricket-division.vercel.app/tournaments/atal-bihari-vajpayee-memorial-tournament/" target="_blank" rel="noopener" class="nav-cta-btn">&#127942; RDCA Live Center &rarr;</a></li>
+          <li><a href="https://rewa-cricket-division.vercel.app/tournaments/atal-bihari-vajpayee-memorial-tournament/" target="_blank" rel="noopener" class="nav-cta-btn">RDCA Live Match Center &rarr;</a></li>
         </ul>
       </nav>
     </div>
@@ -71,7 +76,7 @@ function renderFooter() {
       <div>
         <div class="footer-brand" style="margin-bottom: 0.75rem;">
           <div class="brand-emblem-wrap" style="background: rgba(255,255,255,0.1); border-color: var(--accent);">
-            <img src="/public/images/trophy.svg" alt="ABV Trophy" width="24" height="24">
+            <img src="/public/images/trophy.svg" alt="ABV Tournament Seal" width="26" height="26">
           </div>
           <h3 style="margin: 0; font-size: 1.2rem;">Atal Bihari Vajpayee Memorial Tournament</h3>
         </div>
@@ -88,10 +93,10 @@ function renderFooter() {
       <div>
         <h3>Official Rewa Cricket Network</h3>
         <ul>
-          <li><a href="https://rewa-cricket-division.vercel.app" target="_blank" rel="noopener" style="color: var(--accent); font-weight: 600;">Rewa Cricket Division (RDCA) ↗</a></li>
-          <li><a href="https://rewa-cricket-division.vercel.app/tournaments/atal-bihari-vajpayee-memorial-tournament/" target="_blank" rel="noopener">RDCA Tournament Fixtures ↗</a></li>
-          <li><a href="https://destroyers-rewacricket.pages.dev" target="_blank" rel="noopener" style="color: #f59e0b; font-weight: 600;">Destroyers CC Portal (2026 Champs) ↗</a></li>
-          <li><a href="https://dread-eleven-rewacricket.pages.dev" target="_blank" rel="noopener" style="color: #a3e635; font-weight: 600;">Dread Eleven Digital Stadium ↗</a></li>
+          <li><a href="https://rewa-cricket-division.vercel.app" target="_blank" rel="noopener" style="color: var(--accent); font-weight: 600;">Rewa Cricket Division (RDCA) ${extIcon}</a></li>
+          <li><a href="https://rewa-cricket-division.vercel.app/tournaments/atal-bihari-vajpayee-memorial-tournament/" target="_blank" rel="noopener">RDCA Tournament Fixtures ${extIcon}</a></li>
+          <li><a href="https://destroyers-rewacricket.pages.dev" target="_blank" rel="noopener" style="color: #ff9800; font-weight: 600;">Destroyers CC Portal (2026 Champions) ${extIcon}</a></li>
+          <li><a href="https://dread-eleven-rewacricket.pages.dev" target="_blank" rel="noopener" style="color: #4dd0e1; font-weight: 600;">Dread Eleven Digital Stadium ${extIcon}</a></li>
           <li><a href="/" style="color: #fff; font-weight: 600;">ABV Tournament Official Portal (Here)</a></li>
         </ul>
       </div>
@@ -112,7 +117,7 @@ function renderFooter() {
       <div>
         <h3>Headquarters &amp; Venues</h3>
         <p class="footer-note" style="color: #d1d5db; margin-bottom: 0.5rem;">
-          <strong>Match Venue:</strong><br>
+          <strong>Match Stadium:</strong><br>
           Divisional Cricket Stadium, Neem Chauraha, Boda Bagh Road, Rewa, MP 486001 (Near Neem Chauraha Hanuman Mandir)
         </p>
         <p class="footer-note" style="color: #d1d5db; margin-bottom: 0.5rem;">
@@ -155,6 +160,11 @@ function renderHtmlPage({ title, description, canonicalUrl, activeNav = '', body
   <title>${title}</title>
   <meta name="description" content="${description}">
   <link rel="canonical" href="${canonicalUrl}">
+
+  <!-- Google Fonts: Cinzel (Monumental Serif) + Plus Jakarta Sans (Clean Modern Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   
   <!-- Open Graph -->
   <meta property="og:type" content="website">
@@ -196,14 +206,14 @@ function buildHomePage() {
   const content = `
   <section class="hero">
     <div class="container">
-      <div class="brand-emblem-wrap" style="width: 72px; height: 72px; margin: 0 auto 1.25rem; background: rgba(255,255,255,0.15); border: 2px solid var(--accent);">
-        <img src="/public/images/trophy.svg" alt="ABV Trophy" width="40" height="40">
+      <div class="brand-emblem-wrap" style="width: 80px; height: 80px; margin: 0 auto 1.25rem; background: rgba(255,255,255,0.15); border: 2px solid var(--accent); box-shadow: 0 0 0 4px rgba(255,255,255,0.1);">
+        <img src="/public/images/trophy.svg" alt="ABV Tournament Seal" width="48" height="48">
       </div>
       <p class="eyebrow">Rewa Divisional Cricket &bull; MPCA Sanctioned</p>
       <h1>Atal Bihari Vajpayee Memorial Tournament</h1>
       <p>The premier invitational cricket championship of Vindhya Pradesh, honoring former Prime Minister Shri Atal Bihari Vajpayee. Sanctioned by Rewa Division Cricket Association (RDCA) and MPCA.</p>
       <div class="hero-actions">
-        <a href="https://rewa-cricket-division.vercel.app/tournaments/atal-bihari-vajpayee-memorial-tournament/" target="_blank" rel="noopener" class="btn btn-primary">&#127942; RDCA Live Match Center &rarr;</a>
+        <a href="https://rewa-cricket-division.vercel.app/tournaments/atal-bihari-vajpayee-memorial-tournament/" target="_blank" rel="noopener" class="btn btn-primary">RDCA Live Match Center &rarr;</a>
         <a href="/teams/" class="btn btn-ghost">The Derby Teams (2)</a>
         <a href="/rules/" class="btn btn-ghost">14 Official Regulations</a>
       </div>
@@ -215,9 +225,9 @@ function buildHomePage() {
     <section class="section" style="margin-top: 2rem;">
       <div class="card card-official" style="padding: 1.75rem;">
         <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem; border-bottom: 1px solid var(--line); padding-bottom: 1rem; margin-bottom: 1.25rem;">
-          <div style="display: flex; align-items: center; gap: 0.5rem;">
+          <div style="display: flex; align-items: center; gap: 0.6rem;">
             <img src="/public/images/trophy.svg" alt="Trophy" width="22" height="22">
-            <strong style="font-family: var(--serif); font-size: 1.15rem; color: var(--brand-dark);">Reigning Champions &bull; 2026 Title Holders</strong>
+            <strong style="font-family: var(--serif); font-size: 1.15rem; color: var(--brand-dark); letter-spacing: 0.03em;">Reigning Champions &bull; 2026 Title Holders</strong>
           </div>
           <span class="badge badge-completed" style="font-size: 0.8rem; padding: 0.25rem 0.65rem;">
             3 Consecutive Titles (2024, 2025, 2026)
@@ -226,7 +236,7 @@ function buildHomePage() {
 
         <div style="display: grid; grid-template-columns: 1fr auto; gap: 2rem; align-items: center;">
           <div>
-            <h2 style="font-family: var(--serif); font-size: 2rem; color: var(--brand-dark); margin-bottom: 0.35rem;">
+            <h2 style="font-family: var(--serif); font-size: 2rem; color: var(--brand-dark); margin-bottom: 0.35rem; letter-spacing: 0.02em;">
               ${w26.champion}
             </h2>
             <p style="color: var(--muted); font-size: 0.95rem; margin-bottom: 0.5rem;">
@@ -240,28 +250,28 @@ function buildHomePage() {
             </p>
             <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
               <a href="https://destroyers-rewacricket.pages.dev" target="_blank" rel="noopener" class="btn btn-primary" style="font-size: 0.85rem;">
-                Visit Destroyers CC Portal ↗
+                Visit Destroyers CC Portal ${extIcon}
               </a>
               <a href="https://dread-eleven-rewacricket.pages.dev" target="_blank" rel="noopener" class="btn btn-outline" style="font-size: 0.85rem;">
-                Visit Dread Eleven Stadium ↗
+                Visit Dread Eleven Stadium ${extIcon}
               </a>
             </div>
           </div>
 
           <div style="display: flex; align-items: center; gap: 1.5rem; background: var(--brand-light); padding: 1.25rem 2rem; border-radius: var(--radius); border: 1px solid var(--line); text-align: center;">
             <div>
-              <div style="width: 64px; height: 64px; margin: 0 auto 0.5rem; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 2px solid #3b82f6;">
-                <img src="/public/images/des.svg" alt="DES Emblem" width="40" height="40">
+              <div style="width: 68px; height: 68px; margin: 0 auto 0.5rem; background: #141414; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 2px solid #ff7a00; padding: 6px;">
+                <img src="/public/images/des.svg" alt="DES Shield" width="46" height="46">
               </div>
-              <strong style="display: block; font-size: 0.9rem; color: var(--brand-dark);">Destroyers</strong>
+              <strong style="display: block; font-size: 0.9rem; color: var(--brand-dark); font-family: var(--serif);">Destroyers</strong>
               <small style="color: var(--muted);">164/7 (20 ov)</small>
             </div>
             <div style="font-weight: 900; color: #9ca3af; font-size: 1.2rem;">DEF.</div>
             <div>
-              <div style="width: 64px; height: 64px; margin: 0 auto 0.5rem; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 2px solid #ef4444;">
-                <img src="/public/images/de.svg" alt="DE Emblem" width="40" height="40">
+              <div style="width: 68px; height: 68px; margin: 0 auto 0.5rem; background: #060913; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 2px solid #00f0ff; padding: 6px;">
+                <img src="/public/images/de.svg" alt="DE Shield" width="46" height="46">
               </div>
-              <strong style="display: block; font-size: 0.9rem; color: var(--brand-dark);">Dread Eleven</strong>
+              <strong style="display: block; font-size: 0.9rem; color: var(--brand-dark); font-family: var(--serif);">Dread Eleven</strong>
               <small style="color: var(--muted);">152/9 (20 ov)</small>
             </div>
           </div>
@@ -315,11 +325,11 @@ function buildHomePage() {
         ${teams.map(t => `
           <div class="card card-official" style="padding: 1.5rem;">
             <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-              <div style="width: 58px; height: 58px; border-radius: 50%; background: var(--brand-light); border: 2px solid var(--accent); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                <img src="/public/images/${t.id}.svg" alt="${t.name}" width="38" height="38">
+              <div style="width: 64px; height: 64px; border-radius: 50%; background: ${t.secondaryColor}; border: 2px solid ${t.primaryColor}; display: flex; align-items: center; justify-content: center; flex-shrink: 0; padding: 6px;">
+                <img src="/public/images/${t.id}.svg" alt="${t.name} Emblem" width="44" height="44">
               </div>
               <div>
-                <h3 style="font-family: var(--serif); font-size: 1.35rem; color: var(--brand-dark); margin: 0;">${t.name}</h3>
+                <h3 style="font-family: var(--serif); font-size: 1.35rem; color: var(--brand-dark); margin: 0; letter-spacing: 0.02em;">${t.name}</h3>
                 <span class="card-meta">${t.city} &bull; <strong>Captain:</strong> ${t.captain}</span>
               </div>
             </div>
@@ -334,10 +344,10 @@ function buildHomePage() {
             </div>
             <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
               <a href="${t.website}" target="_blank" rel="noopener" class="btn btn-primary" style="font-size: 0.85rem;">
-                Official Club Portal ↗
+                Official Club Portal ${extIcon}
               </a>
               <a href="${t.website}/matches" target="_blank" rel="noopener" class="btn btn-outline" style="font-size: 0.85rem;">
-                Match Scorecards ↗
+                Match Scorecards ${extIcon}
               </a>
             </div>
           </div>
@@ -350,7 +360,7 @@ function buildHomePage() {
       <div class="card card-official" style="padding: 1.75rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem;">
         <div style="max-width: 60ch;">
           <span class="badge badge-completed" style="margin-bottom: 0.5rem;">Central RDCA Scoring Architecture</span>
-          <h2 style="font-family: var(--serif); font-size: 1.5rem; color: var(--brand-dark); margin: 0.35rem 0;">
+          <h2 style="font-family: var(--serif); font-size: 1.5rem; color: var(--brand-dark); margin: 0.35rem 0; letter-spacing: 0.02em;">
             Match Fixtures, Live Scores &amp; Ball-by-Ball Commentary
           </h2>
           <p style="color: #404040; line-height: 1.6; margin: 0;">
@@ -359,7 +369,7 @@ function buildHomePage() {
         </div>
         <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
           <a href="https://rewa-cricket-division.vercel.app/tournaments/atal-bihari-vajpayee-memorial-tournament/" target="_blank" rel="noopener" class="btn btn-primary">
-            &#127942; RDCA Tournament Hub &rarr;
+            RDCA Tournament Hub &rarr;
           </a>
           <a href="https://rewa-cricket-division.vercel.app/matches/" target="_blank" rel="noopener" class="btn btn-outline">
             RDCA Matches Central &rarr;
@@ -377,7 +387,7 @@ function buildHomePage() {
 
       <div class="grid grid-2">
         <div class="table-wrap">
-          <h3 style="font-family: var(--serif); font-size: 1.15rem; color: var(--brand-dark); padding: 0.8rem 0.9rem; margin: 0; border-bottom: 1px solid var(--line); background: #f9fbf9;">
+          <h3 style="font-family: var(--serif); font-size: 1.15rem; color: var(--brand-dark); padding: 0.8rem 0.9rem; margin: 0; border-bottom: 1px solid var(--line); background: #f9fbf9; letter-spacing: 0.02em;">
             Leading Run Scorers
           </h3>
           <table>
@@ -407,7 +417,7 @@ function buildHomePage() {
         </div>
 
         <div class="table-wrap">
-          <h3 style="font-family: var(--serif); font-size: 1.15rem; color: var(--brand-dark); padding: 0.8rem 0.9rem; margin: 0; border-bottom: 1px solid var(--line); background: #f9fbf9;">
+          <h3 style="font-family: var(--serif); font-size: 1.15rem; color: var(--brand-dark); padding: 0.8rem 0.9rem; margin: 0; border-bottom: 1px solid var(--line); background: #f9fbf9; letter-spacing: 0.02em;">
             Leading Wicket Takers
           </h3>
           <table>
@@ -460,7 +470,7 @@ function buildHomePage() {
             ${past.map(p => `
               <tr>
                 <td><strong>${p.year}</strong></td>
-                <td><strong style="color: var(--brand);">${p.winner}</strong></td>
+                <td><strong style="color: var(--brand); font-family: var(--serif);">${p.winner}</strong></td>
                 <td>${p.captain}</td>
                 <td>${p.runnerUp}</td>
                 <td>${p.score}</td>
@@ -484,7 +494,7 @@ function buildHomePage() {
             <div style="margin-bottom: 0.4rem;">
               <span class="badge badge-completed">${r.category}</span>
             </div>
-            <h3 style="font-family: var(--serif); font-size: 1.15rem; color: var(--brand-dark); margin: 0.35rem 0 0.5rem;">
+            <h3 style="font-family: var(--serif); font-size: 1.15rem; color: var(--brand-dark); margin: 0.35rem 0 0.5rem; letter-spacing: 0.02em;">
               ${r.title}
             </h3>
             <p style="color: var(--muted); font-size: 0.875rem; line-height: 1.5; margin-bottom: 1rem; flex: 1;">
@@ -512,7 +522,7 @@ function buildHomePage() {
             <div style="font-size: 0.75rem; color: var(--muted); margin-bottom: 0.35rem;">
               ${n.category} &bull; ${n.publishedAt}
             </div>
-            <h3 style="font-family: var(--serif); font-size: 1.15rem; color: var(--brand-dark); margin-bottom: 0.5rem;">
+            <h3 style="font-family: var(--serif); font-size: 1.15rem; color: var(--brand-dark); margin-bottom: 0.5rem; letter-spacing: 0.02em;">
               ${n.title}
             </h3>
             <p style="color: #404040; font-size: 0.875rem; line-height: 1.5; margin-bottom: 1rem; flex: 1;">
@@ -533,7 +543,7 @@ function buildHomePage() {
 
       <div class="grid grid-2">
         <div class="card">
-          <h3 style="font-family: var(--serif); font-size: 1.25rem; color: var(--brand-dark); margin-bottom: 1rem; border-bottom: 1px solid var(--line); padding-bottom: 0.5rem;">
+          <h3 style="font-family: var(--serif); font-size: 1.25rem; color: var(--brand-dark); margin-bottom: 1rem; border-bottom: 1px solid var(--line); padding-bottom: 0.5rem; letter-spacing: 0.02em;">
             Tournament Venue &amp; Local RDCA
           </h3>
           <div class="contact-item">
@@ -559,7 +569,7 @@ function buildHomePage() {
         </div>
 
         <div class="card">
-          <h3 style="font-family: var(--serif); font-size: 1.25rem; color: var(--brand-dark); margin-bottom: 1rem; border-bottom: 1px solid var(--line); padding-bottom: 0.5rem;">
+          <h3 style="font-family: var(--serif); font-size: 1.25rem; color: var(--brand-dark); margin-bottom: 1rem; border-bottom: 1px solid var(--line); padding-bottom: 0.5rem; letter-spacing: 0.02em;">
             State MPCA &amp; Integrity Hotlines
           </h3>
           <div class="contact-item">
@@ -573,6 +583,10 @@ function buildHomePage() {
           <div class="contact-item">
             <strong>MPCA Email:</strong>
             <div><a href="mailto:${tournament.contact.mpcaEmail}">${tournament.contact.mpcaEmail}</a></div>
+          </div>
+          <div class="contact-item">
+            <strong>MPCA Portal:</strong>
+            <div><a href="https://www.mpcaonline.com" target="_blank" rel="noopener">www.mpcaonline.com ${extIcon}</a></div>
           </div>
 
           <div class="hotline-box">
@@ -637,7 +651,7 @@ function buildHomePage() {
   });
 
   fs.writeFileSync(path.join(rootDir, 'index.html'), html, 'utf-8');
-  console.log('Built: index.html (RDCA UI)');
+  console.log('Built: index.html (RDCA UI - No Emojis)');
 }
 
 // 2. Generate Teams Page (teams/index.html)
@@ -670,11 +684,11 @@ function buildTeamsPage() {
       </div>
       <div class="derby-vs-grid">
         <div class="derby-club">
-          <div class="derby-club-emblem" style="border-color: #3b82f6;">
-            <img src="/public/images/des.svg" alt="Destroyers CC">
+          <div class="derby-club-emblem" style="background: #141414; border-color: #ff7a00; width: 76px; height: 76px;">
+            <img src="/public/images/des.svg" alt="Destroyers CC" width="52" height="52">
           </div>
           <h2 style="font-family: var(--serif); font-size: 1.5rem; color: var(--brand-dark); margin-bottom: 0.25rem;">Destroyers CC</h2>
-          <div style="font-size: 2.25rem; font-weight: 900; color: #f59e0b;">19 WINS</div>
+          <div style="font-size: 2.25rem; font-weight: 900; color: #ff7a00;">19 WINS</div>
           <div style="font-size: 0.8rem; color: var(--muted);">55.9% Win Rate &bull; 3 Titles</div>
         </div>
 
@@ -685,11 +699,11 @@ function buildTeamsPage() {
         </div>
 
         <div class="derby-club">
-          <div class="derby-club-emblem" style="border-color: #ef4444;">
-            <img src="/public/images/de.svg" alt="Dread Eleven">
+          <div class="derby-club-emblem" style="background: #060913; border-color: #00f0ff; width: 76px; height: 76px;">
+            <img src="/public/images/de.svg" alt="Dread Eleven" width="52" height="52">
           </div>
           <h2 style="font-family: var(--serif); font-size: 1.5rem; color: var(--brand-dark); margin-bottom: 0.25rem;">Dread Eleven</h2>
-          <div style="font-size: 2.25rem; font-weight: 900; color: #84cc16;">15 WINS</div>
+          <div style="font-size: 2.25rem; font-weight: 900; color: #00bcd4;">15 WINS</div>
           <div style="font-size: 0.8rem; color: var(--muted);">44.1% Win Rate &bull; 3 Titles</div>
         </div>
       </div>
@@ -700,8 +714,8 @@ function buildTeamsPage() {
       ${teams.map(t => `
         <div class="card card-official" style="padding: 1.75rem;">
           <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-            <div style="width: 64px; height: 64px; border-radius: 50%; background: var(--brand-light); border: 2px solid var(--accent); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-              <img src="/public/images/${t.id}.svg" alt="${t.name}" width="44" height="44">
+            <div style="width: 68px; height: 68px; border-radius: 50%; background: ${t.secondaryColor}; border: 2px solid ${t.primaryColor}; display: flex; align-items: center; justify-content: center; flex-shrink: 0; padding: 6px;">
+              <img src="/public/images/${t.id}.svg" alt="${t.name} Emblem" width="46" height="46">
             </div>
             <div>
               <h2 style="font-family: var(--serif); font-size: 1.5rem; color: var(--brand-dark); margin: 0;">${t.name}</h2>
@@ -728,10 +742,10 @@ function buildTeamsPage() {
 
           <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
             <a href="${t.website}" target="_blank" rel="noopener" class="btn btn-primary" style="font-size: 0.9rem;">
-              Visit Official Club Portal ↗
+              Visit Official Club Portal ${extIcon}
             </a>
             <a href="${t.website}/matches" target="_blank" rel="noopener" class="btn btn-outline" style="font-size: 0.9rem;">
-              Match Scorecards ↗
+              Match Scorecards ${extIcon}
             </a>
           </div>
         </div>
@@ -771,7 +785,7 @@ function buildTeamsPage() {
   });
 
   fs.writeFileSync(path.join(rootDir, 'teams/index.html'), html, 'utf-8');
-  console.log('Built: teams/index.html (RDCA UI)');
+  console.log('Built: teams/index.html (RDCA UI - No Emojis)');
 }
 
 // 3. Generate Matches Page (matches/index.html)
@@ -805,10 +819,10 @@ function buildMatchesPage() {
       </p>
       <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
         <a href="https://rewa-cricket-division.vercel.app/tournaments/atal-bihari-vajpayee-memorial-tournament/" target="_blank" rel="noopener" class="btn btn-primary">
-          &#127942; ABV Tournament on RDCA ↗
+          ABV Tournament on RDCA &rarr;
         </a>
         <a href="https://rewa-cricket-division.vercel.app/matches/" target="_blank" rel="noopener" class="btn btn-outline">
-          RDCA All Matches Central ↗
+          RDCA All Matches Central &rarr;
         </a>
       </div>
     </div>
@@ -823,8 +837,8 @@ function buildMatchesPage() {
       <div class="grid grid-2">
         <div class="card" style="padding: 1.75rem;">
           <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-            <div style="width: 54px; height: 54px; background: var(--brand-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 2px solid #3b82f6;">
-              <img src="/public/images/des.svg" alt="DES" width="36" height="36">
+            <div style="width: 58px; height: 58px; background: #141414; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 2px solid #ff7a00; padding: 6px;">
+              <img src="/public/images/des.svg" alt="DES" width="40" height="40">
             </div>
             <div>
               <h3 style="font-family: var(--serif); font-size: 1.3rem; color: var(--brand-dark); margin: 0;">Destroyers CC</h3>
@@ -835,25 +849,25 @@ function buildMatchesPage() {
             Review Destroyers CC match scorecards, player wagon wheels, bowling telemetry, and 2021&ndash;2026 rivalry records against Dread Eleven.
           </p>
           <a href="https://destroyers-rewacricket.pages.dev/matches/" target="_blank" rel="noopener" class="btn btn-primary" style="width: 100%; justify-content: center;">
-            Destroyers Match Center ↗
+            Destroyers Match Center &rarr;
           </a>
         </div>
 
         <div class="card" style="padding: 1.75rem;">
           <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-            <div style="width: 54px; height: 54px; background: var(--brand-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 2px solid #ef4444;">
-              <img src="/public/images/de.svg" alt="DE" width="36" height="36">
+            <div style="width: 58px; height: 58px; background: #060913; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 2px solid #00f0ff; padding: 6px;">
+              <img src="/public/images/de.svg" alt="DE" width="40" height="40">
             </div>
             <div>
               <h3 style="font-family: var(--serif); font-size: 1.3rem; color: var(--brand-dark); margin: 0;">Dread Eleven CC</h3>
-              <small style="color: #b91c1c; font-weight: 600;">3-Time Former Champions</small>
+              <small style="color: #00838f; font-weight: 600;">3-Time Former Champions</small>
             </div>
           </div>
           <p style="color: #404040; font-size: 0.925rem; line-height: 1.6; margin-bottom: 1.25rem;">
             Inspect Dread Eleven match logs, ball-by-ball analysis, batting charts, and complete 2021&ndash;2026 tournament statistics.
           </p>
           <a href="https://dread-eleven-rewacricket.pages.dev/matches/" target="_blank" rel="noopener" class="btn btn-outline" style="width: 100%; justify-content: center;">
-            Dread Eleven Match Center ↗
+            Dread Eleven Match Center &rarr;
           </a>
         </div>
       </div>
@@ -870,7 +884,7 @@ function buildMatchesPage() {
   });
 
   fs.writeFileSync(path.join(rootDir, 'matches/index.html'), html, 'utf-8');
-  console.log('Built: matches/index.html (RDCA UI)');
+  console.log('Built: matches/index.html (RDCA UI - No Emojis)');
 }
 
 // 4. Generate Rules Index Page (rules/index.html)
@@ -946,7 +960,7 @@ function buildRulesIndexPage() {
   });
 
   fs.writeFileSync(path.join(rootDir, 'rules/index.html'), html, 'utf-8');
-  console.log('Built: rules/index.html (RDCA UI)');
+  console.log('Built: rules/index.html (RDCA UI - No Emojis)');
 }
 
 // 5. Generate Individual Rule Pages (rules/[rule-id]/index.html)
@@ -1045,7 +1059,7 @@ function buildIndividualRulePages() {
     });
 
     fs.writeFileSync(path.join(dir, 'index.html'), html, 'utf-8');
-    console.log(`Built: rules/${rule.id}/index.html (RDCA UI)`);
+    console.log(`Built: rules/${rule.id}/index.html (RDCA UI - No Emojis)`);
   });
 }
 
@@ -1112,7 +1126,7 @@ function buildGoverningCouncilPage() {
   });
 
   fs.writeFileSync(path.join(rootDir, 'governing-council/index.html'), html, 'utf-8');
-  console.log('Built: governing-council/index.html (RDCA UI)');
+  console.log('Built: governing-council/index.html (RDCA UI - No Emojis)');
 }
 
 // 7. Generate News Page (news/index.html)
@@ -1169,7 +1183,7 @@ function buildNewsPage() {
   });
 
   fs.writeFileSync(path.join(rootDir, 'news/index.html'), html, 'utf-8');
-  console.log('Built: news/index.html (RDCA UI)');
+  console.log('Built: news/index.html (RDCA UI - No Emojis)');
 }
 
 // 8. Generate Contact Page (contact/index.html)
@@ -1201,7 +1215,7 @@ function buildContactPage() {
           Tournament Venue &amp; Local RDCA
         </h2>
         <div class="contact-item">
-          <strong>Stadium Venue:</strong>
+          <strong>Match Stadium:</strong>
           <div>
             <strong>${c.stadiumName}</strong><br>
             ${c.locality}<br>
@@ -1248,13 +1262,13 @@ function buildContactPage() {
         </div>
         <div class="contact-item">
           <strong>MPCA Portal:</strong>
-          <div><a href="https://www.mpcaonline.com" target="_blank" rel="noopener">www.mpcaonline.com ↗</a></div>
+          <div><a href="https://www.mpcaonline.com" target="_blank" rel="noopener">www.mpcaonline.com ${extIcon}</a></div>
         </div>
 
         <div class="hotline-box">
           <strong>Anti-Corruption &amp; Integrity Helpline:</strong><br>
           Direct telephone: <a href="tel:+917662250011" style="font-weight: 700; color: #7f1d1d;">${c.antiCorruptionHotline}</a><br>
-          <small>Confidential reporting of corrupt approaches or match fixing concerns. Available 24 hours daily.</small>
+          <small>Confidential reporting of corrupt approaches or match fixing concerns. Monitored 24/7.</small>
         </div>
       </div>
     </div>
@@ -1270,7 +1284,7 @@ function buildContactPage() {
   });
 
   fs.writeFileSync(path.join(rootDir, 'contact/index.html'), html, 'utf-8');
-  console.log('Built: contact/index.html (RDCA UI)');
+  console.log('Built: contact/index.html (RDCA UI - No Emojis)');
 }
 
 // 9. Generate 404 Page (404.html)
@@ -1300,7 +1314,7 @@ function build404Page() {
   });
 
   fs.writeFileSync(path.join(rootDir, '404.html'), html, 'utf-8');
-  console.log('Built: 404.html (RDCA UI)');
+  console.log('Built: 404.html (RDCA UI - No Emojis)');
 }
 
 // 10. Generate Sitemap XML (sitemap.xml)
@@ -1380,21 +1394,11 @@ ${rules.map(r => `- [${r.title}](${SITE_URL}/rules/${r.id}/): ${r.summary}`).joi
   fs.writeFileSync(path.join(rootDir, 'llms.txt'), llmsTxt, 'utf-8');
   console.log('Built: llms.txt');
 
-  let llmsFull = `${llmsTxt}
-
-## Complete 14 Governance Policies Clauses
-
-`;
+  let llmsFull = `${llmsTxt}\n\n## Complete 14 Governance Policies Clauses\n\n`;
   rules.forEach(r => {
-    llmsFull += `### ${r.title} (${r.category})
-Effective Date: ${r.effectiveDate}
-
-`;
+    llmsFull += `### ${r.title} (${r.category})\nEffective Date: ${r.effectiveDate}\n\n`;
     r.clauses.forEach(c => {
-      llmsFull += `#### ${c.clause}
-${c.content}
-
-`;
+      llmsFull += `#### ${c.clause}\n${c.content}\n\n`;
     });
   });
 
@@ -1427,7 +1431,7 @@ function buildManifest() {
 
 // 14. Master Build Pipeline
 function buildAll() {
-  console.log('Starting static build for abv-rewacricket (RDCA UI)...');
+  console.log('Starting static build for abv-rewacricket (RDCA UI - No Emojis)...');
   buildHomePage();
   buildTeamsPage();
   buildMatchesPage();
@@ -1441,7 +1445,7 @@ function buildAll() {
   buildRobotsTxt();
   buildLlmsTxt();
   buildManifest();
-  console.log('Static build completed successfully with RDCA UI!');
+  console.log('Static build completed successfully with RDCA UI & NO EMOJIS!');
 }
 
 buildAll();

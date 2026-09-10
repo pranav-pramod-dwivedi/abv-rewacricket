@@ -4,7 +4,7 @@
 
 ---
 
-## 🏆 Tournament Overview
+##  Tournament Overview
 
 - **Competition Name**: Atal Bihari Vajpayee Memorial Tournament
 - **Short Name**: ABV Memorial Trophy
@@ -16,7 +16,7 @@
 
 ---
 
-## 🏏 Participating Franchises & Clubs (12)
+##  Participating Franchises & Clubs (12)
 
 1. **Chennai Super Kings (CSK)** — https://www.chennaisuperkings.com
 2. **Delhi Capitals (DC)** — https://www.delhicapitals.in
@@ -33,7 +33,7 @@
 
 ---
 
-## 📜 14 Official Regulatory Policies
+##  14 Official Regulatory Policies
 
 All matches, players, team personnel, match officials, and media operate under the 14 statutory codes detailed in `/rules/`:
 1. **Anti-Corruption Policy & Protocols** (`/rules/anti-corruption/`)
@@ -53,7 +53,7 @@ All matches, players, team personnel, match officials, and media operate under t
 
 ---
 
-## 📊 Central Match Redirection Architecture
+##  Central Match Redirection Architecture
 
 Per RDCA statutory policy, match scorecards and live ball-by-ball telemetry are centrally hosted on the RDCA infrastructure:
 - **Tournament Standings & Fixtures**: https://rewa-cricket-division.vercel.app/tournaments/atal-bihari-vajpayee-memorial-tournament/
@@ -61,7 +61,7 @@ Per RDCA statutory policy, match scorecards and live ball-by-ball telemetry are 
 
 ---
 
-## 📞 Administrative Contact & Hotlines
+##  Administrative Contact & Hotlines
 
 - **Rewa Stadium Address**: Divisional Cricket Stadium, Neem Chauraha, Boda Bagh Road, Rewa, MP 486001 (Near Neem Chauraha Hanuman Mandir)
 - **RDCA Regional Office**: APSU Stadium Complex, Sirmour Road, Rewa, MP 486003 (Phone: +91 7662 250000)
@@ -70,7 +70,7 @@ Per RDCA statutory policy, match scorecards and live ball-by-ball telemetry are 
 
 ---
 
-## 🛠️ Build & Development
+## ️ Build & Development
 
 ```bash
 # Build static site

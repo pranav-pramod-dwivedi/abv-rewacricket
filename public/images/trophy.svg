@@ -1,8 +1,63 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="100%" height="100%">
-  <path d="M40 24 H80 V48 C80 62 72 74 60 76 C48 74 40 62 40 48 Z" fill="#ffd700" stroke="#b38600" stroke-width="3"/>
-  <path d="M40 32 C28 32 24 44 28 54 C32 62 40 62 40 62" fill="none" stroke="#ffd700" stroke-width="4" stroke-linecap="round"/>
-  <path d="M80 32 C92 32 96 44 92 54 C88 62 80 62 80 62" fill="none" stroke="#ffd700" stroke-width="4" stroke-linecap="round"/>
-  <path d="M54 76 H66 V92 H54 Z" fill="#ffd700"/>
-  <path d="M38 92 H82 V102 H38 Z" fill="#b38600"/>
-  <polygon points="60,34 64,44 74,44 66,50 69,60 60,54 51,60 54,50 46,44 56,44" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdf497"/>
+      <stop offset="25%" stop-color="#e2bc52"/>
+      <stop offset="50%" stop-color="#c8a24a"/>
+      <stop offset="75%" stop-color="#ab822e"/>
+      <stop offset="100%" stop-color="#8a631c"/>
+    </linearGradient>
+    <linearGradient id="cupGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ab822e"/>
+      <stop offset="30%" stop-color="#fdf497"/>
+      <stop offset="50%" stop-color="#c8a24a"/>
+      <stop offset="85%" stop-color="#e2bc52"/>
+      <stop offset="100%" stop-color="#735014"/>
+    </linearGradient>
+    <radialGradient id="greenBg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#146d47"/>
+      <stop offset="70%" stop-color="#0e5a3a"/>
+      <stop offset="100%" stop-color="#08301f"/>
+    </radialGradient>
+  </defs>
+
+  <circle cx="100" cy="100" r="96" fill="url(#greenBg)" stroke="url(#goldGrad)" stroke-width="4"/>
+  <circle cx="100" cy="100" r="88" fill="none" stroke="url(#goldGrad)" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <circle cx="100" cy="100" r="83" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+
+  <g opacity="0.28" stroke="url(#goldGrad)" stroke-width="2.5" stroke-linecap="round">
+    <line x1="44" y1="156" x2="156" y2="44"/>
+    <line x1="156" y1="156" x2="44" y2="44"/>
+  </g>
+
+  <g fill="none" stroke="url(#goldGrad)" stroke-width="2" stroke-linecap="round" opacity="0.85">
+    <path d="M42 135 C30 110 32 75 52 50"/>
+    <circle cx="37" cy="115" r="2.5" fill="url(#goldGrad)"/>
+    <circle cx="34" cy="95" r="2.5" fill="url(#goldGrad)"/>
+    <circle cx="39" cy="75" r="2.5" fill="url(#goldGrad)"/>
+    <circle cx="48" cy="58" r="2.5" fill="url(#goldGrad)"/>
+    <path d="M158 135 C170 110 168 75 148 50"/>
+    <circle cx="163" cy="115" r="2.5" fill="url(#goldGrad)"/>
+    <circle cx="166" cy="95" r="2.5" fill="url(#goldGrad)"/>
+    <circle cx="161" cy="75" r="2.5" fill="url(#goldGrad)"/>
+    <circle cx="152" cy="58" r="2.5" fill="url(#goldGrad)"/>
+  </g>
+
+  <path d="M68 152 H132 V158 H68 Z" fill="url(#goldGrad)"/>
+  <path d="M74 144 H126 V152 H74 Z" fill="url(#cupGrad)"/>
+  <path d="M86 128 H114 L110 144 H90 Z" fill="url(#goldGrad)"/>
+  <path d="M96 112 H104 V128 H96 Z" fill="url(#cupGrad)"/>
+
+  <path d="M64 54 H136 V88 C136 108 120 114 100 114 C80 114 64 108 64 88 Z" fill="url(#cupGrad)" stroke="url(#goldGrad)" stroke-width="1.5"/>
+  <ellipse cx="100" cy="54" rx="36" ry="7" fill="url(#goldGrad)"/>
+  <ellipse cx="100" cy="54" rx="32" ry="5" fill="#543c10"/>
+
+  <path d="M64 62 C46 62 42 78 50 92 C56 102 66 100 66 100" fill="none" stroke="url(#goldGrad)" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M136 62 C154 62 158 78 150 92 C144 102 134 100 134 100" fill="none" stroke="url(#goldGrad)" stroke-width="4.5" stroke-linecap="round"/>
+
+  <circle cx="100" cy="80" r="14" fill="#08301f" stroke="url(#goldGrad)" stroke-width="1.5"/>
+  <path d="M100 69 L103 76 L110 77 L105 82 L106 89 L100 85 L94 89 L95 82 L90 77 L97 76 Z" fill="url(#goldGrad)"/>
+
+  <text x="100" y="174" font-family="'Cinzel', Georgia, serif" font-weight="800" font-size="10.5" fill="url(#goldGrad)" text-anchor="middle" letter-spacing="3.5">RDCA &bull; MPCA</text>
+  <text x="100" y="32" font-family="'Cinzel', Georgia, serif" font-weight="900" font-size="11" fill="url(#goldGrad)" text-anchor="middle" letter-spacing="4">ABV MEMORIAL</text>
 </svg>
