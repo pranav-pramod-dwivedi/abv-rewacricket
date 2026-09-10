@@ -1,13 +1,12 @@
-// Atal Bihari Vajpayee Memorial Tournament Client Interactions
+// Atal Bihari Vajpayee Memorial Tournament — RDCA UI Interactions
 document.addEventListener('DOMContentLoaded', () => {
-  // Mobile Nav Toggle
-  const toggle = document.querySelector('.mobile-toggle');
-  const navLinks = document.querySelector('.nav-links');
-  if (toggle && navLinks) {
-    toggle.addEventListener('click', () => {
-      navLinks.classList.toggle('open');
-      const expanded = navLinks.classList.contains('open');
-      toggle.setAttribute('aria-expanded', expanded);
+  // Mobile Nav Toggle (RDCA standard)
+  const navToggle = document.querySelector('[data-nav-toggle]');
+  const navMenu = document.querySelector('[data-nav]');
+  if (navToggle && navMenu) {
+    navToggle.addEventListener('click', () => {
+      const open = navMenu.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded', String(open));
     });
   }
 
@@ -22,24 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const summary = card.querySelector('.rule-summary')?.textContent.toLowerCase() || '';
         const cat = card.querySelector('.rule-category')?.textContent.toLowerCase() || '';
         if (title.includes(q) || summary.includes(q) || cat.includes(q)) {
-          card.style.display = 'flex';
-        } else {
-          card.style.display = 'none';
-        }
-      });
-    });
-  }
-
-  // Real-time teams search filter
-  const teamSearch = document.getElementById('teamSearch');
-  if (teamSearch) {
-    teamSearch.addEventListener('input', (e) => {
-      const q = e.target.value.toLowerCase().trim();
-      const cards = document.querySelectorAll('.team-card');
-      cards.forEach(card => {
-        const name = card.querySelector('.team-name')?.textContent.toLowerCase() || '';
-        const city = card.querySelector('.team-city')?.textContent.toLowerCase() || '';
-        if (name.includes(q) || city.includes(q)) {
           card.style.display = 'flex';
         } else {
           card.style.display = 'none';

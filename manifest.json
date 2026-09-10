@@ -4,8 +4,8 @@
   "description": "Official portal of the Atal Bihari Vajpayee Memorial Tournament in Rewa, Madhya Pradesh.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#0b1528",
-  "theme_color": "#0b1528",
+  "background_color": "#08301f",
+  "theme_color": "#0e5a3a",
   "icons": [
     {
       "src": "/public/images/trophy.svg",
