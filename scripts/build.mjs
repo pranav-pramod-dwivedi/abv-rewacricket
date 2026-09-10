@@ -41,6 +41,7 @@ function cleanDesc(str, maxLen = 155) {
 function renderHeader(activeNav = '') {
   const navItems = [
     { name: 'Home', path: '/', key: 'home' },
+    { name: 'Leaderboards', path: '/stats/', key: 'stats' },
     { name: 'The Teams (2)', path: '/teams/', key: 'teams' },
     { name: 'Matches (34)', path: '/matches/', key: 'matches' },
     { name: 'Regulations (14)', path: '/rules/', key: 'rules' },
@@ -1310,9 +1311,189 @@ Sitemap: ${SITE_URL}/sitemap.xml
 }
 
 // Master Build Function
+
+// Build Combined Leaderboard / Stats Page (/stats/index.html)
+function buildStatsPage() {
+  const topBat = tournament.topPerformers.batting;
+  const topBowl = tournament.topPerformers.bowling;
+  const num = tournament.seasonInNumbers;
+  const past = tournament.pastWinners;
+
+  const content = `
+<div class="page-head">
+  <p class="eyebrow">Combined Official Telemetry &bull; 2021&ndash;2026</p>
+  <h1>Tournament Leaderboards &amp; Records</h1>
+  <p>All-Time Consolidated Player Statistics Across Both Competing Franchises (Destroyers CC &amp; Dread Eleven)</p>
+</div>
+
+<div class="card" style="margin-bottom:2rem;padding:1.5rem;background:#f0fdf4;border:1px solid #bbf7d0;">
+  <p class="eyebrow" style="color:#166534;margin-bottom:0.25rem;">Official Championship Standings</p>
+  <h3 style="color:#14532d;margin:0 0 0.5rem 0;font-size:1.25rem;">Series Level at 3&ndash;3 (Deadlock After 6 Editions &amp; 34 Matches)</h3>
+  <p class="prose" style="margin:0;color:#166534;font-size:0.95rem;line-height:1.6;">
+    The Atal Bihari Vajpayee Memorial Tournament stands precisely deadlocked at <strong>3&ndash;3 in championship titles</strong> between <strong>Dread Eleven</strong> (Champions: 2021, 2022, 2023 under Akhil Mishra) and <strong>Destroyers Cricket Club</strong> (Champions: 2024, 2025, 2026 under Pranav Dwivedi). Across 34 official bilateral matches, 10,842 runs have been scored and 498 wickets have fallen. Below are the certified combined leaderboards of both franchises.
+  </p>
+</div>
+
+<!-- Telemetry At A Glance -->
+<section class="section" style="margin-bottom:2.5rem;">
+  <div class="section-title">
+    <h2>Aggregated Tournament Metrics (34 Matches)</h2>
+  </div>
+  <div class="stat-grid">
+    <div class="card stat"><div class="stat-value">34</div><div class="stat-label">Total Matches</div></div>
+    <div class="card stat"><div class="stat-value">3&ndash;3</div><div class="stat-label">Series Titles (Tied)</div></div>
+    <div class="card stat"><div class="stat-value">10,842</div><div class="stat-label">Total Runs Scored</div></div>
+    <div class="card stat"><div class="stat-value">498</div><div class="stat-label">Total Wickets Fallen</div></div>
+    <div class="card stat"><div class="stat-value">284/5</div><div class="stat-label">Highest Team Total</div></div>
+    <div class="card stat"><div class="stat-value">8/39</div><div class="stat-label">Best Bowling Figures</div></div>
+  </div>
+</section>
+
+<!-- Combined Leaderboards (Both Teams) -->
+<section class="section">
+  <div class="section-title">
+    <div>
+      <p class="eyebrow">Both Teams Combined</p>
+      <h2>Official All-Time Player Leaderboards</h2>
+    </div>
+  </div>
+
+  <div class="grid grid-2">
+    <!-- Leading Run Scorers -->
+    <div>
+      <h3 style="margin-bottom:0.75rem;">Leading Run Scorers (Both Teams)</h3>
+      <div class="card table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Player</th>
+              <th>Team</th>
+              <th class="num">Runs</th>
+              <th class="num">Avg</th>
+              <th class="num">SR</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${topBat.map(b => `
+              <tr>
+                <td><strong>${esc(b.name)}</strong></td>
+                <td><span class="badge ${b.team.includes('Destroyers') ? 'badge-completed' : ''}">${esc(b.team)}</span></td>
+                <td class="num font-bold">${b.runs}</td>
+                <td class="num">${b.average}</td>
+                <td class="num">${b.strikeRate}</td>
+              </tr>
+            `).join('\n            ')}
+          </tbody>
+        </table>
+      </div>
+      <p class="card-meta" style="margin-top:0.5rem;font-size:0.85rem;">Pranav Dwivedi leads all-time run charts with 1,435 runs at 57.4 avg (SR 146.4), closely followed by Akhil Mishra (1,378 runs, avg 44.5).</p>
+    </div>
+
+    <!-- Leading Wicket Takers -->
+    <div>
+      <h3 style="margin-bottom:0.75rem;">Leading Wicket Takers (Both Teams)</h3>
+      <div class="card table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Player</th>
+              <th>Team</th>
+              <th class="num">Wkts</th>
+              <th class="num">Avg</th>
+              <th class="num">Econ</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${topBowl.map(b => `
+              <tr>
+                <td><strong>${esc(b.name)}</strong></td>
+                <td><span class="badge ${b.team.includes('Destroyers') ? 'badge-completed' : ''}">${esc(b.team)}</span></td>
+                <td class="num font-bold">${b.wickets}</td>
+                <td class="num">${b.average}</td>
+                <td class="num">${b.economy}</td>
+              </tr>
+            `).join('\n            ')}
+          </tbody>
+        </table>
+      </div>
+      <p class="card-meta" style="margin-top:0.5rem;font-size:0.85rem;">Pranav Dwivedi leads all-time wicket charts with 66 wickets at 16.3 avg (Econ 5.48, BBI 8/39), followed by Aditya Shrivastava (49 wkts, avg 21.2).</p>
+    </div>
+  </div>
+</section>
+
+<!-- Series Outcomes by Year -->
+<section class="section" style="margin-top:2.5rem;">
+  <div class="section-title">
+    <h2>Roll of Honour &amp; 3&ndash;3 Deadlock Breakdown</h2>
+  </div>
+  <div class="card table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Edition</th>
+          <th>Champion Franchise</th>
+          <th>Winning Captain</th>
+          <th class="num">Series Margin</th>
+          <th>Title Count</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>2026 Edition</strong></td><td><strong>Destroyers Cricket Club</strong></td><td>Pranav Dwivedi (c)</td><td class="num font-bold">3&ndash;2</td><td>Destroyers 3rd Title</td></tr>
+        <tr><td><strong>2025 Edition</strong></td><td><strong>Destroyers Cricket Club</strong></td><td>Pranav Dwivedi (c)</td><td class="num font-bold">5&ndash;0</td><td>Destroyers 2nd Title</td></tr>
+        <tr><td><strong>2024 Edition</strong></td><td><strong>Destroyers Cricket Club</strong></td><td>Pranav Dwivedi (c)</td><td class="num font-bold">4&ndash;1</td><td>Destroyers 1st Title</td></tr>
+        <tr><td><strong>2023 Edition</strong></td><td><strong>Dread Eleven</strong></td><td>Akhil Mishra (c)</td><td class="num font-bold">3&ndash;2</td><td>Dread Eleven 3rd Title</td></tr>
+        <tr><td><strong>2022 Edition</strong></td><td><strong>Dread Eleven</strong></td><td>Akhil Mishra (c)</td><td class="num font-bold">4&ndash;3</td><td>Dread Eleven 2nd Title</td></tr>
+        <tr><td><strong>2021 Edition</strong></td><td><strong>Dread Eleven</strong></td><td>Akhil Mishra (c)</td><td class="num font-bold">5&ndash;2</td><td>Dread Eleven 1st Title</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- Official Cross-Network Backlinks -->
+<div class="card" style="margin-top:2rem;padding:1.5rem">
+  <h3 style="margin-bottom:0.5rem">Verified Historical Scorecards</h3>
+  <p class="card-meta" style="margin-bottom:1rem">Access full ball-by-ball scorecards and division records on the official RDCA archive and franchise hubs:</p>
+  <div style="display:flex;gap:1rem;flex-wrap:wrap">
+    <a href="https://rewa-cricket-division.vercel.app/tournaments/atal-bihari-vajpayee-memorial-tournament/" target="_blank" rel="noopener" class="btn btn-primary">RDCA Official Tournament Central &rarr;</a>
+    <a href="/matches/" class="btn btn-secondary">All 34 Match Cards &rarr;</a>
+    <a href="https://destroyers-rewacricket.pages.dev/stats" target="_blank" rel="noopener" class="btn btn-secondary">Destroyers CC Stats &rarr;</a>
+    <a href="https://dread-eleven-rewacricket.pages.dev/stats" target="_blank" rel="noopener" class="btn btn-secondary">Dread Eleven Stats &rarr;</a>
+  </div>
+</div>
+`;
+
+  const specificData = {
+    "@context": "https://schema.org",
+    "@type": "DataCatalog",
+    "name": "Atal Bihari Vajpayee Memorial Tournament Leaderboards & Records",
+    "description": "Consolidated player statistics and tournament records combining Destroyers CC and Dread Eleven across 34 bilateral matches (2021-2026).",
+    "url": "https://abv-rewacricket.pages.dev/stats/",
+    "publisher": {
+      "@type": "SportsOrganization",
+      "name": "Rewa Division Cricket Association (RDCA)",
+      "url": "https://rewa-cricket-division.vercel.app"
+    }
+  };
+
+  const html = renderHtmlPage({
+    title: "Tournament Leaderboards & All-Time Records | Atal Bihari Vajpayee Memorial Tournament",
+    description: "Official consolidated leaderboards of both teams combined (Destroyers CC & Dread Eleven) for the Atal Bihari Vajpayee Memorial Tournament. Pranav Dwivedi (1,435 runs, 66 wkts), Akhil Mishra (1,378 runs). Series tied 3-3.",
+    canonicalUrl: `${SITE_URL}/stats/`,
+    activeNav: "stats",
+    breadcrumbs: [{ name: "Leaderboards", path: "/stats/" }],
+    bodyContent: content,
+    specificData
+  });
+
+  ensureDir(path.join(rootDir, 'stats'));
+  fs.writeFileSync(path.join(rootDir, 'stats/index.html'), html, 'utf-8');
+  console.log('Built: stats/index.html (Pure RDCA UI)');
+}
+
 function buildAll() {
   console.log('Starting pure RDCA UI static build for abv-rewacricket...');
   buildHomePage();
+  buildStatsPage();
   buildTeamsPage();
   buildMatchesPage();
   buildRulesPages();
