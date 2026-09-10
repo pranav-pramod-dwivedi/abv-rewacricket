@@ -1,0 +1,20 @@
+{
+  "name": "abv-rewacricket",
+  "version": "1.0.0",
+  "description": "Official Tournament Website for Atal Bihari Vajpayee Memorial Tournament — RDCA & MPCA",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs"
+  },
+  "keywords": [
+    "atal-bihari-vajpayee-tournament",
+    "abv-memorial-trophy",
+    "rewa-cricket",
+    "rdca",
+    "mpca",
+    "destroyers-cc",
+    "dread-eleven"
+  ],
+  "author": "Atal Bihari Vajpayee Memorial Tournament Committee",
+  "license": "ISC"
+}

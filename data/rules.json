@@ -1,0 +1,376 @@
+[
+  {
+    "id": "anti-corruption",
+    "title": "Anti-Corruption Policy & Protocols",
+    "category": "Integrity & Ethics",
+    "summary": "Mandatory anti-corruption code for players, match officials, and team personnel to safeguard against match-fixing, spot-fixing, and illegal betting.",
+    "effectiveDate": "1 January 2026",
+    "clauses": [
+      {
+        "clause": "1. Prohibited Conduct",
+        "content": "No participant shall fix, contrive, or improperly influence the result, progress, conduct or any aspect of any tournament match. Receiving or seeking any bribe, gift, or consideration in return for non-performance or disclosure of inside information is strictly prohibited."
+      },
+      {
+        "clause": "2. Mandatory Reporting of Approaches",
+        "content": "Every player, official, or team staff member approached by any person to engage in corrupt conduct must report the approach to the Anti-Corruption Unit (ACU) within 24 hours. Failure to report carries an automatic minimum 1-year ban."
+      },
+      {
+        "clause": "3. Prohibition on Betting & Inside Information",
+        "content": "All participants are strictly barred from betting directly or indirectly on any match in the tournament, or providing pitch, selection, or tactical information to third parties prior to public toss announcement."
+      },
+      {
+        "clause": "4. ACU Powers of Investigation",
+        "content": "The Tournament Anti-Corruption Officer is empowered to request itemized phone records, bank statements, electronic devices, and summon participants for recorded interviews."
+      },
+      {
+        "clause": "5. Sanction Framework",
+        "content": "Sanctions range from a minimum 2-year ban for betting offenses up to a lifetime ban from all RDCA, MPCA, and BCCI-sanctioned cricket for proven match manipulation."
+      }
+    ]
+  },
+  {
+    "id": "anti-doping",
+    "title": "Anti-Doping Code",
+    "category": "Integrity & Ethics",
+    "summary": "WADA and NADA compliant anti-doping code ensuring fair athletic competition through rigorous in-competition and out-of-competition testing.",
+    "effectiveDate": "1 January 2026",
+    "clauses": [
+      {
+        "clause": "1. Strict Liability Principle",
+        "content": "It is each athlete's personal duty to ensure that no prohibited substance enters his or her body. Athletes are responsible for any prohibited substance or its metabolites found in their samples."
+      },
+      {
+        "clause": "2. Prohibited List",
+        "content": "The tournament adopts the current World Anti-Doping Agency (WADA) Prohibited List, covering anabolic agents, peptide hormones, beta-2 agonists, diuretics, and stimulants."
+      },
+      {
+        "clause": "3. Testing Protocols",
+        "content": "Doping control officers may conduct random or targeted urine and blood sample collection at any match venue (APSU Stadium, Neem Chauraha Stadium, Martand Ground) immediately following match completion."
+      },
+      {
+        "clause": "4. Therapeutic Use Exemptions (TUE)",
+        "content": "Players requiring prescribed medication containing prohibited substances must submit a formal TUE application to the Tournament Medical Board at least 21 days before competing."
+      },
+      {
+        "clause": "5. Disciplinary Sanctions",
+        "content": "First violation results in a mandatory 2 to 4-year suspension. Aggravating circumstances or intentional tampering result in lifetime disqualification."
+      }
+    ]
+  },
+  {
+    "id": "anti-racism",
+    "title": "Anti-Racism Policy",
+    "category": "Inclusion & Social Conduct",
+    "summary": "Zero-tolerance framework prohibiting racial slurs, derogatory chants, or discrimination on the basis of race, colour, or ethnic origin.",
+    "effectiveDate": "1 January 2026",
+    "clauses": [
+      {
+        "clause": "1. Zero Tolerance Mandate",
+        "content": "The Atal Bihari Vajpayee Memorial Tournament operates a strict zero-tolerance policy towards racist behaviour by players, coaching staff, venue personnel, or spectators."
+      },
+      {
+        "clause": "2. On-Field Violations",
+        "content": "Any player uttering racist slurs or making offensive gestures will be immediately charged under Level 3 of the Code of Conduct, incurring an immediate minimum 4-match suspension."
+      },
+      {
+        "clause": "3. Spectator Conduct & Stadium Eviction",
+        "content": "Spectators engaging in racist chants, insults, or harassment will be immediately ejected from the stadium by venue security and handed over to local police authorities under relevant Indian Penal Code provisions."
+      },
+      {
+        "clause": "4. Match Official Responsibility",
+        "content": "Umpires possess the authority to pause match proceedings if crowd abuse persists, and instruct the ground announcer to issue formal public warnings before restarting."
+      }
+    ]
+  },
+  {
+    "id": "anti-discrimination",
+    "title": "Anti-Discrimination Policy",
+    "category": "Inclusion & Social Conduct",
+    "summary": "Affirmative commitment to equal dignity and fair treatment regardless of religion, caste, creed, region, disability, or socio-economic background.",
+    "effectiveDate": "1 January 2026",
+    "clauses": [
+      {
+        "clause": "1. Equal Opportunity",
+        "content": "All players, officials, and academy candidates shall be evaluated solely on merit, skill, fitness, and conduct without bias based on religion, caste, linguistic background, or state of origin."
+      },
+      {
+        "clause": "2. Harassment & Bullying",
+        "content": "Verbal intimidation, derogatory nicknames, or exclusionary dressing-room behaviour aimed at a participant's socio-cultural identity will trigger immediate inquiry by the Disciplinary Committee."
+      },
+      {
+        "clause": "3. Grievance Redressal Mechanism",
+        "content": "Any registered individual may lodge a confidential discrimination complaint to the Tournament Ombudsman within 14 days of an incident. Inquiries must be completed within 10 days."
+      }
+    ]
+  },
+  {
+    "id": "suspected-illegal-action",
+    "title": "Suspected Illegal Bowling Action Policy & Guidelines",
+    "category": "Technical Regulations",
+    "summary": "Standardized procedure for reporting, scrutinizing, and biomechanically evaluating bowling actions exceeding the permissible 15-degree elbow extension limit.",
+    "effectiveDate": "1 January 2026",
+    "clauses": [
+      {
+        "clause": "1. Legal Bowling Action Definition",
+        "content": "A bowling action is deemed legal if the bowler's elbow joint does not extend by more than 15 degrees from the moment the bowling arm reaches horizontal until the release of the ball."
+      },
+      {
+        "clause": "2. Match Official Reporting",
+        "content": "If both on-field umpires or the TV umpire suspect a bowler's action, they must submit an official Match Officials' Report to the Match Referee within 2 hours of match conclusion."
+      },
+      {
+        "clause": "3. Warning & Video Review",
+        "content": "Upon the first report, the bowler and team management receive official footage. The player may continue bowling for 14 days pending laboratory assessment at an accredited biomechanics center."
+      },
+      {
+        "clause": "4. Suspension from Bowling",
+        "content": "If scientific analysis confirms an elbow extension exceeding 15 degrees, or upon a second formal reporting during the tournament, the player is suspended from bowling in all tournament fixtures until cleared."
+      },
+      {
+        "clause": "5. Remedial Coaching",
+        "content": "Suspended bowlers may undergo remedial coaching with certified RDCA/MPCA bowling consultants before applying for independent re-testing."
+      }
+    ]
+  },
+  {
+    "id": "match-playing-conditions",
+    "title": "Match Playing Conditions (50 Overs & T20 Blast)",
+    "category": "Field of Play",
+    "summary": "Complete playing regulations governing match duration, over rates, field restrictions, powerplays, DRS reviews, ball specifications, and tie-breakers.",
+    "effectiveDate": "1 January 2026",
+    "clauses": [
+      {
+        "clause": "1. Ball Specifications",
+        "content": "All white-ball matches are conducted using four-piece certified SG White Club/Tournament turf balls. In 50-over matches, two new balls are used per innings, one from each end."
+      },
+      {
+        "clause": "2. Powerplay & Fielding Restrictions (T20)",
+        "content": "Overs 1-6: Mandatory Powerplay (maximum 2 fielders outside 30-yard circle). Overs 7-20: Maximum 5 fielders outside the circle. Maximum 4 overs per bowler."
+      },
+      {
+        "clause": "3. Powerplay Restrictions (50 Overs)",
+        "content": "P1 (Overs 1-10): Mandatory (max 2 fielders outside). P2 (Overs 11-40): Max 4 fielders outside. P3 (Overs 41-50): Max 5 fielders outside. Maximum 10 overs per bowler."
+      },
+      {
+        "clause": "4. Over Rates & Penalties",
+        "content": "Teams must complete 20 overs within 85 minutes. If a team fails to start the final over by the scheduled cut-off time, one additional fielder must be brought inside the 30-yard circle for the remainder of the innings."
+      },
+      {
+        "clause": "5. Super Over Protocol",
+        "content": "In the event of a tied match, a Super Over will be played. If the Super Over is tied, subsequent Super Overs will be played until a clear winner emerges."
+      },
+      {
+        "clause": "6. Rain Interruption & VJD Method",
+        "content": "A minimum of 5 overs per side in T20 and 20 overs per side in 50 overs must be bowled to constitute a result. Revised targets are calculated using the certified VJD / DLS mathematical software."
+      }
+    ]
+  },
+  {
+    "id": "pmoa-minimum-standards",
+    "title": "PMOA (Players & Match Officials Area) Minimum Standards",
+    "category": "Integrity & Security",
+    "summary": "Mandatory security cordon and communication blackout safeguarding the integrity of dressing rooms, dugouts, and match officials' facilities.",
+    "effectiveDate": "1 January 2026",
+    "clauses": [
+      {
+        "clause": "1. Defined Area Boundaries",
+        "content": "The PMOA encompasses player dressing rooms, dugouts, viewing terraces, match referee suites, umpire change rooms, and designated tunnel passageways."
+      },
+      {
+        "clause": "2. Electronic Device Ban",
+        "content": "All mobile phones, smart watches, laptops, two-way radios, and transmission equipment must be deposited with the Tournament Anti-Corruption Manager 60 minutes before the toss."
+      },
+      {
+        "clause": "3. Access Accreditation",
+        "content": "Only personnel holding valid PMOA accreditation badges (players, coach, physio, doctor, match officials) are permitted entry. Visitors must register in the official PMOA logbook."
+      },
+      {
+        "clause": "4. CCTV Surveillance",
+        "content": "Entry doors and corridors leading to PMOA suites are monitored by 24-hour recorded CCTV feeds under the custody of the Chief Security Officer."
+      }
+    ]
+  },
+  {
+    "id": "code-of-conduct-match-officials",
+    "title": "Code of Conduct for Match Officials",
+    "category": "Officiating & Governance",
+    "summary": "Standards of professionalism, impartiality, physical fitness, conflict of interest disclosure, and report writing for umpires and match referees.",
+    "effectiveDate": "1 January 2026",
+    "clauses": [
+      {
+        "clause": "1. Impartiality & Integrity",
+        "content": "Officials must execute their duties with complete neutrality and never express bias or favouritism towards any team or athlete."
+      },
+      {
+        "clause": "2. Conflict of Interest",
+        "content": "Officials must disclose any commercial, familial, or personal relationship with competing clubs or players prior to appointment."
+      },
+      {
+        "clause": "3. Media & Public Comment",
+        "content": "Umpires and referees are forbidden from discussing decisions, player behaviour, or pitch conditions with media representatives or on social media platforms."
+      },
+      {
+        "clause": "4. Post-Match Telemetry Reports",
+        "content": "The Match Referee must submit the complete official scorecard, pitch rating, over-rate tally, and captain's assessment within 12 hours of match finish."
+      }
+    ]
+  },
+  {
+    "id": "code-of-conduct-players",
+    "title": "Code of Conduct for Players and Team Officials",
+    "category": "Discipline & On-field Behavior",
+    "summary": "Comprehensive 4-tier disciplinary framework penalizing dissent, ball-tampering, abusive language, equipment damage, and physical assault.",
+    "effectiveDate": "1 January 2026",
+    "clauses": [
+      {
+        "clause": "1. Level 1 Offenses",
+        "content": "Excessive appealing, aggressive hand gestures, kicking the boundary rope, dissent at umpire decisions. Sanction: Official reprimand up to 50% match fee fine."
+      },
+      {
+        "clause": "2. Level 2 Offenses",
+        "content": "Serious dissent, obscene language directed at an opponent, throwing the ball deliberately near a player, ball tampering. Sanction: 50% to 100% match fee fine and/or 1-match suspension."
+      },
+      {
+        "clause": "3. Level 3 Offenses",
+        "content": "Intimidation of match officials, threatening physical assault against opponents or spectators. Sanction: 2 to 4-match suspension."
+      },
+      {
+        "clause": "4. Level 4 Offenses",
+        "content": "Physical assault on the field, acts of violence, refusal to play, bringing the tournament into grave disrepute. Sanction: 1-year suspension up to permanent tournament expulsion."
+      },
+      {
+        "clause": "5. Hearing Procedure",
+        "content": "Level 2, 3, and 4 charges are adjudicated by the Match Referee in an on-venue hearing conducted within 24 hours of match conclusion with right of legal representation."
+      }
+    ]
+  },
+  {
+    "id": "clothing-and-equipment",
+    "title": "Clothing and Equipment Regulations",
+    "category": "Technical Regulations",
+    "summary": "Standardization of coloured clothing, uniform design, sponsor logo dimensions, protective gear safety standards, and bat gauge compliance.",
+    "effectiveDate": "1 January 2026",
+    "clauses": [
+      {
+        "clause": "1. Uniform & Colour Standards",
+        "content": "All players in a team must wear identical coloured jerseys and trousers. White jerseys are strictly forbidden in white-ball day-night or day encounters."
+      },
+      {
+        "clause": "2. Jersey Numbers & Names",
+        "content": "Player name must appear in uppercase across the upper back (minimum 6cm height). Player jersey number must appear centered below (minimum 25cm height)."
+      },
+      {
+        "clause": "3. Sponsor Logo Dimensions",
+        "content": "Principal chest sponsor logo cannot exceed 250 sq cm. Sleeve sponsor logos cannot exceed 65 sq cm each. Non-commercial club emblems cannot exceed 50 sq cm."
+      },
+      {
+        "clause": "4. Protective Gear Safety (BS 7928:2013)",
+        "content": "Helmets worn while batting against pace bowlers or wicket-keeping up to the stumps must strictly comply with the British Standard BS 7928:2013 specification."
+      },
+      {
+        "clause": "5. Bat Dimensions Gauge Test",
+        "content": "All bats must pass through the official bat gauge: maximum width 10.8 cm, maximum depth 6.7 cm, and maximum edge 4.0 cm."
+      }
+    ]
+  },
+  {
+    "id": "news-access-regulations",
+    "title": "News Access Regulations",
+    "category": "Media & Broadcast",
+    "summary": "Rules governing the access, capture, editing, and distribution of match footage, audio, and news by non-rights holder media networks.",
+    "effectiveDate": "1 January 2026",
+    "clauses": [
+      {
+        "clause": "1. Fair Dealing Window",
+        "content": "Non-rights holder broadcast networks may use up to 90 seconds of match footage per news bulletin, with a maximum of 6 minutes across a 24-hour broadcast cycle."
+      },
+      {
+        "clause": "2. Live In-Play Blackout",
+        "content": "No non-rights holder may broadcast or stream live or near-live moving video footage from the stadium during the continuance of a match."
+      },
+      {
+        "clause": "3. Credit & Courtesy Obligation",
+        "content": "All match clips utilized in news broadcasts must carry an on-screen courtesy bug: 'Footage Courtesy: Atal Bihari Vajpayee Memorial Tournament / RDCA'."
+      },
+      {
+        "clause": "4. Digital & Social Media Restrictions",
+        "content": "Video clips may not be posted natively to third-party social media handles without formal digital sub-licensing authorization."
+      }
+    ]
+  },
+  {
+    "id": "image-use-terms",
+    "title": "Image Use Terms & Photography Guidelines",
+    "category": "Media & Broadcast",
+    "summary": "Legal terms licensing still photographic imagery for accredited journalists and strictly forbidding commercial merchandise exploitation.",
+    "effectiveDate": "1 January 2026",
+    "clauses": [
+      {
+        "clause": "1. Editorial Usage Only",
+        "content": "Photographs taken inside tournament stadiums by accredited photographers may be utilized strictly for editorial news reporting and sports journalism."
+      },
+      {
+        "clause": "2. Prohibition on Commercial Merchandising",
+        "content": "Images cannot be sold, sublicensed, or reproduced on commercial posters, digital trading cards, NFT assets, apparel, or promotional endorsements without written consent."
+      },
+      {
+        "clause": "3. Player Image Rights",
+        "content": "The collective image rights of participating athletes remain protected under the Tournament Participant Agreement and statutory Indian personality rights law."
+      }
+    ]
+  },
+  {
+    "id": "media-accreditation",
+    "title": "Media Accreditation Terms and Conditions",
+    "category": "Media & Broadcast",
+    "summary": "Application protocol, eligibility criteria, bib collection, and venue privileges for print, electronic, and digital journalists.",
+    "effectiveDate": "1 January 2026",
+    "clauses": [
+      {
+        "clause": "1. Accreditation Application",
+        "content": "Journalists and photojournalists must submit official accreditation requests with editor endorsement at least 7 days before opening match day."
+      },
+      {
+        "clause": "2. Identification Bibs",
+        "content": "Pitch-side photojournalists must wear the official high-visibility numbered bib at all times while in the photographers' trench."
+      },
+      {
+        "clause": "3. Press Conference Etiquette",
+        "content": "Accredited media must observe professional decorum during post-match press conferences and follow the moderation of the Press Officer."
+      },
+      {
+        "clause": "4. Revocation of Accreditation",
+        "content": "The Tournament Governing Council reserves the right to immediately revoke accreditation for breaches of PMOA rules or unauthorized streaming."
+      }
+    ]
+  },
+  {
+    "id": "ticket-terms-and-conditions",
+    "title": "Ticket Terms and Conditions",
+    "category": "Spectator & Stadium Admission",
+    "summary": "Conditions of entry, prohibited articles, spectator code of conduct, rain-check refund policy, and stadium evacuation protocols.",
+    "effectiveDate": "1 January 2026",
+    "clauses": [
+      {
+        "clause": "1. Condition of Entry",
+        "content": "Possession of a valid ticket, pass, or digital QR code entitles the holder entry into the specified enclosure of the stadium. Admission is revocable at the discretion of venue management."
+      },
+      {
+        "clause": "2. Prohibited Articles",
+        "content": "Glass bottles, metal cans, firecrackers, laser pointers, weapons, alcoholic beverages, commercial recording cameras, and political banners are strictly barred at turnstiles."
+      },
+      {
+        "clause": "3. Spectator Conduct",
+        "content": "Spectators must occupy only the allocated stand or seat. Entering the field of play, throwing objects onto the turf, or using abusive language will lead to immediate arrest and prosecution."
+      },
+      {
+        "clause": "4. Rain Check & Refund Policy",
+        "content": "If play is abandoned without a single ball bowled on the match date, tickets are eligible for full refund within 7 working days. If 5 overs or more are completed, no refund is payable."
+      },
+      {
+        "clause": "5. Search & Surveillance Consent",
+        "content": "Ticket holders consent to physical baggage inspection, body frisking by security personnel, and being recorded by stadium CCTV cameras."
+      }
+    ]
+  }
+]

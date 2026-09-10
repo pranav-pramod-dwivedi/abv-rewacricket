@@ -1,0 +1,56 @@
+[
+  {
+    "id": "news-1",
+    "title": "Destroyers Clinch 2026 ABV Memorial Trophy in 12-Run Final Thriller",
+    "slug": "destroyers-clinch-2026-abv-memorial-trophy-final",
+    "publishedAt": "2026-09-20",
+    "category": "Championship Final",
+    "summary": "Capt. Pranav Dwivedi delivers an all-round masterclass (82 runs & 3/28) to steer Destroyers CC past Dread Eleven in the 2026 finale at APSU Stadium.",
+    "content": "The 2026 Atal Bihari Vajpayee Memorial Tournament concluded in sensational fashion on Sunday evening as Destroyers Cricket Club defended their title with a nerve-shredding 12-run victory over arch-rivals Dread Eleven. Batting first, Destroyers posted 164/7 powered by Pranav Dwivedi's scintillating 82 off 44 balls. Despite a spirited 54 from Dread Eleven skipper Akhil Mishra, Destroyers' pace-spin battery closed out the death overs to seal a 3-2 series victory."
+  },
+  {
+    "id": "news-2",
+    "title": "Governing Council Announces Upgraded 2026-27 Tournament Regulations",
+    "slug": "governing-council-announces-upgraded-2026-27-regulations",
+    "publishedAt": "2026-09-02",
+    "category": "Official Circular",
+    "summary": "The Tournament Governing Council in collaboration with RDCA and MPCA publishes revised Anti-Doping, PMOA, and Match Playing Conditions.",
+    "content": "In a comprehensive executive session held at the Divisional Cricket Stadium in Neem Chauraha, Rewa, the Tournament Governing Council ratified an upgraded regulatory charter. The new policies include biometric PMOA access, mandatory VJD software parity for weather interruptions, and stricter anti-corruption reporting thresholds for all franchise participants."
+  },
+  {
+    "id": "news-3",
+    "title": "Top Performers Honour Roll: Pranav Dwivedi and Akhil Mishra Head All-Time Charts",
+    "slug": "top-performers-honour-roll-all-time-charts",
+    "publishedAt": "2026-08-25",
+    "category": "Historical Telemetry",
+    "summary": "Official statistics released by RDCA confirm Pranav Dwivedi (1,435 runs, 66 wickets) and Akhil Mishra (1,378 runs, 38 wickets) as tournament legends.",
+    "content": "Statistical verification across all 34 tournament derby matches reveals historic milestones. Destroyers skipper Pranav Dwivedi leads both aggregate run-scoring and bowling tallies, while Dread Eleven's Akhil Mishra remains the only player to feature in all championship campaigns with over 1,300 runs."
+  },
+  {
+    "id": "news-4",
+    "title": "Divisional Cricket Stadium at Neem Chauraha Undergoes Pitch & Pavilion Overhaul",
+    "slug": "divisional-stadium-neem-chauraha-pitch-overhaul",
+    "publishedAt": "2026-08-10",
+    "category": "Infrastructure",
+    "summary": "Chief curator announces new red-soil center pitches and high-powered LED floodlight towers ahead of the upcoming multi-team championship cycle.",
+    "content": "Ground developments at the Divisional Cricket Stadium near Neem Chauraha, Rewa, have achieved full completion. Supported by MPCA infrastructural grants, the stadium now features three newly relayed pitches imported from Mumbai clay, modernized player dugouts, and compliant high-definition floodlight arrays."
+  },
+  {
+    "id": "news-5",
+    "title": "Anti-Corruption Unit Deploys Digital Integrity Hotline for 2026 Cycle",
+    "slug": "anti-corruption-unit-deploys-digital-integrity-hotline",
+    "publishedAt": "2026-07-28",
+    "category": "Integrity Desk",
+    "summary": "Participants and supporters can now report suspicious approaches directly through 24/7 dedicated telephone and encrypted digital channels.",
+    "content": "Reaffirming its commitment to ethical sporting standards, the Tournament ACU has activated a 24/7 emergency integrity hotline (+91 7662 250011). Under tournament rules, failure to report corrupt overtures within 24 hours triggers mandatory disciplinary hearings and automatic suspensions."
+  },
+  {
+    "id": "news-6",
+    "title": "Official Redirect Policy for Live Matches and Historical Scorecards",
+    "slug": "official-redirect-policy-live-matches-scorecards",
+    "publishedAt": "2026-07-15",
+    "category": "Technical Advisory",
+    "summary": "All ball-by-ball telemetry, live innings scorecards, and historical match archives are centralized on the Rewa Division Cricket Association (RDCA) portal.",
+    "content": "To maintain uniform data accuracy, the ABV Memorial Tournament confirms that individual match scorecards and live ball-by-ball data are hosted exclusively on the official RDCA Central Portal (https://rewa-cricket-division.vercel.app/matches/). Fans and media can access complete telemetry with single-click verification."
+  }
+]

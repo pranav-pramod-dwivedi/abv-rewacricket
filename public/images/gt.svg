@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="100%" height="100%">
+  <defs>
+    <linearGradient id="gtGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1b2133"/>
+      <stop offset="100%" stop-color="#0d111a"/>
+    </linearGradient>
+  </defs>
+  <polygon points="60,10 110,38 95,105 25,105 10,38" fill="url(#gtGrad)" stroke="#bba46c" stroke-width="4"/>
+  <path d="M60 25 L85 70 L60 62 L35 70 Z" fill="#bba46c"/>
+  <polygon points="60,35 72,60 48,60" fill="#ffffff"/>
+  <text x="60" y="96" font-family="Arial, sans-serif" font-weight="900" font-size="14" fill="#bba46c" text-anchor="middle">TITANS</text>
+</svg>

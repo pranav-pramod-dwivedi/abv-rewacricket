@@ -1,0 +1,6 @@
+/rule/* /rules/:splat 301
+/team/* /teams/:splat 301
+/council /governing-council 301
+/live /matches 302
+/scorecard /matches 302
+/scorecards /matches 302

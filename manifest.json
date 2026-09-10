@@ -1,0 +1,16 @@
+{
+  "name": "Atal Bihari Vajpayee Memorial Tournament",
+  "short_name": "ABV Trophy",
+  "description": "Official portal of the Atal Bihari Vajpayee Memorial Tournament in Rewa, Madhya Pradesh.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b1528",
+  "theme_color": "#0b1528",
+  "icons": [
+    {
+      "src": "/public/images/trophy.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}

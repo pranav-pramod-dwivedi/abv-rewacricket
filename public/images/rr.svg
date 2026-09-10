@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="100%" height="100%">
+  <defs>
+    <linearGradient id="rrGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ea1a80"/>
+      <stop offset="100%" stop-color="#99004d"/>
+    </linearGradient>
+  </defs>
+  <circle cx="60" cy="60" r="54" fill="url(#rrGrad)" stroke="#004ba0" stroke-width="4"/>
+  <!-- Royal Crown & Heraldic Emblem -->
+  <path d="M35 65 L40 45 L50 55 L60 38 L70 55 L80 45 L85 65 Z" fill="#ffd700"/>
+  <circle cx="60" cy="74" r="8" fill="#004ba0"/>
+  <text x="60" y="96" font-family="Arial, sans-serif" font-weight="900" font-size="14" fill="#ffffff" text-anchor="middle">ROYALS</text>
+</svg>

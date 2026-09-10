@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="100%" height="100%">
+  <defs>
+    <linearGradient id="miGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#004ba0"/>
+      <stop offset="100%" stop-color="#002b66"/>
+    </linearGradient>
+  </defs>
+  <circle cx="60" cy="60" r="54" fill="url(#miGrad)" stroke="#d4af37" stroke-width="4"/>
+  <!-- Razor Chakra Blades -->
+  <path d="M60 22 L65 50 L85 35 L68 56 L95 62 L68 68 L85 85 L65 70 L60 98 L55 70 L35 85 L52 68 L25 62 L52 56 L35 35 L55 50 Z" fill="#d4af37"/>
+  <circle cx="60" cy="60" r="16" fill="#004ba0" stroke="#ffffff" stroke-width="2"/>
+  <text x="60" y="65" font-family="Arial, sans-serif" font-weight="900" font-size="12" fill="#ffffff" text-anchor="middle">MI</text>
+</svg>

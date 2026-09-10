@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://abv-rewacricket.pages.dev/sitemap.xml
+
+# LLMs.txt AI Model Context
+# Discoverable at https://abv-rewacricket.pages.dev/llms.txt and https://abv-rewacricket.pages.dev/llms-full.txt

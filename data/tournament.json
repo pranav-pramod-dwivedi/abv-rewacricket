@@ -1,0 +1,251 @@
+{
+  "name": "Atal Bihari Vajpayee Memorial Tournament",
+  "shortName": "ABV Memorial Trophy",
+  "circuit": "Rewa Division Cricket Association (RDCA) & Madhya Pradesh Cricket Association (MPCA)",
+  "tagline": "The Premier Invitational Cricket Championship of Vindhya Pradesh",
+  "seasonInNumbers": {
+    "editions": 6,
+    "years": "2021\u20132026",
+    "matchesPlayed": 34,
+    "runsScored": 10842,
+    "wicketsFallen": 498,
+    "boundaries": {
+      "fours": 946,
+      "sixes": 312
+    },
+    "highestTeamTotal": "284/5 (Destroyers CC vs Dread Eleven, 2025)",
+    "lowestTeamTotal": "98 all out (Dread Eleven vs Destroyers, 2023)",
+    "centuries": 2,
+    "fifties": 42,
+    "bestBowlingFigures": "8/39 (Pranav Dwivedi, Destroyers CC)"
+  },
+  "topPerformers": {
+    "batting": [
+      {
+        "rank": 1,
+        "name": "Pranav Dwivedi",
+        "team": "Destroyers CC",
+        "runs": 1435,
+        "average": 57.4,
+        "strikeRate": 146.4,
+        "highestScore": "102*",
+        "fifties": 14,
+        "hundreds": 1
+      },
+      {
+        "rank": 2,
+        "name": "Akhil Mishra",
+        "team": "Dread Eleven",
+        "runs": 1378,
+        "average": 44.5,
+        "strikeRate": 130.0,
+        "highestScore": "96*",
+        "fifties": 12,
+        "hundreds": 1
+      },
+      {
+        "rank": 3,
+        "name": "Anant Verma",
+        "team": "Destroyers CC",
+        "runs": 782,
+        "average": 39.1,
+        "strikeRate": 134.2,
+        "highestScore": "78",
+        "fifties": 6,
+        "hundreds": 0
+      },
+      {
+        "rank": 4,
+        "name": "Sagar Pratap Singh",
+        "team": "Destroyers CC",
+        "runs": 694,
+        "average": 34.7,
+        "strikeRate": 128.5,
+        "highestScore": "69",
+        "fifties": 5,
+        "hundreds": 0
+      },
+      {
+        "rank": 5,
+        "name": "Aditya Shrivastava",
+        "team": "Dread Eleven",
+        "runs": 612,
+        "average": 30.6,
+        "strikeRate": 122.4,
+        "highestScore": "64",
+        "fifties": 4,
+        "hundreds": 0
+      }
+    ],
+    "bowling": [
+      {
+        "rank": 1,
+        "name": "Pranav Dwivedi",
+        "team": "Destroyers CC",
+        "wickets": 66,
+        "average": 16.3,
+        "economy": 5.48,
+        "bestBowling": "8/39"
+      },
+      {
+        "rank": 2,
+        "name": "Aditya Shrivastava",
+        "team": "Dread Eleven",
+        "wickets": 49,
+        "average": 21.2,
+        "economy": 5.76,
+        "bestBowling": "5/32"
+      },
+      {
+        "rank": 3,
+        "name": "Somil Khan",
+        "team": "Destroyers CC",
+        "wickets": 42,
+        "average": 19.8,
+        "economy": 5.62,
+        "bestBowling": "5/24"
+      },
+      {
+        "rank": 4,
+        "name": "Akhil Mishra",
+        "team": "Dread Eleven",
+        "wickets": 38,
+        "average": 61.1,
+        "economy": 5.92,
+        "bestBowling": "4/28"
+      },
+      {
+        "rank": 5,
+        "name": "Harshit Patel",
+        "team": "Destroyers CC",
+        "wickets": 34,
+        "average": 22.1,
+        "economy": 6.04,
+        "bestBowling": "4/18"
+      }
+    ]
+  },
+  "winners2026": {
+    "champion": "Destroyers Cricket Club (DES)",
+    "captain": "Pranav Dwivedi",
+    "runnerUp": "Dread Eleven (DE)",
+    "runnerUpCaptain": "Akhil Mishra",
+    "seriesResult": "Destroyers won 3\u20132 (5-match series)",
+    "finalScore": "DES 164/7 (20 ov) def. DE 152/9 (20 ov) by 12 runs",
+    "finalVenue": "APSU Stadium / Neem Chauraha Stadium, Rewa",
+    "playerOfTheFinal": "Pranav Dwivedi (82 runs off 44 balls & 3/28)",
+    "summary": "In an exhilarating 2026 Championship Finale, Destroyers CC held their nerve under skipper Pranav Dwivedi to seal a 12-run thriller against arch-rivals Dread Eleven, lifting their third consecutive Atal Bihari Vajpayee Memorial Trophy."
+  },
+  "pastWinners": [
+    {
+      "year": 2026,
+      "winner": "Destroyers Cricket Club",
+      "captain": "Pranav Dwivedi",
+      "runnerUp": "Dread Eleven",
+      "score": "3\u20132 Series Victory (12-run final win)"
+    },
+    {
+      "year": 2025,
+      "winner": "Destroyers Cricket Club",
+      "captain": "Pranav Dwivedi",
+      "runnerUp": "Dread Eleven",
+      "score": "5\u20130 Clean Sweep"
+    },
+    {
+      "year": 2024,
+      "winner": "Destroyers Cricket Club",
+      "captain": "Pranav Dwivedi",
+      "runnerUp": "Dread Eleven",
+      "score": "4\u20131 Series Victory"
+    },
+    {
+      "year": 2023,
+      "winner": "Dread Eleven",
+      "captain": "Akhil Mishra",
+      "runnerUp": "Destroyers CC",
+      "score": "4\u20131 Series Victory"
+    },
+    {
+      "year": 2022,
+      "winner": "Dread Eleven",
+      "captain": "Akhil Mishra",
+      "runnerUp": "Destroyers CC",
+      "score": "3\u20132 Series Victory"
+    },
+    {
+      "year": 2021,
+      "winner": "Dread Eleven",
+      "captain": "Akhil Mishra",
+      "runnerUp": "Destroyers CC",
+      "score": "3\u20132 Series Victory"
+    }
+  ],
+  "governingCouncil": [
+    {
+      "role": "Patron-in-Chief",
+      "name": "Divisional Commissioner",
+      "affiliation": "Rewa Division Sports Authority"
+    },
+    {
+      "role": "Chairman, Governing Council",
+      "name": "Shri R. P. Singh",
+      "affiliation": "Senior MPCA Delegate"
+    },
+    {
+      "role": "Honorary Tournament Director",
+      "name": "Er. K. N. Tiwari",
+      "affiliation": "Rewa Division Cricket Association (RDCA)"
+    },
+    {
+      "role": "Chief Match Referee",
+      "name": "Shri S. K. Verma",
+      "affiliation": "Former BCCI Level-2 First Class Umpire"
+    },
+    {
+      "role": "Head of Anti-Corruption Unit (ACU)",
+      "name": "Shri D. C. Sharma (IPS Retd.)",
+      "affiliation": "MPCA / RDCA Integrity Panel"
+    },
+    {
+      "role": "Technical & Pitches Committee Chairman",
+      "name": "Shri A. P. Pandey",
+      "affiliation": "BCCI Certified Chief Curator"
+    },
+    {
+      "role": "Anti-Doping & Medical Officer",
+      "name": "Dr. V. K. Mishra",
+      "affiliation": "Rewa Sports Medicine Board"
+    },
+    {
+      "role": "Media & Broadcast Liaison",
+      "name": "Shri M. K. Shukla",
+      "affiliation": "Vindhya Press Desk"
+    }
+  ],
+  "contact": {
+    "stadiumName": "Divisional Cricket Stadium",
+    "locality": "Neem Chauraha, Boda Bagh Road",
+    "city": "Rewa",
+    "state": "Madhya Pradesh",
+    "pincode": "486001",
+    "country": "India",
+    "landmark": "Near Neem Chauraha Hanuman Mandir",
+    "rdcaOffice": "Rewa Division Cricket Association, APSU Stadium Complex, Sirmour Road, Rewa, MP 486003",
+    "mpcaOffice": "Madhya Pradesh Cricket Association, Holkar Stadium, Race Course Road, Indore - 452001 (M.P.)",
+    "mpcaPhones": [
+      "+91 731 2543602",
+      "+91 731 2434575",
+      "+91 731 2531643"
+    ],
+    "rdcaPhones": [
+      "+91 7662 250000",
+      "+91 94251 78900"
+    ],
+    "antiCorruptionHotline": "+91 7662 250011",
+    "email": "tournament@abv-rewacricket.org",
+    "rdcaEmail": "rdca.rewa@gmail.com",
+    "mpcaEmail": "secretary@mpcaonline.com",
+    "officialMatchesPortal": "https://rewa-cricket-division.vercel.app/tournaments/atal-bihari-vajpayee-memorial-tournament/",
+    "rdcaMatchesCentral": "https://rewa-cricket-division.vercel.app/matches/"
+  }
+}

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pbksGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d71920"/>
+      <stop offset="100%" stop-color="#800a0f"/>
+    </linearGradient>
+  </defs>
+  <path d="M60 10 L102 28 V70 C102 92 60 112 60 112 C60 112 18 92 18 70 V28 Z" fill="url(#pbksGrad)" stroke="#c5a059" stroke-width="4"/>
+  <!-- Lion Rampant Silhouette -->
+  <path d="M48 45 C48 35 60 32 72 38 C75 48 68 55 64 62 C68 68 76 74 72 82 C65 82 58 75 52 75 C48 82 44 82 40 75 C45 68 48 58 48 45 Z" fill="#c5a059"/>
+  <text x="60" y="98" font-family="Arial, sans-serif" font-weight="900" font-size="13" fill="#ffffff" text-anchor="middle">PUNJAB</text>
+</svg>

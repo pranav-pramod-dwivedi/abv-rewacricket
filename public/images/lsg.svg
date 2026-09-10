@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="100%" height="100%">
+  <defs>
+    <linearGradient id="lsgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#005792"/>
+      <stop offset="100%" stop-color="#002d4d"/>
+    </linearGradient>
+  </defs>
+  <circle cx="60" cy="60" r="54" fill="url(#lsgGrad)" stroke="#ff6b35" stroke-width="4"/>
+  <path d="M30 60 C30 40 50 35 60 35 C70 35 90 40 90 60 C75 55 60 75 30 60 Z" fill="#ff6b35"/>
+  <path d="M40 70 C40 55 55 50 60 50 C65 50 80 55 80 70 Z" fill="#00e676"/>
+  <circle cx="60" cy="45" r="8" fill="#ffffff"/>
+  <text x="60" y="96" font-family="Arial, sans-serif" font-weight="900" font-size="14" fill="#ffffff" text-anchor="middle">LSG</text>
+</svg>
