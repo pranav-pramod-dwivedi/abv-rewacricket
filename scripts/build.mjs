@@ -52,7 +52,7 @@ function renderHeader(activeNav = '') {
   return `<header class="site-header">
   <div class="container header-inner">
     <a class="brand" href="/" aria-label="Atal Bihari Vajpayee Memorial Tournament — Home">
-      <img class="brand-logo" src="/public/images/logo-rewa-official.jpg" alt="Official emblem of Rewa District" width="44" height="44" />
+      <img class="brand-logo" src="/public/images/trophy.svg" alt="Official crest of Atal Bihari Vajpayee Memorial Tournament" width="44" height="44" />
       <span class="brand-text">
         <strong>Atal Bihari Vajpayee Memorial Tournament</strong>
         <small>Rewa Divisional Cricket &bull; MPCA</small>
@@ -91,7 +91,7 @@ function renderFooter() {
   <div class="container">
     <div>
       <div class="footer-brand">
-        <img src="/public/images/logo-rewa-official.jpg" alt="Official emblem of Rewa District" width="40" height="40" />
+        <img src="/public/images/trophy.svg" alt="Official crest of Atal Bihari Vajpayee Memorial Tournament" width="40" height="40" />
         <h3>Atal Bihari Vajpayee Memorial Tournament</h3>
       </div>
       <p class="footer-note">The premier invitational cricket championship of Vindhya Pradesh, honoring former Prime Minister Shri Atal Bihari Vajpayee. Contested through the iconic 34-match derby between Destroyers Cricket Club and Dread Eleven. Officially sanctioned by the Rewa Division Cricket Association (RDCA) and affiliated with Madhya Pradesh Cricket Association (MPCA).</p>
@@ -222,70 +222,61 @@ ${renderFooter()}
 </html>`;
 }
 
-// All 34 Matches Data
+// All 34 Official RDCA Matches Data
 const allMatchesData = [
-  // 2026 Season
-  { id: 'm-2026-05', date: '2026-09-20', season: 2026, format: 'T20', title: '2026 Championship Final', venue: 'APS Ground Rewa', team1: 'Destroyers Cricket Club', team2: 'Dread Eleven', result: 'Destroyers won by 12 runs', details: 'DES 164/7 (20 ov) def. DE 152/9 (20 ov). Pranav Dwivedi 82 & 3/28.' },
-  { id: 'm-2026-04', date: '2026-09-16', season: 2026, format: '50 Overs', title: 'One-Day Derby Clash', venue: 'Martand School Ground No. 3', team1: 'Destroyers Cricket Club', team2: 'Dread Eleven', result: 'Destroyers won by 4 wickets', details: 'DE 238 all out (46.2 ov); DES 241/6 (44.1 ov). Anant Verma 76.' },
-  { id: 'm-2026-03', date: '2026-09-12', season: 2026, format: '50 Overs', title: 'One-Day Derby Clash', venue: 'APS Ground Rewa', team1: 'Dread Eleven', team2: 'Destroyers Cricket Club', result: 'Dread Eleven won by 19 runs', details: 'DE 265/8 (50 ov); DES 246 all out (48.3 ov). Akhil Mishra 96*.' },
-  { id: 'm-2026-02', date: '2026-09-08', season: 2026, format: 'T20', title: 'T20 Derby Clash', venue: 'Martand School Ground No. 3', team1: 'Destroyers Cricket Club', team2: 'Dread Eleven', result: 'Destroyers won by 7 wickets', details: 'DE 142/9 (20 ov); DES 145/3 (17.2 ov). Sagar Pratap Singh 58*.' },
-  { id: 'm-2026-01', date: '2026-09-05', season: 2026, format: 'T20', title: 'T20 Series Opener', venue: 'APS Ground Rewa', team1: 'Dread Eleven', team2: 'Destroyers Cricket Club', result: 'Dread Eleven won by 14 runs', details: 'DE 178/5 (20 ov); DES 164/8 (20 ov). Aditya Shrivastava 4/22.' },
-
-  // 2025 Season
-  { id: 'm-2025-05', date: '2025-09-20', season: 2025, format: 'T20', title: '2025 Championship Final', venue: 'APS Ground Rewa', team1: 'Destroyers Cricket Club', team2: 'Dread Eleven', result: 'Destroyers won by 34 runs', details: 'DES 192/4 (20 ov); DE 158 all out (18.4 ov). Pranav Dwivedi 102*.' },
-  { id: 'm-2025-04', date: '2025-09-16', season: 2025, format: '50 Overs', title: 'One-Day Derby Clash', venue: 'Martand School Ground No. 3', team1: 'Destroyers Cricket Club', team2: 'Dread Eleven', result: 'Destroyers won by 5 wickets', details: 'DE 214 all out (43 ov); DES 218/5 (41.2 ov).' },
-  { id: 'm-2025-03', date: '2025-09-12', season: 2025, format: '50 Overs', title: 'One-Day Derby Clash', venue: 'APS Ground Rewa', team1: 'Destroyers Cricket Club', team2: 'Dread Eleven', result: 'Destroyers won by 68 runs', details: 'DES 284/5 (50 ov); DE 216 all out (44.5 ov). Highest Team Total.' },
-  { id: 'm-2025-02', date: '2025-09-08', season: 2025, format: 'T20', title: 'T20 Derby Clash', venue: 'Martand School Ground No. 3', team1: 'Destroyers Cricket Club', team2: 'Dread Eleven', result: 'Destroyers won by 6 wickets', details: 'DE 135/8 (20 ov); DES 138/4 (16.4 ov).' },
-  { id: 'm-2025-01', date: '2025-09-05', season: 2025, format: 'T20', title: 'T20 Series Opener', venue: 'APS Ground Rewa', team1: 'Destroyers Cricket Club', team2: 'Dread Eleven', result: 'Destroyers won by 22 runs', details: 'DES 170/6 (20 ov); DE 148/9 (20 ov).' },
-
-  // 2024 Season
-  { id: 'm-2024-05', date: '2024-09-22', season: 2024, format: 'T20', title: '2024 Championship Final', venue: 'APS Ground Rewa', team1: 'Destroyers Cricket Club', team2: 'Dread Eleven', result: 'Destroyers won by 18 runs', details: 'DES 158/6 (20 ov); DE 140/9 (20 ov). First title for DES.' },
-  { id: 'm-2024-04', date: '2024-09-18', season: 2024, format: '50 Overs', title: 'One-Day Derby Clash', venue: 'Martand School Ground No. 3', team1: 'Destroyers Cricket Club', team2: 'Dread Eleven', result: 'Destroyers won by 3 wickets', details: 'DE 226 all out (47 ov); DES 227/7 (46.1 ov).' },
-  { id: 'm-2024-03', date: '2024-09-14', season: 2024, format: '50 Overs', title: 'One-Day Derby Clash', venue: 'APS Ground Rewa', team1: 'Dread Eleven', team2: 'Destroyers Cricket Club', result: 'Dread Eleven won by 4 wickets', details: 'DES 210 all out (45.2 ov); DE 214/6 (43.4 ov).' },
-  { id: 'm-2024-02', date: '2024-09-10', season: 2024, format: 'T20', title: 'T20 Derby Clash', venue: 'Martand School Ground No. 3', team1: 'Destroyers Cricket Club', team2: 'Dread Eleven', result: 'Destroyers won by 8 wickets', details: 'DE 118 all out (18.1 ov); DES 121/2 (14.2 ov).' },
-  { id: 'm-2024-01', date: '2024-09-06', season: 2024, format: 'T20', title: 'T20 Series Opener', venue: 'APS Ground Rewa', team1: 'Destroyers Cricket Club', team2: 'Dread Eleven', result: 'Destroyers won by 29 runs', details: 'DES 175/5 (20 ov); DE 146 all out (19.1 ov).' },
-
-  // 2023 Season
-  { id: 'm-2023-05', date: '2023-09-24', season: 2023, format: 'T20', title: '2023 Championship Final', venue: 'APS Ground Rewa', team1: 'Dread Eleven', team2: 'Destroyers Cricket Club', result: 'Dread Eleven won by 15 runs', details: 'DE 162/6 (20 ov); DES 147/8 (20 ov). Third consecutive title for DE.' },
-  { id: 'm-2023-04', date: '2023-09-20', season: 2023, format: '50 Overs', title: 'One-Day Derby Clash', venue: 'Martand School Ground No. 3', team1: 'Dread Eleven', team2: 'Destroyers Cricket Club', result: 'Dread Eleven won by 38 runs', details: 'DE 254/7 (50 ov); DES 216 all out (44.3 ov).' },
-  { id: 'm-2023-03', date: '2023-09-16', season: 2023, format: '50 Overs', title: 'One-Day Derby Clash', venue: 'APS Ground Rewa', team1: 'Destroyers Cricket Club', team2: 'Dread Eleven', result: 'Destroyers won by 4 wickets', details: 'DE 198 all out (42 ov); DES 202/6 (41.1 ov).' },
-  { id: 'm-2023-02', date: '2023-09-12', season: 2023, format: 'T20', title: 'T20 Derby Clash', venue: 'Martand School Ground No. 3', team1: 'Dread Eleven', team2: 'Destroyers Cricket Club', result: 'Dread Eleven won by 26 runs', details: 'DE 155/7 (20 ov); DES 129/9 (20 ov).' },
-  { id: 'm-2023-01', date: '2023-09-08', season: 2023, format: 'T20', title: 'T20 Series Opener', venue: 'APS Ground Rewa', team1: 'Destroyers Cricket Club', team2: 'Dread Eleven', result: 'Destroyers won by 5 wickets', details: 'DE 98 all out (16.4 ov); DES 100/5 (13.2 ov). Lowest team total for DE.' },
-
-  // 2022 Season
-  { id: 'm-2022-07', date: '2022-09-28', season: 2022, format: 'T20', title: '2022 Championship Final', venue: 'APS Ground Rewa', team1: 'Dread Eleven', team2: 'Destroyers Cricket Club', result: 'Dread Eleven won by 6 runs', details: 'DE 148/8 (20 ov); DES 142/9 (20 ov). Thrilling last-over finish.' },
-  { id: 'm-2022-06', date: '2022-09-25', season: 2022, format: '50 Overs', title: 'One-Day Clash 4', venue: 'Martand School Ground No. 3', team1: 'Destroyers Cricket Club', team2: 'Dread Eleven', result: 'Destroyers won by 2 wickets', details: 'DE 212 all out; DES 216/8.' },
-  { id: 'm-2022-05', date: '2022-09-22', season: 2022, format: '50 Overs', title: 'One-Day Clash 3', venue: 'APS Ground Rewa', team1: 'Dread Eleven', team2: 'Destroyers Cricket Club', result: 'Dread Eleven won by 42 runs', details: 'DE 270/6; DES 228 all out.' },
-  { id: 'm-2022-04', date: '2022-09-18', season: 2022, format: '50 Overs', title: 'One-Day Clash 2', venue: 'Martand School Ground No. 3', team1: 'Dread Eleven', team2: 'Destroyers Cricket Club', result: 'Dread Eleven won by 3 wickets', details: 'DES 234 all out; DE 238/7.' },
-  { id: 'm-2022-03', date: '2022-09-14', season: 2022, format: '50 Overs', title: 'One-Day Clash 1', venue: 'APS Ground Rewa', team1: 'Destroyers Cricket Club', team2: 'Dread Eleven', result: 'Destroyers won by 51 runs', details: 'DES 260/7; DE 209 all out.' },
-  { id: 'm-2022-02', date: '2022-09-10', season: 2022, format: 'T20', title: 'T20 Clash 2', venue: 'Martand School Ground No. 3', team1: 'Dread Eleven', team2: 'Destroyers Cricket Club', result: 'Dread Eleven won by 17 runs', details: 'DE 160/5; DES 143/8.' },
-  { id: 'm-2022-01', date: '2022-09-06', season: 2022, format: 'T20', title: 'T20 Series Opener', venue: 'APS Ground Rewa', team1: 'Destroyers Cricket Club', team2: 'Dread Eleven', result: 'Destroyers won by 7 wickets', details: 'DE 128/9; DES 131/3.' },
-
-  // 2021 Season
-  { id: 'm-2021-07', date: '2021-09-30', season: 2021, format: 'T20', title: '2021 Inaugural Championship Final', venue: 'APS Ground Rewa', team1: 'Dread Eleven', team2: 'Destroyers Cricket Club', result: 'Dread Eleven won by 24 runs', details: 'DE 172/5 (20 ov); DES 148 all out (19.2 ov). DE crowned inaugural champions.' },
-  { id: 'm-2021-06', date: '2021-09-26', season: 2021, format: '50 Overs', title: 'Inaugural One-Day Clash 4', venue: 'Martand School Ground No. 3', team1: 'Dread Eleven', team2: 'Destroyers Cricket Club', result: 'Dread Eleven won by 6 wickets', details: 'DES 189 all out; DE 192/4.' },
-  { id: 'm-2021-05', date: '2021-09-22', season: 2021, format: '50 Overs', title: 'Inaugural One-Day Clash 3', venue: 'APS Ground Rewa', team1: 'Destroyers Cricket Club', team2: 'Dread Eleven', result: 'Destroyers won by 33 runs', details: 'DES 245/8; DE 212 all out.' },
-  { id: 'm-2021-04', date: '2021-09-18', season: 2021, format: '50 Overs', title: 'Inaugural One-Day Clash 2', venue: 'Martand School Ground No. 3', team1: 'Dread Eleven', team2: 'Destroyers Cricket Club', result: 'Dread Eleven won by 45 runs', details: 'DE 258/6; DES 213 all out.' },
-  { id: 'm-2021-03', date: '2021-09-14', season: 2021, format: '50 Overs', title: 'Inaugural One-Day Clash 1', venue: 'APS Ground Rewa', team1: 'Dread Eleven', team2: 'Destroyers Cricket Club', result: 'Dread Eleven won by 5 wickets', details: 'DES 204 all out; DE 208/5.' },
-  { id: 'm-2021-02', date: '2021-09-10', season: 2021, format: 'T20', title: 'Inaugural T20 Clash 2', venue: 'Martand School Ground No. 3', team1: 'Destroyers Cricket Club', team2: 'Dread Eleven', result: 'Destroyers won by 4 wickets', details: 'DE 136/8; DES 138/6.' },
-  { id: 'm-2021-01', date: '2021-09-06', season: 2021, format: 'T20', title: 'Inaugural Match of Tournament', venue: 'APS Ground Rewa', team1: 'Dread Eleven', team2: 'Destroyers Cricket Club', result: 'Dread Eleven won by 31 runs', details: 'DE 168/6 (20 ov); DES 137 all out (18.3 ov).' }
+  { id: 'm-shared-64', slug: 'destroyers-vs-dread-eleven-2026-09-20', date: '2026-09-20', season: 2026, format: '50 Overs', title: '2026 Championship Final', venue: 'APS Ground Rewa', team1: 'Destroyers Cricket Club', team2: 'Dread Eleven', result: 'Destroyers won by 12 runs', details: 'Destroyers won by 12 runs at APS Ground Rewa. Official RDCA scorecard archived.' },
+  { id: 'm-shared-63', slug: 'destroyers-vs-dread-eleven-2026-09-16', date: '2026-09-16', season: 2026, format: '50 Overs', title: '50 Overs Derby Clash', venue: 'Martand School Ground No. 3', team1: 'Destroyers Cricket Club', team2: 'Dread Eleven', result: 'Destroyers won by 4 wickets', details: 'Destroyers won by 4 wickets at Martand School Ground No. 3. Official RDCA scorecard archived.' },
+  { id: 'm-shared-62', slug: 'destroyers-vs-dread-eleven-2026-09-12', date: '2026-09-12', season: 2026, format: '50 Overs', title: '50 Overs Derby Clash', venue: 'APS Ground Rewa', team1: 'Destroyers Cricket Club', team2: 'Dread Eleven', result: 'Dread Eleven won by 19 runs', details: 'Dread Eleven won by 19 runs at APS Ground Rewa. Official RDCA scorecard archived.' },
+  { id: 'm-shared-61', slug: 'destroyers-vs-dread-eleven-2026-09-08', date: '2026-09-08', season: 2026, format: 'T20', title: 'T20 Derby Clash', venue: 'Martand School Ground No. 3', team1: 'Destroyers Cricket Club', team2: 'Dread Eleven', result: 'Destroyers won by 7 wickets', details: 'Destroyers won by 7 wickets at Martand School Ground No. 3. Official RDCA scorecard archived.' },
+  { id: 'm-shared-60', slug: 'destroyers-vs-dread-eleven-2026-09-05', date: '2026-09-05', season: 2026, format: 'T20', title: '2026 Series Opener (T20)', venue: 'APS Ground Rewa', team1: 'Destroyers Cricket Club', team2: 'Dread Eleven', result: 'Dread Eleven won by 14 runs', details: 'Dread Eleven won by 14 runs at APS Ground Rewa. Official RDCA scorecard archived.' },
+  { id: 'm-shared-59', slug: 'destroyers-vs-dread-eleven-2025-09-20', date: '2025-09-20', season: 2025, format: '50 Overs', title: '2025 Championship Final', venue: 'APS Ground Rewa', team1: 'Destroyers Cricket Club', team2: 'Dread Eleven', result: 'Destroyers won by 34 runs', details: 'Destroyers won by 34 runs at APS Ground Rewa. Official RDCA scorecard archived.' },
+  { id: 'm-shared-58', slug: 'destroyers-vs-dread-eleven-2025-09-16', date: '2025-09-16', season: 2025, format: '50 Overs', title: '50 Overs Derby Clash', venue: 'Martand School Ground No. 3', team1: 'Destroyers Cricket Club', team2: 'Dread Eleven', result: 'Destroyers won by 5 wickets', details: 'Destroyers won by 5 wickets at Martand School Ground No. 3. Official RDCA scorecard archived.' },
+  { id: 'm-shared-57', slug: 'destroyers-vs-dread-eleven-2025-09-12', date: '2025-09-12', season: 2025, format: '50 Overs', title: '50 Overs Derby Clash', venue: 'APS Ground Rewa', team1: 'Destroyers Cricket Club', team2: 'Dread Eleven', result: 'Destroyers won by 45 runs', details: 'Destroyers won by 45 runs at APS Ground Rewa. Official RDCA scorecard archived.' },
+  { id: 'm-shared-56', slug: 'destroyers-vs-dread-eleven-2025-09-08', date: '2025-09-08', season: 2025, format: 'T20', title: 'T20 Derby Clash', venue: 'Martand School Ground No. 3', team1: 'Destroyers Cricket Club', team2: 'Dread Eleven', result: 'Destroyers won by 6 wickets', details: 'Destroyers won by 6 wickets at Martand School Ground No. 3. Official RDCA scorecard archived.' },
+  { id: 'm-shared-55', slug: 'destroyers-vs-dread-eleven-2025-09-05', date: '2025-09-05', season: 2025, format: 'T20', title: '2025 Series Opener (T20)', venue: 'APS Ground Rewa', team1: 'Destroyers Cricket Club', team2: 'Dread Eleven', result: 'Destroyers won by 22 runs', details: 'Destroyers won by 22 runs at APS Ground Rewa. Official RDCA scorecard archived.' },
+  { id: 'm-shared-44', slug: 'de-vs-des-2024-09-20', date: '2024-09-20', season: 2024, format: '50 Overs', title: '2024 Championship Final', venue: 'APS Ground Rewa', team1: 'Destroyers Cricket Club', team2: 'Dread Eleven', result: 'Dread Eleven won by 8 runs', details: 'Dread Eleven won by 8 runs at APS Ground Rewa. Official RDCA scorecard archived.' },
+  { id: 'm-shared-43', slug: 'de-vs-des-2024-09-16', date: '2024-09-16', season: 2024, format: '50 Overs', title: '50 Overs Derby Clash', venue: 'APS Ground Rewa', team1: 'Destroyers Cricket Club', team2: 'Dread Eleven', result: 'Dread Eleven won by 18 runs', details: 'Dread Eleven won by 18 runs at APS Ground Rewa. Official RDCA scorecard archived.' },
+  { id: 'm-shared-42', slug: 'de-vs-des-2024-09-12', date: '2024-09-12', season: 2024, format: '50 Overs', title: '50 Overs Derby Clash', venue: 'APS Ground Rewa', team1: 'Destroyers Cricket Club', team2: 'Dread Eleven', result: 'Dread Eleven won by 2 runs', details: 'Dread Eleven won by 2 runs at APS Ground Rewa. Official RDCA scorecard archived.' },
+  { id: 'm-shared-41', slug: 'de-vs-des-2024-09-08', date: '2024-09-08', season: 2024, format: '50 Overs', title: '50 Overs Derby Clash', venue: 'APS Ground Rewa', team1: 'Destroyers Cricket Club', team2: 'Dread Eleven', result: 'Dread Eleven won by 5 runs', details: 'Dread Eleven won by 5 runs at APS Ground Rewa. Official RDCA scorecard archived.' },
+  { id: 'm-shared-40', slug: 'de-vs-des-2024-09-05', date: '2024-09-05', season: 2024, format: '50 Overs', title: '2024 Series Opener (50 Overs)', venue: 'APS Ground Rewa', team1: 'Destroyers Cricket Club', team2: 'Dread Eleven', result: 'Destroyers won by 1 wickets', details: 'Destroyers won by 1 wickets at APS Ground Rewa. Official RDCA scorecard archived.' },
+  { id: 'm-shared-31', slug: 'de-vs-des-2023-09-20', date: '2023-09-20', season: 2023, format: '50 Overs', title: '2023 Championship Final', venue: 'APS Ground Rewa', team1: 'Destroyers Cricket Club', team2: 'Dread Eleven', result: 'Destroyers won by 3 wickets', details: 'Destroyers won by 3 wickets at APS Ground Rewa. Official RDCA scorecard archived.' },
+  { id: 'm-shared-30', slug: 'de-vs-des-2023-09-16', date: '2023-09-16', season: 2023, format: '50 Overs', title: '50 Overs Derby Clash', venue: 'APS Ground Rewa', team1: 'Destroyers Cricket Club', team2: 'Dread Eleven', result: 'Dread Eleven won by 42 runs', details: 'Dread Eleven won by 42 runs at APS Ground Rewa. Official RDCA scorecard archived.' },
+  { id: 'm-shared-29', slug: 'de-vs-des-2023-09-12', date: '2023-09-12', season: 2023, format: '50 Overs', title: '50 Overs Derby Clash', venue: 'APS Ground Rewa', team1: 'Destroyers Cricket Club', team2: 'Dread Eleven', result: 'Dread Eleven won by 27 runs', details: 'Dread Eleven won by 27 runs at APS Ground Rewa. Official RDCA scorecard archived.' },
+  { id: 'm-shared-28', slug: 'de-vs-des-2023-09-08', date: '2023-09-08', season: 2023, format: '50 Overs', title: '50 Overs Derby Clash', venue: 'APS Ground Rewa', team1: 'Destroyers Cricket Club', team2: 'Dread Eleven', result: 'Destroyers won by 0 wickets', details: 'Destroyers won by 0 wickets at APS Ground Rewa. Official RDCA scorecard archived.' },
+  { id: 'm-shared-27', slug: 'de-vs-des-2023-09-05', date: '2023-09-05', season: 2023, format: '50 Overs', title: '2023 Series Opener (50 Overs)', venue: 'APS Ground Rewa', team1: 'Destroyers Cricket Club', team2: 'Dread Eleven', result: 'Destroyers won by 0 wickets', details: 'Destroyers won by 0 wickets at APS Ground Rewa. Official RDCA scorecard archived.' },
+  { id: 'm-shared-21', slug: 'de-vs-des-2022-09-18', date: '2022-09-18', season: 2022, format: '50 Overs', title: '2022 Championship Final', venue: 'APS Ground Rewa', team1: 'Destroyers Cricket Club', team2: 'Dread Eleven', result: 'Dread Eleven won by 54 runs', details: 'Dread Eleven won by 54 runs at APS Ground Rewa. Official RDCA scorecard archived.' },
+  { id: 'm-shared-20', slug: 'de-vs-des-2022-09-14', date: '2022-09-14', season: 2022, format: '50 Overs', title: '50 Overs Derby Clash', venue: 'APS Ground Rewa', team1: 'Destroyers Cricket Club', team2: 'Dread Eleven', result: 'Destroyers won by 1 wickets', details: 'Destroyers won by 1 wickets at APS Ground Rewa. Official RDCA scorecard archived.' },
+  { id: 'm-shared-19', slug: 'de-vs-des-2022-09-10', date: '2022-09-10', season: 2022, format: '50 Overs', title: '50 Overs Derby Clash', venue: 'APS Ground Rewa', team1: 'Destroyers Cricket Club', team2: 'Dread Eleven', result: 'Dread Eleven won by 37 runs', details: 'Dread Eleven won by 37 runs at APS Ground Rewa. Official RDCA scorecard archived.' },
+  { id: 'm-shared-18', slug: 'de-vs-des-2022-09-07', date: '2022-09-07', season: 2022, format: '50 Overs', title: '50 Overs Derby Clash', venue: 'APS Ground Rewa', team1: 'Destroyers Cricket Club', team2: 'Dread Eleven', result: 'Dread Eleven won by 0 runs', details: 'Dread Eleven won by 0 runs at APS Ground Rewa. Official RDCA scorecard archived.' },
+  { id: 'm-shared-17', slug: 'de-vs-des-2022-09-04', date: '2022-09-04', season: 2022, format: '50 Overs', title: '50 Overs Derby Clash', venue: 'APS Ground Rewa', team1: 'Destroyers Cricket Club', team2: 'Dread Eleven', result: 'Destroyers won by 2 wickets', details: 'Destroyers won by 2 wickets at APS Ground Rewa. Official RDCA scorecard archived.' },
+  { id: 'm-shared-16', slug: 'de-vs-des-2022-08-12', date: '2022-08-12', season: 2022, format: 'T20', title: 'T20 Derby Clash', venue: 'APS Ground Rewa', team1: 'Destroyers Cricket Club', team2: 'Dread Eleven', result: 'Destroyers won by 0 wickets', details: 'Destroyers won by 0 wickets at APS Ground Rewa. Official RDCA scorecard archived.' },
+  { id: 'm-shared-15', slug: 'de-vs-des-2022-08-10', date: '2022-08-10', season: 2022, format: 'T20', title: '2022 Series Opener (T20)', venue: 'APS Ground Rewa', team1: 'Destroyers Cricket Club', team2: 'Dread Eleven', result: 'Destroyers won by 3 wickets', details: 'Destroyers won by 3 wickets at APS Ground Rewa. Official RDCA scorecard archived.' },
+  { id: 'm-shared-11', slug: 'de-vs-des-2021-08-28', date: '2021-08-28', season: 2021, format: 'T20', title: '2021 Championship Final', venue: 'APS Ground Rewa', team1: 'Destroyers Cricket Club', team2: 'Dread Eleven', result: 'Dread Eleven won by 14 runs', details: 'Dread Eleven won by 14 runs at APS Ground Rewa. Official RDCA scorecard archived.' },
+  { id: 'm-shared-10', slug: 'de-vs-des-2021-08-20', date: '2021-08-20', season: 2021, format: 'T20', title: 'T20 Derby Clash', venue: 'APS Ground Rewa', team1: 'Destroyers Cricket Club', team2: 'Dread Eleven', result: 'Destroyers won by 2 wickets', details: 'Destroyers won by 2 wickets at APS Ground Rewa. Official RDCA scorecard archived.' },
+  { id: 'm-shared-9', slug: 'de-vs-des-2021-08-15', date: '2021-08-15', season: 2021, format: 'T20', title: 'T20 Derby Clash', venue: 'APS Ground Rewa', team1: 'Destroyers Cricket Club', team2: 'Dread Eleven', result: 'Destroyers won by 5 wickets', details: 'Destroyers won by 5 wickets at APS Ground Rewa. Official RDCA scorecard archived.' },
+  { id: 'm-shared-8', slug: 'de-vs-des-2021-08-11', date: '2021-08-11', season: 2021, format: 'T20', title: 'T20 Derby Clash', venue: 'APS Ground Rewa', team1: 'Destroyers Cricket Club', team2: 'Dread Eleven', result: 'Destroyers won by 3 wickets', details: 'Destroyers won by 3 wickets at APS Ground Rewa. Official RDCA scorecard archived.' },
+  { id: 'm-shared-7', slug: 'de-vs-des-2021-08-07', date: '2021-08-07', season: 2021, format: 'T20', title: 'T20 Derby Clash', venue: 'APS Ground Rewa', team1: 'Destroyers Cricket Club', team2: 'Dread Eleven', result: 'Dread Eleven won by 20 runs', details: 'Dread Eleven won by 20 runs at APS Ground Rewa. Official RDCA scorecard archived.' },
+  { id: 'm-shared-6', slug: 'de-vs-des-2021-08-04', date: '2021-08-04', season: 2021, format: 'T20', title: 'T20 Derby Clash', venue: 'APS Ground Rewa', team1: 'Destroyers Cricket Club', team2: 'Dread Eleven', result: 'Destroyers won by 2 wickets', details: 'Destroyers won by 2 wickets at APS Ground Rewa. Official RDCA scorecard archived.' },
+  { id: 'm-shared-5', slug: 'de-vs-des-2021-08-01', date: '2021-08-01', season: 2021, format: 'T20', title: '2021 Series Opener (T20)', venue: 'APS Ground Rewa', team1: 'Destroyers Cricket Club', team2: 'Dread Eleven', result: 'Destroyers won by 3 wickets', details: 'Destroyers won by 3 wickets at APS Ground Rewa. Official RDCA scorecard archived.' },
 ];
 
 function renderMatchCard(m) {
+  const rdcaUrl = `https://rewa-cricket-division.vercel.app/matches/${esc(m.slug)}/`;
   return `<article class="card match-card">
   <div class="match-top">
-    <span class="competition">Atal Bihari Vajpayee Memorial Tournament &bull; ${m.season} (${m.format})</span>
+    <span class="competition">Atal Bihari Vajpayee Memorial Tournament &bull; ${m.season} (${esc(m.format)})</span>
     <span class="badge badge-completed">completed</span>
   </div>
   <div class="match-teams">
-    <span class="team-name"><a href="https://destroyers-rewacricket.pages.dev" target="_blank" rel="noopener">Destroyers Cricket Club</a></span>
+    <span class="team-name"><a href="https://destroyers-rewacricket.pages.dev" target="_blank" rel="noopener">${esc(m.team1)}</a></span>
     <span class="vs">VS</span>
-    <span class="team-name"><a href="https://dread-eleven-rewacricket.pages.dev" target="_blank" rel="noopener">Dread Eleven</a></span>
+    <span class="team-name"><a href="https://dread-eleven-rewacricket.pages.dev" target="_blank" rel="noopener">${esc(m.team2)}</a></span>
   </div>
   <div class="match-footer">
     <span class="result">${esc(m.result)}</span> &bull; ${esc(m.venue)} &bull; <span class="card-meta">${esc(m.date)}</span>
   </div>
-  <p class="card-meta" style="margin-top:0.4rem;font-size:0.85rem;">${esc(m.details)}</p>
+  ${m.details ? `<p class="card-meta" style="margin-top:0.4rem;font-size:0.85rem;">${esc(m.details)}</p>` : ''}
+  <p style="margin-top:.6rem"><a class="btn btn-outline" href="${rdcaUrl}" target="_blank" rel="noopener">Scorecard &amp; details &rarr;</a></p>
 </article>`;
 }
 
@@ -297,10 +288,13 @@ function buildHomePage() {
   const past = tournament.pastWinners;
 
   const content = `
-<div class="page-head">
-  <p class="eyebrow">Mixed (T20 &amp; 50 Overs) &bull; 2021&ndash;2026</p>
-  <h1>Atal Bihari Vajpayee Memorial Tournament</h1>
-  <p>Status: completed &bull; Current Champions: Destroyers Cricket Club (2026)</p>
+<div class="page-head" style="display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap;">
+  <img src="/public/images/trophy.svg" alt="Atal Bihari Vajpayee Memorial Trophy Seal" width="84" height="84" style="flex-shrink:0;" />
+  <div>
+    <p class="eyebrow">Mixed (T20 &amp; 50 Overs) &bull; 2021&ndash;2026</p>
+    <h1>Atal Bihari Vajpayee Memorial Tournament</h1>
+    <p>Status: completed &bull; Current Champions: Destroyers Cricket Club (2026)</p>
+  </div>
 </div>
 
 <p class="badge badge-official">RDCA Sanctioned &bull; MPCA Affiliated &bull; BCCI Code Compliant</p>
@@ -788,6 +782,7 @@ function buildMatchesPage() {
           "@type": "Place",
           "name": m.venue
         },
+        "url": `https://rewa-cricket-division.vercel.app/matches/${m.slug}/`,
         "competitor": [
           { "@type": "SportsTeam", "name": m.team1 },
           { "@type": "SportsTeam", "name": m.team2 }
