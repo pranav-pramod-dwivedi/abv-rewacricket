@@ -1,39 +1,16 @@
 # Atal Bihari Vajpayee Memorial Tournament
-> Official invitational cricket championship of Vindhya Pradesh, sanctioned by Rewa Division Cricket Association (RDCA) and affiliated with Madhya Pradesh Cricket Association (MPCA).
+> The premier annual invitational cricket championship of Vindhya Pradesh, sanctioned by the Rewa Division Cricket Association (RDCA) and affiliated with the Madhya Pradesh Cricket Association (MPCA).
 
-## Overview
-- **Championship**: Atal Bihari Vajpayee Memorial Tournament (ABV Memorial Trophy)
-- **Circuit**: Rewa Division Cricket Association (RDCA) & Madhya Pradesh Cricket Association (MPCA)
-- **Reigning Champions (2026)**: Destroyers Cricket Club (Captain: Pranav Dwivedi)
-- **Rival Club**: Dread Eleven Cricket Club (Captain: Akhil Mishra)
-- **Venues**: Divisional Cricket Stadium, Neem Chauraha, Boda Bagh Road, Rewa, MP 486001 & APSU Stadium, Rewa
-- **Official Network**:
-  - Rewa Division Cricket Association (RDCA): https://rewa-cricket-division.vercel.app
-  - Destroyers Cricket Club (DES): https://destroyers-rewacricket.pages.dev
-  - Dread Eleven (DE): https://dread-eleven-rewacricket.pages.dev
-  - ABV Memorial Tournament (Official Portal): https://abv-rewacricket.pages.dev
+## Primary Documentation
+- [Tournament Home](https://abv-rewacricket.pages.dev/)
+- [The Derby Teams](https://abv-rewacricket.pages.dev/teams/)
+- [Match Archive (34 Matches)](https://abv-rewacricket.pages.dev/matches/)
+- [Official Regulations (14 Codes)](https://abv-rewacricket.pages.dev/rules/)
+- [Governing Council](https://abv-rewacricket.pages.dev/governing-council/)
+- [News & Media Releases](https://abv-rewacricket.pages.dev/news/)
+- [Contact & Venues](https://abv-rewacricket.pages.dev/contact/)
 
-## Core Sections
-- [Championship Portal](https://abv-rewacricket.pages.dev/): Complete tournament overview, telemetry, past winners, and champions.
-- [The Derby Teams (2)](https://abv-rewacricket.pages.dev/teams/): The 2 founding clubs: Destroyers CC and Dread Eleven with all-time head-to-head records.
-- [Matches & Scorecards](https://abv-rewacricket.pages.dev/matches/): Official match hub redirecting to central RDCA ball-by-ball system.
-- [14 Regulatory Policies](https://abv-rewacricket.pages.dev/rules/): Official codes including Anti-Corruption, Anti-Doping, and Playing Conditions.
-- [Governing Council](https://abv-rewacricket.pages.dev/governing-council/): Executive leadership, technical committee, and anti-corruption officers.
-- [News & Circulars](https://abv-rewacricket.pages.dev/news/): Official press statements and tournament notices.
-- [Contact & Venues](https://abv-rewacricket.pages.dev/contact/): Divisional Cricket Stadium Neem Chauraha Rewa, MPCA phone numbers (+91 731 2543602), RDCA office, and ACU helpline (+91 7662 250011).
-
-## 14 Official Regulations
-- [Anti-Corruption Policy & Protocols](https://abv-rewacricket.pages.dev/rules/anti-corruption/): Mandatory anti-corruption code for players, match officials, and team personnel to safeguard against match-fixing, spot-fixing, and illegal betting.
-- [Anti-Doping Code](https://abv-rewacricket.pages.dev/rules/anti-doping/): WADA and NADA compliant anti-doping code ensuring fair athletic competition through rigorous in-competition and out-of-competition testing.
-- [Anti-Racism Policy](https://abv-rewacricket.pages.dev/rules/anti-racism/): Zero-tolerance framework prohibiting racial slurs, derogatory chants, or discrimination on the basis of race, colour, or ethnic origin.
-- [Anti-Discrimination Policy](https://abv-rewacricket.pages.dev/rules/anti-discrimination/): Affirmative commitment to equal dignity and fair treatment regardless of religion, caste, creed, region, disability, or socio-economic background.
-- [Suspected Illegal Bowling Action Policy & Guidelines](https://abv-rewacricket.pages.dev/rules/suspected-illegal-action/): Standardized procedure for reporting, scrutinizing, and biomechanically evaluating bowling actions exceeding the permissible 15-degree elbow extension limit.
-- [Match Playing Conditions (50 Overs & T20 Blast)](https://abv-rewacricket.pages.dev/rules/match-playing-conditions/): Complete playing regulations governing match duration, over rates, field restrictions, powerplays, DRS reviews, ball specifications, and tie-breakers.
-- [PMOA (Players & Match Officials Area) Minimum Standards](https://abv-rewacricket.pages.dev/rules/pmoa-minimum-standards/): Mandatory security cordon and communication blackout safeguarding the integrity of dressing rooms, dugouts, and match officials' facilities.
-- [Code of Conduct for Match Officials](https://abv-rewacricket.pages.dev/rules/code-of-conduct-match-officials/): Standards of professionalism, impartiality, physical fitness, conflict of interest disclosure, and report writing for umpires and match referees.
-- [Code of Conduct for Players and Team Officials](https://abv-rewacricket.pages.dev/rules/code-of-conduct-players/): Comprehensive 4-tier disciplinary framework penalizing dissent, ball-tampering, abusive language, equipment damage, and physical assault.
-- [Clothing and Equipment Regulations](https://abv-rewacricket.pages.dev/rules/clothing-and-equipment/): Standardization of coloured clothing, uniform design, sponsor logo dimensions, protective gear safety standards, and bat gauge compliance.
-- [News Access Regulations](https://abv-rewacricket.pages.dev/rules/news-access-regulations/): Rules governing the access, capture, editing, and distribution of match footage, audio, and news by non-rights holder media networks.
-- [Image Use Terms & Photography Guidelines](https://abv-rewacricket.pages.dev/rules/image-use-terms/): Legal terms licensing still photographic imagery for accredited journalists and strictly forbidding commercial merchandise exploitation.
-- [Media Accreditation Terms and Conditions](https://abv-rewacricket.pages.dev/rules/media-accreditation/): Application protocol, eligibility criteria, bib collection, and venue privileges for print, electronic, and digital journalists.
-- [Ticket Terms and Conditions](https://abv-rewacricket.pages.dev/rules/ticket-terms-and-conditions/): Conditions of entry, prohibited articles, spectator code of conduct, rain-check refund policy, and stadium evacuation protocols.
+## Official Franchise Portals
+- [Destroyers Cricket Club](https://destroyers-rewacricket.pages.dev)
+- [Dread Eleven](https://dread-eleven-rewacricket.pages.dev)
+- [Rewa Cricket Division (RDCA Central)](https://rewa-cricket-division.vercel.app)
