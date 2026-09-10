@@ -4,7 +4,9 @@
   "description": "Official Tournament Website for Atal Bihari Vajpayee Memorial Tournament — RDCA & MPCA",
   "type": "module",
   "scripts": {
-    "build": "node scripts/build.mjs"
+    "build": "node scripts/build.mjs",
+    "serve": "node scripts/serve.mjs",
+    "start": "node scripts/serve.mjs"
   },
   "keywords": [
     "atal-bihari-vajpayee-tournament",
