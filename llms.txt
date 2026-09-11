@@ -15,3 +15,5 @@
 - [Destroyers Cricket Club](https://destroyers-rewacricket.pages.dev)
 - [Dread Eleven](https://dread-eleven-rewacricket.pages.dev)
 - [Rewa Cricket Division (RDCA Central)](https://rewa-cricket-division.vercel.app)
+- [Capt. Pranav Dwivedi Independent Portfolio](https://pranav-dwivedi.pages.dev/)
+- [Capt. Pranav Dwivedi GitHub Mirror](https://pranav-pramod-dwivedi.github.io/)

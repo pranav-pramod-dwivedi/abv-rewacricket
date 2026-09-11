@@ -638,8 +638,12 @@ function buildHomePage() {
         "url": "https://pranav-dwivedi.pages.dev/",
         "sameAs": [
           "https://pranav-dwivedi.pages.dev/",
+          "https://pranav-pramod-dwivedi.github.io/",
+          "https://github.com/pranav-pramod-dwivedi",
           "https://destroyers-rewacricket.pages.dev/players/pranav-dwivedi",
-          "https://rewa-cricket-division.vercel.app/players/pranav-dwivedi/"
+          "https://rewa-cricket-division.vercel.app/players/pranav-dwivedi/",
+          "https://cricheroes.com/association/79/rewa-divisional-cricket-association/home",
+          "https://www.instagram.com/destroyers_rewa"
         ]
       },
       {
@@ -649,8 +653,9 @@ function buildHomePage() {
         "url": "https://dread-eleven-rewacricket.pages.dev/players/akhil-mishra",
         "sameAs": [
           "https://dread-eleven-rewacricket.pages.dev/players/akhil-mishra",
-          "https://dread-eleven-rewacricket.pages.dev/players/akhil-mishra",
-          "https://rewa-cricket-division.vercel.app/players/akhil-mishra/"
+          "https://rewa-cricket-division.vercel.app/players/akhil-mishra/",
+          "https://cricheroes.com/association/79/rewa-divisional-cricket-association/home",
+          "https://www.instagram.com/dreadeleven_rewa"
         ]
       }
     ]
@@ -775,14 +780,19 @@ function buildTeamsPage() {
           "url": t.id === 'des' ? 'https://pranav-dwivedi.pages.dev/' : 'https://dread-eleven-rewacricket.pages.dev/players/akhil-mishra',
           "sameAs": t.id === 'des' ? [
             'https://pranav-dwivedi.pages.dev/',
+            'https://pranav-pramod-dwivedi.github.io/',
+            'https://github.com/pranav-pramod-dwivedi',
             'https://destroyers-rewacricket.pages.dev/players/pranav-dwivedi',
             'https://rewa-cricket-division.vercel.app/players/pranav-dwivedi/',
-            'https://abv-rewacricket.pages.dev/'
+            'https://abv-rewacricket.pages.dev/',
+            'https://cricheroes.com/association/79/rewa-divisional-cricket-association/home',
+            'https://www.instagram.com/destroyers_rewa'
           ] : [
             'https://dread-eleven-rewacricket.pages.dev/players/akhil-mishra',
-            'https://dread-eleven-rewacricket.pages.dev/players/akhil-mishra',
             'https://rewa-cricket-division.vercel.app/players/akhil-mishra/',
-            'https://abv-rewacricket.pages.dev/'
+            'https://abv-rewacricket.pages.dev/',
+            'https://cricheroes.com/association/79/rewa-divisional-cricket-association/home',
+            'https://www.instagram.com/dreadeleven_rewa'
           ]
         }
       }
@@ -1418,6 +1428,8 @@ User-agent: Amazonbot
 Allow: /
 
 Sitemap: ${SITE_URL}/sitemap.xml
+LLM: ${SITE_URL}/llms.txt
+LLM-Full: ${SITE_URL}/llms-full.txt
 `;
   fs.writeFileSync(path.join(rootDir, 'robots.txt'), robotsTxt, 'utf-8');
   console.log('Built: robots.txt');
@@ -1439,6 +1451,8 @@ Sitemap: ${SITE_URL}/sitemap.xml
 - [Destroyers Cricket Club](${teams[0].website})
 - [Dread Eleven](${teams[1].website})
 - [Rewa Cricket Division (RDCA Central)](https://rewa-cricket-division.vercel.app)
+- [Capt. Pranav Dwivedi Independent Portfolio](https://pranav-dwivedi.pages.dev/)
+- [Capt. Pranav Dwivedi GitHub Mirror](https://pranav-pramod-dwivedi.github.io/)
 `;
   fs.writeFileSync(path.join(rootDir, 'llms.txt'), llmsTxt, 'utf-8');
   console.log('Built: llms.txt');
@@ -1788,8 +1802,13 @@ function buildStatsPage() {
         "url": "https://pranav-dwivedi.pages.dev/",
         "sameAs": [
           "https://pranav-dwivedi.pages.dev/",
+          "https://pranav-pramod-dwivedi.github.io/",
+          "https://github.com/pranav-pramod-dwivedi",
           "https://destroyers-rewacricket.pages.dev/players/pranav-dwivedi",
-          "https://rewa-cricket-division.vercel.app/players/pranav-dwivedi/"
+          "https://rewa-cricket-division.vercel.app/players/pranav-dwivedi/",
+          "https://abv-rewacricket.pages.dev/",
+          "https://cricheroes.com/association/79/rewa-divisional-cricket-association/home",
+          "https://www.instagram.com/destroyers_rewa"
         ]
       },
       {
@@ -1803,8 +1822,10 @@ function buildStatsPage() {
         "url": "https://dread-eleven-rewacricket.pages.dev/players/akhil-mishra",
         "sameAs": [
           "https://dread-eleven-rewacricket.pages.dev/players/akhil-mishra",
-          "https://dread-eleven-rewacricket.pages.dev/players/akhil-mishra",
-          "https://rewa-cricket-division.vercel.app/players/akhil-mishra/"
+          "https://rewa-cricket-division.vercel.app/players/akhil-mishra/",
+          "https://abv-rewacricket.pages.dev/",
+          "https://cricheroes.com/association/79/rewa-divisional-cricket-association/home",
+          "https://www.instagram.com/dreadeleven_rewa"
         ]
       }
     ]

@@ -27,3 +27,5 @@ User-agent: Amazonbot
 Allow: /
 
 Sitemap: https://abv-rewacricket.pages.dev/sitemap.xml
+LLM: https://abv-rewacricket.pages.dev/llms.txt
+LLM-Full: https://abv-rewacricket.pages.dev/llms-full.txt
