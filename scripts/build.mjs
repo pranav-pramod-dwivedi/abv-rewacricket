@@ -168,7 +168,8 @@ function buildJsonLd({ title, description, canonicalUrl, breadcrumbs = [], speci
       "@type": "SportsOrganization",
       "name": "Atal Bihari Vajpayee Memorial Tournament",
       "url": SITE_URL,
-      "logo": `${SITE_URL}/public/images/trophy.svg`,
+      "logo": `${SITE_URL}/public/images/logo.png`,
+      "image": `${SITE_URL}/public/images/og-image.png`,
       "parentOrganization": {
         "@type": "SportsOrganization",
         "name": "Rewa Division Cricket Association (RDCA)",
@@ -200,15 +201,22 @@ function renderHtmlPage({ title, description, canonicalUrl, activeNav = '', brea
 <meta property="og:description" content="${safeDesc}" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="${canonicalUrl}" />
-<meta property="og:image" content="${SITE_URL}/public/images/trophy.svg" />
+<meta property="og:image" content="${SITE_URL}/public/images/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:type" content="image/png" />
 
 <!-- Twitter -->
-<meta name="twitter:card" content="summary" />
+<meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="${title}" />
 <meta name="twitter:description" content="${safeDesc}" />
-<meta name="twitter:image" content="${SITE_URL}/public/images/trophy.svg" />
+<meta name="twitter:image" content="${SITE_URL}/public/images/og-image.png" />
 
+<!-- Multi-Resolution Favicons & Icons -->
+<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
 <link rel="icon" type="image/svg+xml" href="/public/images/trophy.svg" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 <link rel="manifest" href="/manifest.json" />
 <link rel="stylesheet" href="/public/css/styles.css" />
 ${jsonLdHtml}
@@ -1459,8 +1467,20 @@ ${tournament.governingCouncil.map(m => `- **${m.role}**: ${m.name} (${m.affiliat
     "theme_color": "#0e5a3a",
     "icons": [
       {
-        "src": "/public/images/trophy.svg",
+        "src": "/public/images/logo-192.png",
         "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "any maskable"
+      },
+      {
+        "src": "/public/images/logo.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "any maskable"
+      },
+      {
+        "src": "/public/images/trophy.svg",
+        "sizes": "any",
         "type": "image/svg+xml"
       }
     ]
