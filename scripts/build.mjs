@@ -192,6 +192,7 @@ function renderHtmlPage({ title, description, canonicalUrl, activeNav = '', brea
 <title>${title}</title>
 <meta name="description" content="${safeDesc}" />
 <link rel="canonical" href="${canonicalUrl}" />
+<meta name="google-site-verification" content="google23e3ba68f31a1fe8" />
 
 <!-- Open Graph -->
 <meta property="og:site_name" content="Atal Bihari Vajpayee Memorial Tournament | RDCA" />
@@ -1504,6 +1505,13 @@ ${tournament.governingCouncil.map(m => `- **${m.role}**: ${m.name} (${m.affiliat
 `;
   fs.writeFileSync(path.join(rootDir, '_redirects'), redirectsContent, 'utf-8');
   console.log('Built: _redirects');
+
+  const googleVerifyFile = 'google23e3ba68f31a1fe8.html';
+  const googleVerifyContent = 'google-site-verification: google23e3ba68f31a1fe8.html\n';
+  fs.writeFileSync(path.join(rootDir, googleVerifyFile), googleVerifyContent, 'utf-8');
+  ensureDir(path.join(rootDir, 'public'));
+  fs.writeFileSync(path.join(rootDir, 'public', googleVerifyFile), googleVerifyContent, 'utf-8');
+  console.log('Built: ' + googleVerifyFile + ' (Google Search Console Verification)');
 }
 
 // Master Build Function
