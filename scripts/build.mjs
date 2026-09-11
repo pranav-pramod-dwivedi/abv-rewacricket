@@ -159,23 +159,35 @@ function buildJsonLd({ title, description, canonicalUrl, breadcrumbs = [], speci
     }))
   });
 
-  // 2. Specific or Organization Schema
+  // 2. Primary Organization Schema (Required for Google Search Console & SEO Logo Snippet)
+  schemas.push({
+    "@context": "https://schema.org",
+    "@type": ["Organization", "SportsOrganization"],
+    "name": "Atal Bihari Vajpayee Memorial Tournament",
+    "alternateName": ["ABV Memorial Trophy", "ABV Tournament Rewa"],
+    "url": `${SITE_URL}/`,
+    "logo": `${SITE_URL}/logo.png`,
+    "image": `${SITE_URL}/og-image.png`,
+    "description": "Premier annual cricket championship of Vindhya Pradesh honoring Shri Atal Bihari Vajpayee, sanctioned by RDCA and affiliated with MPCA.",
+    "parentOrganization": {
+      "@type": "SportsOrganization",
+      "name": "Rewa Division Cricket Association (RDCA)",
+      "url": "https://rewa-cricket-division.vercel.app"
+    }
+  });
+
+  // 3. WebSite Schema
+  schemas.push({
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Atal Bihari Vajpayee Memorial Tournament",
+    "url": `${SITE_URL}/`,
+    "image": `${SITE_URL}/logo.png`
+  });
+
+  // 4. Specific Event or Data Catalog Schema
   if (specificData) {
     schemas.push(specificData);
-  } else {
-    schemas.push({
-      "@context": "https://schema.org",
-      "@type": "SportsOrganization",
-      "name": "Atal Bihari Vajpayee Memorial Tournament",
-      "url": SITE_URL,
-      "logo": `${SITE_URL}/public/images/logo.png`,
-      "image": `${SITE_URL}/public/images/og-image.png`,
-      "parentOrganization": {
-        "@type": "SportsOrganization",
-        "name": "Rewa Division Cricket Association (RDCA)",
-        "url": "https://rewa-cricket-division.vercel.app"
-      }
-    });
   }
 
   return schemas.map(s => `<script type="application/ld+json">${JSON.stringify(s, null, 2)}</script>`).join('\n');
@@ -201,7 +213,7 @@ function renderHtmlPage({ title, description, canonicalUrl, activeNav = '', brea
 <meta property="og:description" content="${safeDesc}" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="${canonicalUrl}" />
-<meta property="og:image" content="${SITE_URL}/public/images/og-image.png" />
+<meta property="og:image" content="${SITE_URL}/og-image.png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta property="og:image:type" content="image/png" />
@@ -210,9 +222,12 @@ function renderHtmlPage({ title, description, canonicalUrl, activeNav = '', brea
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="${title}" />
 <meta name="twitter:description" content="${safeDesc}" />
-<meta name="twitter:image" content="${SITE_URL}/public/images/og-image.png" />
+<meta name="twitter:image" content="${SITE_URL}/og-image.png" />
 
-<!-- Multi-Resolution Favicons & Icons -->
+<!-- Google Search Console & SEO Icons -->
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="icon" type="image/png" sizes="512x512" href="/logo.png" />
+<link rel="icon" type="image/png" sizes="192x192" href="/logo-192.png" />
 <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
 <link rel="icon" type="image/svg+xml" href="/public/images/trophy.svg" />
