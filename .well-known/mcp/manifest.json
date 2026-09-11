@@ -1,0 +1,32 @@
+{
+  "name": "abv-rewacricket-mcp",
+  "version": "1.0.0",
+  "protocolVersion": "2024-11-05",
+  "description": "Official Model Context Protocol (MCP) server for the Atal Bihari Vajpayee Memorial Tournament.",
+  "serverInfo": {
+    "name": "ABV Tournament MCP Server",
+    "version": "1.0.0"
+  },
+  "tools": [
+    {
+      "name": "get_tournament_stats",
+      "description": "Fetch tournament standings, head-to-head record, and aggregate statistics",
+      "inputSchema": {
+        "type": "object",
+        "properties": {}
+      }
+    },
+    {
+      "name": "get_derby_matches",
+      "description": "Fetch list of 34 bilateral matches between Destroyers CC and Dread Eleven",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "season": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  ]
+}

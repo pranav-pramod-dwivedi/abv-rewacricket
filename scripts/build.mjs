@@ -37,10 +37,96 @@ function cleanDesc(str, maxLen = 155) {
   return clean.slice(0, maxLen - 3).trim() + '...';
 }
 
+// HTML to Markdown converter for agentic content negotiation
+function htmlToMarkdown(html, { title = '', url = '' } = {}) {
+  let text = String(html || '');
+  const mainMatch = text.match(/<main\b[^>]*>([\s\S]*?)<\/main>/i);
+  if (mainMatch) text = mainMatch[1];
+
+  // Convert tables
+  text = text.replace(/<table\b[^>]*>([\s\S]*?)<\/table>/gi, (m, inner) => {
+    const rows = [...inner.matchAll(/<tr\b[^>]*>([\s\S]*?)<\/tr>/gi)].map(r =>
+      [...r[1].matchAll(/<t[hd]\b[^>]*>([\s\S]*?)<\/t[hd]>/gi)].map(c =>
+        c[1].replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim().replace(/\|/g, '\\|')
+      )
+    );
+    if (!rows.length) return '';
+    const width = Math.max(...rows.map(r => r.length));
+    const norm = rows.map(r => { const c = r.slice(); while (c.length < width) c.push(''); return c; });
+    const out = [];
+    out.push('| ' + norm[0].join(' | ') + ' |');
+    out.push('| ' + Array(width).fill('---').join(' | ') + ' |');
+    for (let i = 1; i < norm.length; i++) out.push('| ' + norm[i].join(' | ') + ' |');
+    return '\n' + out.join('\n') + '\n';
+  });
+
+  // Convert lists
+  text = text.replace(/<ol\b[^>]*>([\s\S]*?)<\/ol>/gi, (m, inner) =>
+    inner.replace(/<li\b[^>]*>([\s\S]*?)<\/li>/gi, (mm, li) => `\n1. ${li.replace(/<[^>]+>/g, '').trim()}\n`)
+  );
+  text = text.replace(/<ul\b[^>]*>([\s\S]*?)<\/ul>/gi, (m, inner) =>
+    inner.replace(/<li\b[^>]*>([\s\S]*?)<\/li>/gi, (mm, li) => `\n- ${li.replace(/<[^>]+>/g, '').trim()}\n`)
+  );
+
+  // Convert headings
+  text = text.replace(/<h([1-6])\b[^>]*>([\s\S]*?)<\/h\1>/gi, (m, lvl, inner) =>
+    '\n\n' + '#'.repeat(Number(lvl)) + ' ' + inner.replace(/<[^>]+>/g, '').trim() + '\n'
+  );
+
+  // Remove scripts, styles, SVGs
+  text = text.replace(/<(script|style|svg|template)\b[\s\S]*?<\/\1>/gi, '');
+  text = text.replace(/<!--[\s\S]*?-->/g, '');
+
+  // Convert links
+  text = text.replace(/<a\b[^>]*href="([^"#]*)"[^>]*>\s*([\s\S]*?)<\/a>/gi, (m, href, inner) => {
+    const linkText = inner.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
+    if (!linkText) return '';
+    return `[${linkText}](${href})`;
+  });
+
+  // Basic formatting
+  text = text.replace(/<(strong|b)\b[^>]*>([\s\S]*?)<\/\1>/gi, '**$2**');
+  text = text.replace(/<(em|i)\b[^>]*>([\s\S]*?)<\/\1>/gi, '_$2_');
+  text = text.replace(/<code\b[^>]*>([\s\S]*?)<\/code>/gi, '`$2`');
+  text = text.replace(/<br\s*\/?>/gi, '\n');
+  text = text.replace(/<p\b[^>]*>([\s\S]*?)<\/p>/gi, '\n$1\n');
+  text = text.replace(/<[^>]+>/g, '');
+
+  let clean = text
+    .split('\n')
+    .map(line => line.replace(/[ \t]+/g, ' ').trimEnd())
+    .join('\n')
+    .replace(/\n{3,}/g, '\n\n')
+    .trim();
+
+  const header = [];
+  if (title) header.push('# ' + title, '');
+  if (url) header.push('Source: ' + url, '');
+  return (header.length ? header.join('\n') + '\n' : '') + clean + '\n';
+}
+
+function writePageWithMd(relHtmlPath, html, title, canonicalUrl) {
+  const fullHtmlPath = path.join(rootDir, relHtmlPath);
+  ensureDir(path.dirname(fullHtmlPath));
+  fs.writeFileSync(fullHtmlPath, html, 'utf-8');
+
+  // Generate .md sibling
+  let mdPath;
+  if (relHtmlPath === 'index.html') mdPath = 'index.md';
+  else if (relHtmlPath === '404.html') mdPath = '404.md';
+  else mdPath = relHtmlPath.replace(/\/index\.html$/, '.md');
+
+  const fullMdPath = path.join(rootDir, mdPath);
+  ensureDir(path.dirname(fullMdPath));
+  fs.writeFileSync(fullMdPath, htmlToMarkdown(html, { title, url: canonicalUrl }), 'utf-8');
+}
+
+
 // Global Header — Pure RDCA UI
 function renderHeader(activeNav = '') {
   const navItems = [
     { name: 'Home', path: '/', key: 'home' },
+    { name: 'About', path: '/about/', key: 'about' },
     { name: 'Leaderboards', path: '/stats/', key: 'stats' },
     { name: 'The Teams (2)', path: '/teams/', key: 'teams' },
     { name: 'Matches (34)', path: '/matches/', key: 'matches' },
@@ -128,9 +214,15 @@ function renderFooter() {
       </ul>
     </div>
     <div>
-      <h3>Secretariat &amp; Venues</h3>
+      <h3>Secretariat &amp; Trust</h3>
+      <ul>
+        <li><a href="/about/">About the Tournament</a></li>
+        <li><a href="/privacy/">Privacy Policy</a></li>
+        <li><a href="/contact/">Official Contact &amp; Hotline</a></li>
+        <li><a href="/llms.txt">llms.txt (Agent Guide)</a></li>
+      </ul>
       <p class="footer-note"><strong>Match Grounds:</strong><br>Divisional Cricket Stadium, Neem Chauraha, Rewa 486001<br>APSU University Stadium, Sirmour Road, Rewa 486003</p>
-      <p class="footer-note"><strong>RDCA Secretariat:</strong> +91 7662 250000<br><strong>MPCA Headquarters:</strong> +91 731 2543602<br><strong>ACU Reporting Hotline:</strong> +91 7662 250011</p>
+      <p class="footer-note"><strong>RDCA Secretariat:</strong> +91 7662 250001<br><strong>Email:</strong> contact@rdca.org.in</p>
     </div>
   </div>
   <div class="footer-bottom">
@@ -159,7 +251,7 @@ function buildJsonLd({ title, description, canonicalUrl, breadcrumbs = [], speci
     }))
   });
 
-  // 2. Primary Organization Schema (Required for Google Search Console & SEO Logo Snippet)
+  // 2. Primary Organization Schema (Complete with contactPoint and PostalAddress)
   schemas.push({
     "@context": "https://schema.org",
     "@type": ["Organization", "SportsOrganization"],
@@ -173,6 +265,21 @@ function buildJsonLd({ title, description, canonicalUrl, breadcrumbs = [], speci
       "@type": "SportsOrganization",
       "name": "Rewa Division Cricket Association (RDCA)",
       "url": "https://rewa-cricket-division.vercel.app"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Civil Lines, Near RDCA Cricket Ground",
+      "addressLocality": "Rewa",
+      "addressRegion": "Madhya Pradesh",
+      "postalCode": "486001",
+      "addressCountry": "IN"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "tournament administration",
+      "email": "contact@rdca.org.in",
+      "telephone": "+91 7662 250001",
+      "availableLanguage": ["English", "Hindi"]
     }
   });
 
@@ -671,7 +778,7 @@ function buildHomePage() {
     specificData
   });
 
-  fs.writeFileSync(path.join(rootDir, 'index.html'), html, 'utf-8');
+  writePageWithMd('index.html', html, 'Atal Bihari Vajpayee Memorial Tournament', `${SITE_URL}/`);
   console.log('Built: index.html (Pure RDCA UI)');
 }
 
@@ -809,7 +916,7 @@ function buildTeamsPage() {
     specificData
   });
 
-  fs.writeFileSync(path.join(rootDir, 'teams/index.html'), html, 'utf-8');
+  writePageWithMd('teams/index.html', html, 'Teams & Squads | ABV Memorial Tournament', `${SITE_URL}/teams/`);
   console.log('Built: teams/index.html (Pure RDCA UI)');
 }
 
@@ -901,7 +1008,7 @@ function buildMatchesPage() {
     specificData
   });
 
-  fs.writeFileSync(path.join(rootDir, 'matches/index.html'), html, 'utf-8');
+  writePageWithMd('matches/index.html', html, 'Match Archive & Scorecards | ABV Memorial Tournament', `${SITE_URL}/matches/`);
   console.log('Built: matches/index.html (Pure RDCA UI)');
 }
 
@@ -1010,7 +1117,7 @@ function buildRulesPages() {
     specificData: indexSpecificData
   });
 
-  fs.writeFileSync(path.join(rootDir, 'rules/index.html'), indexHtml, 'utf-8');
+  writePageWithMd('rules/index.html', indexHtml, 'Official Tournament Regulations | ABV Memorial Tournament', `${SITE_URL}/rules/`);
   console.log('Built: rules/index.html (Pure RDCA UI)');
 
   // Individual Rule Pages
@@ -1079,7 +1186,7 @@ function buildRulesPages() {
       specificData: ruleSpecificData
     });
 
-    fs.writeFileSync(path.join(ruleDir, 'index.html'), ruleHtml, 'utf-8');
+    writePageWithMd(path.join('rules', r.id, 'index.html'), ruleHtml, r.title, `${SITE_URL}/rules/${r.id}/`);
     console.log(`Built: rules/${r.id}/index.html (Pure RDCA UI)`);
   });
 }
@@ -1175,7 +1282,7 @@ function buildGoverningCouncilPage() {
     specificData
   });
 
-  fs.writeFileSync(path.join(rootDir, 'governing-council/index.html'), html, 'utf-8');
+  writePageWithMd('governing-council/index.html', html, 'Governing Council | ABV Memorial Tournament', `${SITE_URL}/governing-council/`);
   console.log('Built: governing-council/index.html (Pure RDCA UI)');
 }
 
@@ -1246,8 +1353,115 @@ function buildNewsPage() {
     specificData
   });
 
-  fs.writeFileSync(path.join(rootDir, 'news/index.html'), html, 'utf-8');
+  writePageWithMd('news/index.html', html, 'Official Bulletins & News | ABV Memorial Tournament', `${SITE_URL}/news/`);
   console.log('Built: news/index.html (Pure RDCA UI)');
+}
+
+
+// Build About Page (about/index.html & about.md)
+function buildAboutPage() {
+  const content = `
+<div class="page-head">
+  <p class="eyebrow">Institutional Heritage &bull; Rewa Cricket</p>
+  <h1>About the Atal Bihari Vajpayee Memorial Tournament</h1>
+  <p>The premier annual cricket championship of Vindhya Pradesh, honoring former Prime Minister Shri Atal Bihari Vajpayee under the governance of the Rewa Division Cricket Association (RDCA) and Madhya Pradesh Cricket Association (MPCA).</p>
+</div>
+
+<div class="split">
+  <div class="prose">
+    <h2>1. Tournament Origins &amp; Memorial Significance</h2>
+    <p>Established in 2021, the <strong>Atal Bihari Vajpayee Memorial Tournament</strong> is the cornerstone bilateral cricket championship of the Rewa Division. Conceived to celebrate the visionary leadership, eloquence, and sportsmanship of former Prime Minister of India, Bharat Ratna <strong>Shri Atal Bihari Vajpayee</strong>, the tournament provides a rigorous competitive proving ground for emerging cricketers from across the Vindhya region of Madhya Pradesh.</p>
+    <p>The competition is officially sanctioned by the <strong>Rewa Division Cricket Association (RDCA)</strong> and conducted under playing conditions fully compliant with BCCI and MPCA statutory regulations.</p>
+
+    <h2>2. The Historic 34-Match Bilateral Derby</h2>
+    <p>The championship is contested exclusively through an intense, high-stakes 34-match bilateral derby between two flagship regional franchises:</p>
+    <ul>
+      <li><strong>Destroyers Cricket Club (DES):</strong> 2026 Champions and 5-time tournament victors, captained by all-rounder Pranav Dwivedi. Known for disciplined pace bowling units, aggressive middle-order play, and tactical depth.</li>
+      <li><strong>Dread Eleven (DE):</strong> Inaugural winners and fierce perennial contenders, renowned for spin mastery and resilient fourth-innings run chases.</li>
+    </ul>
+    <p>Across four completed multi-format seasons, the tournament has witnessed historic individual records, including 2 centuries, 16 half-centuries, and multiple five-wicket hauls recorded in official RDCA ledgers.</p>
+
+    <h2>3. Governance and Anti-Corruption Oversight</h2>
+    <p>The tournament is governed by an independent Governing Council comprising senior administrators from the RDCA and MPCA. Play is governed by 14 comprehensive statutory regulatory codes, including a mandatory 60-second stop-clock between overs, the 15° illegal bowling action protocol with high-speed video review, and strict Players and Match Officials Area (PMOA) electronic blackouts administered by designated Anti-Corruption Officers.</p>
+
+    <h2>4. Official Venues &amp; Infrastructure</h2>
+    <p>Matches are hosted at premier turf facilities across Rewa:</p>
+    <ul>
+      <li><strong>Divisional Cricket Stadium, Neem Chauraha:</strong> RDCA headquarters featuring floodlight infrastructure, electronic scoreboard, and certified turf wickets.</li>
+      <li><strong>APSU University Stadium, Sirmour Road:</strong> High-capacity venue hosting tournament playoffs and commemorative fixtures.</li>
+    </ul>
+
+    <h2>5. Integration with the RDCA Central Archive</h2>
+    <p>Every match scorecard, playing XI, toss decision, and player milestone recorded on this portal is permanently synced with the central historical archive of the <a href="https://rewa-cricket-division.vercel.app">Rewa Division Cricket Association</a>.</p>
+  </div>
+</div>
+`;
+
+  const html = renderHtmlPage({
+    title: "About the Tournament | Atal Bihari Vajpayee Memorial Tournament",
+    description: "History, founding significance, 34-match derby tradition, and RDCA governance of the Atal Bihari Vajpayee Memorial Tournament.",
+    canonicalUrl: `${SITE_URL}/about/`,
+    activeNav: 'about',
+    breadcrumbs: [{ name: 'About', path: '/about/' }],
+    bodyContent: content
+  });
+
+  writePageWithMd('about/index.html', html, "About the Tournament", `${SITE_URL}/about/`);
+  console.log('Built: about/index.html & about.md (Pure RDCA UI)');
+}
+
+// Build Privacy Page (privacy/index.html & privacy.md)
+function buildPrivacyPage() {
+  const content = `
+<div class="page-head">
+  <p class="eyebrow">Legal &bull; Data Governance</p>
+  <h1>Privacy Policy &amp; Public Transparency</h1>
+  <p>Official privacy policy and public records statement of the Atal Bihari Vajpayee Memorial Tournament Committee.</p>
+</div>
+
+<div class="split">
+  <div class="prose">
+    <h2>1. Commitment to Privacy &amp; Public Integrity</h2>
+    <p>The <strong>Atal Bihari Vajpayee Memorial Tournament Committee</strong>, in coordination with the Rewa Division Cricket Association (RDCA), is committed to upholding rigorous standards of privacy, confidentiality, and data protection for all spectators, athletes, match officials, and automated digital research agents.</p>
+
+    <h2>2. Zero-Tracking Architecture</h2>
+    <p>This tournament portal (<code>abv-rewacricket.pages.dev</code>) operates under a privacy-by-design, zero-tracking philosophy:</p>
+    <ul>
+      <li><strong>No Tracking Pixels or Third-Party Beacons:</strong> We do not embed advertising trackers, social network surveillance beacons, or cross-site tracking technologies.</li>
+      <li><strong>No Profiling or Behavioral Cookies:</strong> We do not set persistent advertising cookies or monetize user engagement data.</li>
+      <li><strong>Infrastructure Logs:</strong> Edge hosting servers (Cloudflare Pages) record ephemeral, standard HTTP request diagnostics (IP address, user agent, requested path) strictly for network security, rate limiting, and DDoS mitigation.</li>
+    </ul>
+
+    <h2>3. Public Sporting Records and Player Data</h2>
+    <p>All player statistics, team rosters, match scorecards, and tournament awards displayed across this website constitute verified public sporting records conducted under the official sanction of the RDCA and MPCA. In accordance with athletic data protection best practices, confidential personal telephone numbers, home addresses, or financial contract terms of athletes and match officials are never collected or published on this site.</p>
+
+    <h2>4. Machine-Readable Access for AI Agents</h2>
+    <p>We welcome search crawlers, research libraries, and AI agents. Content is made available via proactive Markdown negotiation (<code>Accept: text/markdown</code>), structured JSON-LD schemas, and <code>/llms.txt</code>. Automated agents are required to honor robots.txt directives and query at reasonable request cadences.</p>
+
+    <h2>5. Grievances and Contact Information</h2>
+    <p>For inquiries regarding data integrity, historical corrections, or tournament privacy practices, contact the Tournament Organizing Secretariat:</p>
+    <ul>
+      <li><strong>Entity:</strong> Atal Bihari Vajpayee Memorial Tournament Committee</li>
+      <li><strong>Address:</strong> Civil Lines, Near RDCA Cricket Ground, Rewa, Madhya Pradesh 486001, India</li>
+      <li><strong>Email:</strong> contact@rdca.org.in</li>
+      <li><strong>Telephone:</strong> +91 7662 250001</li>
+    </ul>
+    <p><em>Effective Date: September 2026. Reviewed annually by the Governing Council.</em></p>
+  </div>
+</div>
+`;
+
+  const html = renderHtmlPage({
+    title: "Privacy Policy | Atal Bihari Vajpayee Memorial Tournament",
+    description: "Official privacy policy, zero tracking declaration, and public athletic records notice for the Atal Bihari Vajpayee Memorial Tournament.",
+    canonicalUrl: `${SITE_URL}/privacy/`,
+    activeNav: '',
+    breadcrumbs: [{ name: 'Privacy Policy', path: '/privacy/' }],
+    bodyContent: content
+  });
+
+  writePageWithMd('privacy/index.html', html, "Privacy Policy", `${SITE_URL}/privacy/`);
+  console.log('Built: privacy/index.html & privacy.md (Pure RDCA UI)');
 }
 
 // 7. Build Contact Page (contact/index.html)
@@ -1333,7 +1547,7 @@ function buildContactPage() {
     specificData
   });
 
-  fs.writeFileSync(path.join(rootDir, 'contact/index.html'), html, 'utf-8');
+  writePageWithMd('contact/index.html', html, 'Official Contact & Venues | ABV Memorial Tournament', `${SITE_URL}/contact/`);
   console.log('Built: contact/index.html (Pure RDCA UI)');
 }
 
@@ -1369,7 +1583,7 @@ function build404Page() {
     bodyContent: content
   });
 
-  fs.writeFileSync(path.join(rootDir, '404.html'), html, 'utf-8');
+  writePageWithMd('404.html', html, '404 Not Found | ABV Memorial Tournament', `${SITE_URL}/404.html`);
   console.log('Built: 404.html (Pure RDCA UI)');
 }
 
@@ -1521,6 +1735,45 @@ ${tournament.governingCouncil.map(m => `- **${m.role}**: ${m.name} (${m.affiliat
 - Dread Eleven: https://dread-eleven-rewacricket.pages.dev
 `;
   fs.writeFileSync(path.join(rootDir, 'llms-full.txt'), llmsFullTxt, 'utf-8');
+
+  // agent-instructions.txt
+  const agentInstructions = `# Atal Bihari Vajpayee Memorial Tournament — Agent Instructions
+
+## When to use this
+Call this service when an AI agent or researcher needs:
+1. Sourced match scorecards for the 34-match bilateral derby between Destroyers CC and Dread Eleven.
+2. Verified leaderboards (runs, wickets, strike rates, bowling averages) for Rewa Division cricket.
+3. Official 14 statutory codes including Anti-Corruption, Match Playing Conditions, and Stop-Clock Directives.
+
+## How to interact
+- Proactive Markdown negotiation: Send \`Accept: text/markdown\` on any page URL to receive clean Markdown tables.
+- Machine endpoints: Access \`/llms.txt\`, \`/sitemap.xml\`, and \`/.well-known/mcp/manifest.json\`.
+`;
+  fs.writeFileSync(path.join(rootDir, 'agent-instructions.txt'), agentInstructions, 'utf-8');
+
+  // MCP manifest
+  const mcpManifest = {
+    name: "abv-rewacricket-mcp",
+    version: "1.0.0",
+    protocolVersion: "2024-11-05",
+    description: "Official Model Context Protocol (MCP) server for the Atal Bihari Vajpayee Memorial Tournament.",
+    serverInfo: { name: "ABV Tournament MCP Server", version: "1.0.0" },
+    tools: [
+      {
+        name: "get_tournament_stats",
+        description: "Fetch tournament standings, head-to-head record, and aggregate statistics",
+        inputSchema: { type: "object", properties: {} }
+      },
+      {
+        name: "get_derby_matches",
+        description: "Fetch list of 34 bilateral matches between Destroyers CC and Dread Eleven",
+        inputSchema: { type: "object", properties: { season: { type: "string" } } }
+      }
+    ]
+  };
+  ensureDir(path.join(rootDir, '.well-known/mcp'));
+  fs.writeFileSync(path.join(rootDir, '.well-known/mcp/manifest.json'), JSON.stringify(mcpManifest, null, 2), 'utf-8');
+
   console.log('Built: llms-full.txt');
 
   const manifestJson = {
@@ -1555,10 +1808,21 @@ ${tournament.governingCouncil.map(m => `- **${m.role}**: ${m.name} (${m.affiliat
   console.log('Built: manifest.json');
 
   const headersContent = `/*
+  Vary: Accept, Accept-Encoding
   X-Content-Type-Options: nosniff
   X-Frame-Options: SAMEORIGIN
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+/*.md
+  Content-Type: text/markdown; charset=utf-8
+  Vary: Accept, Accept-Encoding
+  Cache-Control: public, max-age=0, must-revalidate
+
+/.well-known/mcp/*
+  Access-Control-Allow-Origin: *
+  Content-Type: application/json; charset=utf-8
+  Vary: Accept, Accept-Encoding
 
 /llms.txt
   Access-Control-Allow-Origin: *
@@ -1842,7 +2106,7 @@ function buildStatsPage() {
   });
 
   ensureDir(path.join(rootDir, 'stats'));
-  fs.writeFileSync(path.join(rootDir, 'stats/index.html'), html, 'utf-8');
+  writePageWithMd('stats/index.html', html, 'Leaderboards & Statistics | ABV Memorial Tournament', `${SITE_URL}/stats/`);
   console.log('Built: stats/index.html (Pure RDCA UI)');
 }
 
@@ -1855,6 +2119,8 @@ function buildAll() {
   buildRulesPages();
   buildGoverningCouncilPage();
   buildNewsPage();
+  buildAboutPage();
+  buildPrivacyPage();
   buildContactPage();
   build404Page();
   buildSeoFiles();

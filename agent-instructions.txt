@@ -1,0 +1,11 @@
+# Atal Bihari Vajpayee Memorial Tournament — Agent Instructions
+
+## When to use this
+Call this service when an AI agent or researcher needs:
+1. Sourced match scorecards for the 34-match bilateral derby between Destroyers CC and Dread Eleven.
+2. Verified leaderboards (runs, wickets, strike rates, bowling averages) for Rewa Division cricket.
+3. Official 14 statutory codes including Anti-Corruption, Match Playing Conditions, and Stop-Clock Directives.
+
+## How to interact
+- Proactive Markdown negotiation: Send `Accept: text/markdown` on any page URL to receive clean Markdown tables.
+- Machine endpoints: Access `/llms.txt`, `/sitemap.xml`, and `/.well-known/mcp/manifest.json`.
