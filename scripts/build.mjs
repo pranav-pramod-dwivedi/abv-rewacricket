@@ -635,9 +635,9 @@ function buildHomePage() {
         "@type": ["Person", "Athlete"],
         "name": "Pranav Dwivedi",
         "jobTitle": "Captain & Premier All-Rounder, Destroyers CC",
-        "url": "https://destroyers-rewacricket.pages.dev/portfolio/",
+        "url": "https://pranav-dwivedi.pages.dev/",
         "sameAs": [
-          "https://destroyers-rewacricket.pages.dev/portfolio/",
+          "https://pranav-dwivedi.pages.dev/",
           "https://destroyers-rewacricket.pages.dev/players/pranav-dwivedi",
           "https://rewa-cricket-division.vercel.app/players/pranav-dwivedi/"
         ]
@@ -646,9 +646,9 @@ function buildHomePage() {
         "@type": ["Person", "Athlete"],
         "name": "Akhil Mishra",
         "jobTitle": "Captain & Top-Order All-Rounder, Dread Eleven",
-        "url": "https://dread-eleven-rewacricket.pages.dev/portfolio/",
+        "url": "https://dread-eleven-rewacricket.pages.dev/players/akhil-mishra",
         "sameAs": [
-          "https://dread-eleven-rewacricket.pages.dev/portfolio/",
+          "https://dread-eleven-rewacricket.pages.dev/players/akhil-mishra",
           "https://dread-eleven-rewacricket.pages.dev/players/akhil-mishra",
           "https://rewa-cricket-division.vercel.app/players/akhil-mishra/"
         ]
@@ -707,7 +707,7 @@ function buildTeamsPage() {
     <tbody>
       <tr>
         <td><strong>Destroyers Cricket Club (DES)</strong></td>
-        <td><a href="https://destroyers-rewacricket.pages.dev/portfolio/" target="_blank" rel="noopener" style="font-weight:700; color:inherit; text-decoration:underline;">Pranav Dwivedi (c) &rarr;</a></td>
+        <td><a href="https://pranav-dwivedi.pages.dev/" target="_blank" rel="noopener" style="font-weight:700; color:inherit; text-decoration:underline;">Pranav Dwivedi (c) &rarr;</a></td>
         <td class="num font-bold">3 (2024, 2025, 2026)</td>
         <td class="num font-bold">19</td>
         <td class="num">55.9%</td>
@@ -716,7 +716,7 @@ function buildTeamsPage() {
       </tr>
       <tr>
         <td><strong>Dread Eleven (DE)</strong></td>
-        <td><a href="https://dread-eleven-rewacricket.pages.dev/portfolio/" target="_blank" rel="noopener" style="font-weight:700; color:inherit; text-decoration:underline;">Akhil Mishra (c) &rarr;</a></td>
+        <td><a href="https://dread-eleven-rewacricket.pages.dev/players/akhil-mishra" target="_blank" rel="noopener" style="font-weight:700; color:inherit; text-decoration:underline;">Akhil Mishra (c) &rarr;</a></td>
         <td class="num font-bold">3 (2021, 2022, 2023)</td>
         <td class="num font-bold">15</td>
         <td class="num">44.1%</td>
@@ -749,7 +749,7 @@ function buildTeamsPage() {
       <div style="display:flex;gap:0.75rem;flex-wrap:wrap">
         <a href="${t.website}" target="_blank" rel="noopener" class="btn btn-primary" style="font-size:0.85rem">Visit Official Club Portal &rarr;</a>
         <a href="${t.website}/players" target="_blank" rel="noopener" class="btn btn-outline" style="font-size:0.85rem">Squad Roster &rarr;</a>
-        <a href="${t.website}/portfolio/" target="_blank" rel="noopener" class="btn btn-secondary" style="font-size:0.85rem; font-weight:700;">Captain Portfolio &amp; Entity Home &rarr;</a>
+        <a href="${t.website}/portfolio/" target="_blank" rel="noopener" class="btn btn-secondary" style="font-size:0.85rem; font-weight:700;">Official Athlete Website &rarr;</a>
       </div>
     </div>
   `).join('\n  ')}
@@ -772,14 +772,14 @@ function buildTeamsPage() {
           "@type": ["Person", "Athlete"],
           "name": t.captain,
           "jobTitle": "Franchise Captain",
-          "url": t.id === 'des' ? 'https://destroyers-rewacricket.pages.dev/portfolio/' : 'https://dread-eleven-rewacricket.pages.dev/portfolio/',
+          "url": t.id === 'des' ? 'https://pranav-dwivedi.pages.dev/' : 'https://dread-eleven-rewacricket.pages.dev/players/akhil-mishra',
           "sameAs": t.id === 'des' ? [
-            'https://destroyers-rewacricket.pages.dev/portfolio/',
+            'https://pranav-dwivedi.pages.dev/',
             'https://destroyers-rewacricket.pages.dev/players/pranav-dwivedi',
             'https://rewa-cricket-division.vercel.app/players/pranav-dwivedi/',
             'https://abv-rewacricket.pages.dev/'
           ] : [
-            'https://dread-eleven-rewacricket.pages.dev/portfolio/',
+            'https://dread-eleven-rewacricket.pages.dev/players/akhil-mishra',
             'https://dread-eleven-rewacricket.pages.dev/players/akhil-mishra',
             'https://rewa-cricket-division.vercel.app/players/akhil-mishra/',
             'https://abv-rewacricket.pages.dev/'
@@ -1652,7 +1652,7 @@ function buildStatsPage() {
           <tbody>
             ${topBat.map(b => `
               <tr>
-                <td><strong>${b.name === 'Pranav Dwivedi' ? '<a href="https://destroyers-rewacricket.pages.dev/portfolio/" target="_blank" rel="noopener" style="color:inherit; text-decoration:underline;">Pranav Dwivedi &rarr;</a>' : b.name === 'Akhil Mishra' ? '<a href="https://dread-eleven-rewacricket.pages.dev/portfolio/" target="_blank" rel="noopener" style="color:inherit; text-decoration:underline;">Akhil Mishra &rarr;</a>' : esc(b.name)}</strong></td>
+                <td><strong>${b.name === 'Pranav Dwivedi' ? '<a href="https://pranav-dwivedi.pages.dev/" target="_blank" rel="noopener" style="color:inherit; text-decoration:underline;">Pranav Dwivedi &rarr;</a>' : b.name === 'Akhil Mishra' ? '<a href="https://dread-eleven-rewacricket.pages.dev/players/akhil-mishra" target="_blank" rel="noopener" style="color:inherit; text-decoration:underline;">Akhil Mishra &rarr;</a>' : esc(b.name)}</strong></td>
                 <td><span class="badge ${b.team.includes('Destroyers') ? 'badge-completed' : ''}">${esc(b.team)}</span></td>
                 <td class="num font-bold">${b.runs}</td>
                 <td class="num">${b.average}</td>
@@ -1682,7 +1682,7 @@ function buildStatsPage() {
           <tbody>
             ${topBowl.map(b => `
               <tr>
-                <td><strong>${b.name === 'Pranav Dwivedi' ? '<a href="https://destroyers-rewacricket.pages.dev/portfolio/" target="_blank" rel="noopener" style="color:inherit; text-decoration:underline;">Pranav Dwivedi &rarr;</a>' : esc(b.name)}</strong></td>
+                <td><strong>${b.name === 'Pranav Dwivedi' ? '<a href="https://pranav-dwivedi.pages.dev/" target="_blank" rel="noopener" style="color:inherit; text-decoration:underline;">Pranav Dwivedi &rarr;</a>' : esc(b.name)}</strong></td>
                 <td><span class="badge ${b.team.includes('Destroyers') ? 'badge-completed' : ''}">${esc(b.team)}</span></td>
                 <td class="num font-bold">${b.wickets}</td>
                 <td class="num">${b.average}</td>
@@ -1714,12 +1714,12 @@ function buildStatsPage() {
         </tr>
       </thead>
       <tbody>
-        <tr><td><strong>2026 Edition</strong></td><td><strong>Destroyers Cricket Club</strong></td><td><a href="https://destroyers-rewacricket.pages.dev/portfolio/" target="_blank" rel="noopener" style="color:inherit; text-decoration:underline;">Pranav Dwivedi (c) &rarr;</a></td><td class="num font-bold">3&ndash;2</td><td>Destroyers 3rd Title</td></tr>
-        <tr><td><strong>2025 Edition</strong></td><td><strong>Destroyers Cricket Club</strong></td><td><a href="https://destroyers-rewacricket.pages.dev/portfolio/" target="_blank" rel="noopener" style="color:inherit; text-decoration:underline;">Pranav Dwivedi (c) &rarr;</a></td><td class="num font-bold">5&ndash;0</td><td>Destroyers 2nd Title</td></tr>
-        <tr><td><strong>2024 Edition</strong></td><td><strong>Destroyers Cricket Club</strong></td><td><a href="https://destroyers-rewacricket.pages.dev/portfolio/" target="_blank" rel="noopener" style="color:inherit; text-decoration:underline;">Pranav Dwivedi (c) &rarr;</a></td><td class="num font-bold">4&ndash;1</td><td>Destroyers 1st Title</td></tr>
-        <tr><td><strong>2023 Edition</strong></td><td><strong>Dread Eleven</strong></td><td><a href="https://dread-eleven-rewacricket.pages.dev/portfolio/" target="_blank" rel="noopener" style="color:inherit; text-decoration:underline;">Akhil Mishra (c) &rarr;</a></td><td class="num font-bold">3&ndash;2</td><td>Dread Eleven 3rd Title</td></tr>
-        <tr><td><strong>2022 Edition</strong></td><td><strong>Dread Eleven</strong></td><td><a href="https://dread-eleven-rewacricket.pages.dev/portfolio/" target="_blank" rel="noopener" style="color:inherit; text-decoration:underline;">Akhil Mishra (c) &rarr;</a></td><td class="num font-bold">4&ndash;3</td><td>Dread Eleven 2nd Title</td></tr>
-        <tr><td><strong>2021 Edition</strong></td><td><strong>Dread Eleven</strong></td><td><a href="https://dread-eleven-rewacricket.pages.dev/portfolio/" target="_blank" rel="noopener" style="color:inherit; text-decoration:underline;">Akhil Mishra (c) &rarr;</a></td><td class="num font-bold">5&ndash;2</td><td>Dread Eleven 1st Title</td></tr>
+        <tr><td><strong>2026 Edition</strong></td><td><strong>Destroyers Cricket Club</strong></td><td><a href="https://pranav-dwivedi.pages.dev/" target="_blank" rel="noopener" style="color:inherit; text-decoration:underline;">Pranav Dwivedi (c) &rarr;</a></td><td class="num font-bold">3&ndash;2</td><td>Destroyers 3rd Title</td></tr>
+        <tr><td><strong>2025 Edition</strong></td><td><strong>Destroyers Cricket Club</strong></td><td><a href="https://pranav-dwivedi.pages.dev/" target="_blank" rel="noopener" style="color:inherit; text-decoration:underline;">Pranav Dwivedi (c) &rarr;</a></td><td class="num font-bold">5&ndash;0</td><td>Destroyers 2nd Title</td></tr>
+        <tr><td><strong>2024 Edition</strong></td><td><strong>Destroyers Cricket Club</strong></td><td><a href="https://pranav-dwivedi.pages.dev/" target="_blank" rel="noopener" style="color:inherit; text-decoration:underline;">Pranav Dwivedi (c) &rarr;</a></td><td class="num font-bold">4&ndash;1</td><td>Destroyers 1st Title</td></tr>
+        <tr><td><strong>2023 Edition</strong></td><td><strong>Dread Eleven</strong></td><td><a href="https://dread-eleven-rewacricket.pages.dev/players/akhil-mishra" target="_blank" rel="noopener" style="color:inherit; text-decoration:underline;">Akhil Mishra (c) &rarr;</a></td><td class="num font-bold">3&ndash;2</td><td>Dread Eleven 3rd Title</td></tr>
+        <tr><td><strong>2022 Edition</strong></td><td><strong>Dread Eleven</strong></td><td><a href="https://dread-eleven-rewacricket.pages.dev/players/akhil-mishra" target="_blank" rel="noopener" style="color:inherit; text-decoration:underline;">Akhil Mishra (c) &rarr;</a></td><td class="num font-bold">4&ndash;3</td><td>Dread Eleven 2nd Title</td></tr>
+        <tr><td><strong>2021 Edition</strong></td><td><strong>Dread Eleven</strong></td><td><a href="https://dread-eleven-rewacricket.pages.dev/players/akhil-mishra" target="_blank" rel="noopener" style="color:inherit; text-decoration:underline;">Akhil Mishra (c) &rarr;</a></td><td class="num font-bold">5&ndash;2</td><td>Dread Eleven 1st Title</td></tr>
       </tbody>
     </table>
   </div>
@@ -1737,7 +1737,7 @@ function buildStatsPage() {
       <h4 style="margin:0 0 0.5rem 0;color:#0f172a;">Capt. Pranav Dwivedi (#7)</h4>
       <p style="font-size:0.85rem;color:#64748b;margin-bottom:0.75rem;">Destroyers CC Captain &bull; 1,435 Runs &bull; 66 Wickets &bull; 3x Champion</p>
       <div style="display:flex;gap:0.5rem;flex-wrap:wrap;">
-        <a href="https://destroyers-rewacricket.pages.dev/portfolio/" target="_blank" rel="noopener" class="btn btn-primary" style="font-size:0.8rem;padding:0.45rem 0.85rem;">Official Athlete Portfolio &rarr;</a>
+        <a href="https://pranav-dwivedi.pages.dev/" target="_blank" rel="noopener" class="btn btn-primary" style="font-size:0.8rem;padding:0.45rem 0.85rem;">Official Athlete Portfolio &rarr;</a>
         <a href="https://rewa-cricket-division.vercel.app/players/pranav-dwivedi/" target="_blank" rel="noopener" class="btn btn-outline" style="font-size:0.8rem;padding:0.45rem 0.85rem;">RDCA Registry &rarr;</a>
       </div>
     </div>
@@ -1745,7 +1745,7 @@ function buildStatsPage() {
       <h4 style="margin:0 0 0.5rem 0;color:#0f172a;">Capt. Akhil Mishra (#45)</h4>
       <p style="font-size:0.85rem;color:#64748b;margin-bottom:0.75rem;">Dread Eleven Captain &bull; 1,378 Runs &bull; 38 Wickets &bull; 2022 Champion</p>
       <div style="display:flex;gap:0.5rem;flex-wrap:wrap;">
-        <a href="https://dread-eleven-rewacricket.pages.dev/portfolio/" target="_blank" rel="noopener" class="btn btn-primary" style="font-size:0.8rem;padding:0.45rem 0.85rem;">Official Athlete Portfolio &rarr;</a>
+        <a href="https://dread-eleven-rewacricket.pages.dev/players/akhil-mishra" target="_blank" rel="noopener" class="btn btn-primary" style="font-size:0.8rem;padding:0.45rem 0.85rem;">Official Athlete Portfolio &rarr;</a>
         <a href="https://rewa-cricket-division.vercel.app/players/akhil-mishra/" target="_blank" rel="noopener" class="btn btn-outline" style="font-size:0.8rem;padding:0.45rem 0.85rem;">RDCA Registry &rarr;</a>
       </div>
     </div>
@@ -1785,9 +1785,9 @@ function buildStatsPage() {
           "@type": "SportsTeam",
           "name": "Destroyers Cricket Club (DES)"
         },
-        "url": "https://destroyers-rewacricket.pages.dev/portfolio/",
+        "url": "https://pranav-dwivedi.pages.dev/",
         "sameAs": [
-          "https://destroyers-rewacricket.pages.dev/portfolio/",
+          "https://pranav-dwivedi.pages.dev/",
           "https://destroyers-rewacricket.pages.dev/players/pranav-dwivedi",
           "https://rewa-cricket-division.vercel.app/players/pranav-dwivedi/"
         ]
@@ -1800,9 +1800,9 @@ function buildStatsPage() {
           "@type": "SportsTeam",
           "name": "Dread Eleven Cricket Club (DE)"
         },
-        "url": "https://dread-eleven-rewacricket.pages.dev/portfolio/",
+        "url": "https://dread-eleven-rewacricket.pages.dev/players/akhil-mishra",
         "sameAs": [
-          "https://dread-eleven-rewacricket.pages.dev/portfolio/",
+          "https://dread-eleven-rewacricket.pages.dev/players/akhil-mishra",
           "https://dread-eleven-rewacricket.pages.dev/players/akhil-mishra",
           "https://rewa-cricket-division.vercel.app/players/akhil-mishra/"
         ]
