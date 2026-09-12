@@ -43,44 +43,44 @@
 
 ## Complete 34-Match Archive
 ### Match #34: 2026 Championship Final (2026 Season — 50 Overs)
-- **Date**: 2026-09-20
+- **Date**: 2026-06-20
 - **Venue**: APS Ground Rewa
 - **Teams**: Destroyers Cricket Club vs Dread Eleven
 - **Result**: Destroyers won by 12 runs
 - **Details**: Destroyers won by 12 runs at APS Ground Rewa. Official RDCA scorecard archived.
-- **Official RDCA Scorecard**: https://rewa-cricket-division.vercel.app/matches/destroyers-vs-dread-eleven-2026-09-20/
+- **Official RDCA Scorecard**: https://rewa-cricket-division.vercel.app/matches/destroyers-vs-dread-eleven-2026-06-20/
 
 ### Match #33: 50 Overs Derby Clash (2026 Season — 50 Overs)
-- **Date**: 2026-09-16
+- **Date**: 2026-06-16
 - **Venue**: Martand School Ground No. 3
 - **Teams**: Destroyers Cricket Club vs Dread Eleven
 - **Result**: Destroyers won by 4 wickets
 - **Details**: Destroyers won by 4 wickets at Martand School Ground No. 3. Official RDCA scorecard archived.
-- **Official RDCA Scorecard**: https://rewa-cricket-division.vercel.app/matches/destroyers-vs-dread-eleven-2026-09-16/
+- **Official RDCA Scorecard**: https://rewa-cricket-division.vercel.app/matches/destroyers-vs-dread-eleven-2026-06-16/
 
 ### Match #32: 50 Overs Derby Clash (2026 Season — 50 Overs)
-- **Date**: 2026-09-12
+- **Date**: 2026-06-12
 - **Venue**: APS Ground Rewa
 - **Teams**: Destroyers Cricket Club vs Dread Eleven
 - **Result**: Dread Eleven won by 19 runs
 - **Details**: Dread Eleven won by 19 runs at APS Ground Rewa. Official RDCA scorecard archived.
-- **Official RDCA Scorecard**: https://rewa-cricket-division.vercel.app/matches/destroyers-vs-dread-eleven-2026-09-12/
+- **Official RDCA Scorecard**: https://rewa-cricket-division.vercel.app/matches/destroyers-vs-dread-eleven-2026-06-12/
 
 ### Match #31: T20 Derby Clash (2026 Season — T20)
-- **Date**: 2026-09-08
+- **Date**: 2026-06-08
 - **Venue**: Martand School Ground No. 3
 - **Teams**: Destroyers Cricket Club vs Dread Eleven
 - **Result**: Destroyers won by 7 wickets
 - **Details**: Destroyers won by 7 wickets at Martand School Ground No. 3. Official RDCA scorecard archived.
-- **Official RDCA Scorecard**: https://rewa-cricket-division.vercel.app/matches/destroyers-vs-dread-eleven-2026-09-08/
+- **Official RDCA Scorecard**: https://rewa-cricket-division.vercel.app/matches/destroyers-vs-dread-eleven-2026-06-08/
 
 ### Match #30: 2026 Series Opener (T20) (2026 Season — T20)
-- **Date**: 2026-09-05
+- **Date**: 2026-06-05
 - **Venue**: APS Ground Rewa
 - **Teams**: Destroyers Cricket Club vs Dread Eleven
 - **Result**: Dread Eleven won by 14 runs
 - **Details**: Dread Eleven won by 14 runs at APS Ground Rewa. Official RDCA scorecard archived.
-- **Official RDCA Scorecard**: https://rewa-cricket-division.vercel.app/matches/destroyers-vs-dread-eleven-2026-09-05/
+- **Official RDCA Scorecard**: https://rewa-cricket-division.vercel.app/matches/destroyers-vs-dread-eleven-2026-06-05/
 
 ### Match #29: 2025 Championship Final (2025 Season — 50 Overs)
 - **Date**: 2025-09-20

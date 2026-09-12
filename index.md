@@ -105,11 +105,11 @@ Matches
  VS
  [Dread Eleven](https://dread-eleven-rewacricket.pages.dev)
 
- Destroyers won by 12 runs &bull; APS Ground Rewa &bull; 2026-09-20
+ Destroyers won by 12 runs &bull; APS Ground Rewa &bull; 2026-06-20
 
 Destroyers won by 12 runs at APS Ground Rewa. Official RDCA scorecard archived.
 
-[Scorecard &amp; details &rarr;](https://rewa-cricket-division.vercel.app/matches/destroyers-vs-dread-eleven-2026-09-20/)
+[Scorecard &amp; details &rarr;](https://rewa-cricket-division.vercel.app/matches/destroyers-vs-dread-eleven-2026-06-20/)
 
  Atal Bihari Vajpayee Memorial Tournament &bull; 2026 (50 Overs)
  completed
@@ -118,11 +118,11 @@ Destroyers won by 12 runs at APS Ground Rewa. Official RDCA scorecard archived.
  VS
  [Dread Eleven](https://dread-eleven-rewacricket.pages.dev)
 
- Destroyers won by 4 wickets &bull; Martand School Ground No. 3 &bull; 2026-09-16
+ Destroyers won by 4 wickets &bull; Martand School Ground No. 3 &bull; 2026-06-16
 
 Destroyers won by 4 wickets at Martand School Ground No. 3. Official RDCA scorecard archived.
 
-[Scorecard &amp; details &rarr;](https://rewa-cricket-division.vercel.app/matches/destroyers-vs-dread-eleven-2026-09-16/)
+[Scorecard &amp; details &rarr;](https://rewa-cricket-division.vercel.app/matches/destroyers-vs-dread-eleven-2026-06-16/)
 
  Atal Bihari Vajpayee Memorial Tournament &bull; 2026 (50 Overs)
  completed
@@ -131,11 +131,11 @@ Destroyers won by 4 wickets at Martand School Ground No. 3. Official RDCA scorec
  VS
  [Dread Eleven](https://dread-eleven-rewacricket.pages.dev)
 
- Dread Eleven won by 19 runs &bull; APS Ground Rewa &bull; 2026-09-12
+ Dread Eleven won by 19 runs &bull; APS Ground Rewa &bull; 2026-06-12
 
 Dread Eleven won by 19 runs at APS Ground Rewa. Official RDCA scorecard archived.
 
-[Scorecard &amp; details &rarr;](https://rewa-cricket-division.vercel.app/matches/destroyers-vs-dread-eleven-2026-09-12/)
+[Scorecard &amp; details &rarr;](https://rewa-cricket-division.vercel.app/matches/destroyers-vs-dread-eleven-2026-06-12/)
 
  Atal Bihari Vajpayee Memorial Tournament &bull; 2026 (T20)
  completed
@@ -144,11 +144,11 @@ Dread Eleven won by 19 runs at APS Ground Rewa. Official RDCA scorecard archived
  VS
  [Dread Eleven](https://dread-eleven-rewacricket.pages.dev)
 
- Destroyers won by 7 wickets &bull; Martand School Ground No. 3 &bull; 2026-09-08
+ Destroyers won by 7 wickets &bull; Martand School Ground No. 3 &bull; 2026-06-08
 
 Destroyers won by 7 wickets at Martand School Ground No. 3. Official RDCA scorecard archived.
 
-[Scorecard &amp; details &rarr;](https://rewa-cricket-division.vercel.app/matches/destroyers-vs-dread-eleven-2026-09-08/)
+[Scorecard &amp; details &rarr;](https://rewa-cricket-division.vercel.app/matches/destroyers-vs-dread-eleven-2026-06-08/)
 
 Governance &amp; Statutory Codes
 
