@@ -13,6 +13,7 @@ const tournament = JSON.parse(fs.readFileSync(path.join(rootDir, 'data/tournamen
 const teams = JSON.parse(fs.readFileSync(path.join(rootDir, 'data/teams.json'), 'utf-8'));
 const rules = JSON.parse(fs.readFileSync(path.join(rootDir, 'data/rules.json'), 'utf-8'));
 const news = JSON.parse(fs.readFileSync(path.join(rootDir, 'data/news.json'), 'utf-8'));
+const squads = JSON.parse(fs.readFileSync(path.join(rootDir, 'data/squads.json'), 'utf-8'));
 
 function ensureDir(dirPath) {
   if (!fs.existsSync(dirPath)) {
@@ -258,8 +259,14 @@ function buildJsonLd({ title, description, canonicalUrl, breadcrumbs = [], speci
     "name": "Atal Bihari Vajpayee Memorial Tournament",
     "alternateName": ["ABV Memorial Trophy", "ABV Tournament Rewa"],
     "url": `${SITE_URL}/`,
-    "logo": `${SITE_URL}/logo.png`,
-    "image": `${SITE_URL}/og-image.png`,
+    "logo": {
+      "@type": "ImageObject",
+      "url": `${SITE_URL}/logo.png`,
+      "width": 512,
+      "height": 512,
+      "caption": "Atal Bihari Vajpayee Memorial Tournament Official Logo"
+    },
+    "image": `${SITE_URL}/logo.png`,
     "description": "Premier annual cricket championship of Vindhya Pradesh honoring Shri Atal Bihari Vajpayee, sanctioned by RDCA and affiliated with MPCA.",
     "parentOrganization": {
       "@type": "SportsOrganization",
@@ -324,6 +331,8 @@ function renderHtmlPage({ title, description, canonicalUrl, activeNav = '', brea
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta property="og:image:type" content="image/png" />
+<meta property="og:logo" content="${SITE_URL}/logo.png" />
+<meta itemprop="image" content="${SITE_URL}/logo.png" />
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
@@ -332,12 +341,12 @@ function renderHtmlPage({ title, description, canonicalUrl, activeNav = '', brea
 <meta name="twitter:image" content="${SITE_URL}/og-image.png" />
 
 <!-- Google Search Console & SEO Icons -->
-<link rel="shortcut icon" href="/favicon.ico" />
-<link rel="icon" type="image/png" sizes="512x512" href="/logo.png" />
-<link rel="icon" type="image/png" sizes="192x192" href="/logo-192.png" />
 <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-<link rel="icon" type="image/svg+xml" href="/public/images/trophy.svg" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+<link rel="icon" type="image/png" sizes="192x192" href="/logo-192.png" />
+<link rel="icon" type="image/png" sizes="512x512" href="/logo.png" />
+<link rel="shortcut icon" href="/favicon.ico" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 <link rel="manifest" href="/manifest.json" />
 <link rel="stylesheet" href="/public/css/styles.css" />
@@ -843,10 +852,12 @@ function buildTeamsPage() {
   <h2>Franchise Club Dossiers</h2>
 </div>
 <div class="grid grid-2">
-  ${teams.map(t => `
+  ${teams.map(t => {
+    const squadList = t.id === 'des' ? (squads.destroyers || []) : (squads['dread-eleven'] || []);
+    return `
     <div class="card" style="padding:1.5rem">
-      <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1rem">
-        <img src="/public/images/${t.id}.svg" alt="${esc(t.name)} Crest" width="48" height="56" style="flex-shrink:0" />
+      <div style="display:flex;align-items:center;gap:1.25rem;margin-bottom:1rem">
+        <img src="/public/images/${t.id}-crest.png" alt="${esc(t.name)} Official Crest" width="64" height="64" style="border-radius:50%;object-fit:cover;aspect-ratio:1/1;flex-shrink:0;box-shadow:0 4px 14px rgba(0,0,0,0.25);" />
         <div>
           <h3 style="margin:0;font-size:1.35rem;color:var(--brand-dark)">${esc(t.name)}</h3>
           <span class="card-meta">${esc(t.city)} &bull; Established ${t.established}</span>
@@ -858,13 +869,21 @@ function buildTeamsPage() {
         <p style="margin-bottom:0.25rem"><strong>Franchise Captain:</strong> ${esc(t.captain)}</p>
         <p style="margin-bottom:0"><strong>Primary Home Ground:</strong> ${esc(t.homeGround)}</p>
       </div>
+      <div style="border-top:1px solid var(--line);padding-top:0.75rem;margin-bottom:1rem">
+        <h4 style="margin:0 0 0.5rem 0;font-size:0.95rem;color:var(--brand-dark);">Official Registered Squad (${squadList.length} Players)</h4>
+        <div style="display:flex;flex-wrap:wrap;gap:0.35rem;max-height:180px;overflow-y:auto;padding:0.6rem;background:var(--bg-light,#f8fafc);border-radius:6px;border:1px solid var(--line);">
+          ${squadList.map(p => `<span style="font-size:0.8rem;background:white;padding:2px 8px;border-radius:12px;border:1px solid #e2e8f0;white-space:nowrap;"><strong>${esc(p.name)}</strong> <span style="color:#64748b;font-size:0.72rem;">(${esc(p.role || 'Player')})</span></span>`).join('\n          ')}
+        </div>
+      </div>
       <div style="display:flex;gap:0.75rem;flex-wrap:wrap">
         <a href="${t.website}" target="_blank" rel="noopener" class="btn btn-primary" style="font-size:0.85rem">Visit Official Club Portal &rarr;</a>
+        <a href="${t.id === 'des' ? 'https://rewa-cricket-division.vercel.app/teams/destroyers/' : 'https://rewa-cricket-division.vercel.app/teams/dread-eleven/'}" target="_blank" rel="noopener" class="btn btn-outline" style="font-size:0.85rem">RDCA Team Profile &rarr;</a>
         <a href="${t.website}/players" target="_blank" rel="noopener" class="btn btn-outline" style="font-size:0.85rem">Squad Roster &rarr;</a>
-        <a href="${t.website}/portfolio/" target="_blank" rel="noopener" class="btn btn-secondary" style="font-size:0.85rem; font-weight:700;">Official Athlete Website &rarr;</a>
+        ${t.id === 'des' ? `<a href="${t.website}/portfolio/" target="_blank" rel="noopener" class="btn btn-secondary" style="font-size:0.85rem; font-weight:700;">Official Athlete Website &rarr;</a>` : ''}
       </div>
     </div>
-  `).join('\n  ')}
+  `;
+  }).join('\n  ')}
 </div>
 `;
 
@@ -872,20 +891,37 @@ function buildTeamsPage() {
     "@context": "https://schema.org",
     "@type": "ItemList",
     "name": "Participating Franchises — ABV Memorial Tournament",
-    "itemListElement": teams.map((t, idx) => ({
-      "@type": "ListItem",
-      "position": idx + 1,
-      "item": {
-        "@type": "SportsTeam",
-        "name": t.name,
-        "url": t.website,
-        "logo": `${SITE_URL}/public/images/${t.id}.svg`,
-        "athlete": {
-          "@type": ["Person", "Athlete"],
-          "name": t.captain,
-          "jobTitle": "Franchise Captain",
-          "url": t.id === 'des' ? 'https://pranav-dwivedi.pages.dev/' : 'https://dread-eleven-rewacricket.pages.dev/players/akhil-mishra',
+    "itemListElement": teams.map((t, idx) => {
+      const squadList = t.id === 'des' ? (squads.destroyers || []) : (squads['dread-eleven'] || []);
+      return {
+        "@type": "ListItem",
+        "position": idx + 1,
+        "item": {
+          "@type": "SportsTeam",
+          "name": t.name,
+          "alternateName": t.shortName,
+          "url": t.website,
+          "logo": `${SITE_URL}/public/images/${t.id}-crest.png`,
+          "image": `${SITE_URL}/public/images/${t.id}-crest.png`,
+          "foundingDate": "2021",
+          "memberOf": {
+            "@type": "SportsOrganization",
+            "name": "Rewa Division Cricket Association (RDCA)",
+            "url": "https://rewa-cricket-division.vercel.app"
+          },
+          "coach": {
+            "@type": "Person",
+            "name": t.id === 'des' ? "Devendra Bundela" : "Harpreet Singh Bhatia"
+          },
+          "athlete": squadList.map(p => ({
+            "@type": ["Person", "Athlete"],
+            "name": p.name,
+            "jobTitle": p.role,
+            "url": t.id === 'des' ? `${t.website}/players/${p.slug || ''}` : `${t.website}/players/${p.slug || ''}`
+          })),
           "sameAs": t.id === 'des' ? [
+            'https://destroyers-rewacricket.pages.dev/',
+            'https://rewa-cricket-division.vercel.app/teams/destroyers/',
             'https://pranav-dwivedi.pages.dev/',
             'https://pranav-pramod-dwivedi.github.io/',
             'https://github.com/pranav-pramod-dwivedi',
@@ -895,6 +931,8 @@ function buildTeamsPage() {
             'https://cricheroes.com/association/79/rewa-divisional-cricket-association/home',
             'https://www.instagram.com/destroyers_rewa'
           ] : [
+            'https://dread-eleven-rewacricket.pages.dev/',
+            'https://rewa-cricket-division.vercel.app/teams/dread-eleven/',
             'https://dread-eleven-rewacricket.pages.dev/players/akhil-mishra',
             'https://rewa-cricket-division.vercel.app/players/akhil-mishra/',
             'https://abv-rewacricket.pages.dev/',
@@ -902,8 +940,8 @@ function buildTeamsPage() {
             'https://www.instagram.com/dreadeleven_rewa'
           ]
         }
-      }
-    }))
+      };
+    })
   };
 
   const html = renderHtmlPage({
@@ -1691,6 +1729,27 @@ LLM-Full: ${SITE_URL}/llms-full.txt
   - Divisional Cricket Stadium, Neem Chauraha, Boda Bagh Road, Rewa, MP 486001
   - Awadhesh Pratap Singh University (APSU) Stadium, Rewa
   - Martand School Ground No. 3, Rewa
+
+## The Marquee Derby Teams & Full Squad Rosters
+### 1. Destroyers Cricket Club (DES)
+- **Captain**: Pranav Dwivedi (All-Rounder)
+- **Home Ground**: Awadhesh Pratap Singh University (APSU) Stadium, Rewa
+- **Titles**: 3-time consecutive champions (2024, 2025, 2026 - Historic 3-Peat)
+- **Head-to-Head Derby Record**: 19 Wins in 34 Matches (55.9% Win Rate)
+- **Official Website**: https://destroyers-rewacricket.pages.dev
+- **RDCA Central Archive**: https://rewa-cricket-division.vercel.app/teams/destroyers/
+- **Key Domestic/IPL Stars**: Venkatesh Iyer, Rajat Patidar, Kulwant Khejroliya, Ajay Rohera, Aryan Deshmukh, Akshat Raghuwanshi
+- **Registered Squad (48 Players)**: ${squads.destroyers.map(p => `${p.name} (${p.role})`).join(', ')}
+
+### 2. Dread Eleven (DE)
+- **Captain**: Akhil Mishra (Wicketkeeper-Batsman)
+- **Home Ground**: Martand School Ground No. 3, Rewa
+- **Titles**: 3-time champions (2021, 2022, 2023 - Inaugural 3-Peat)
+- **Head-to-Head Derby Record**: 15 Wins in 34 Matches (44.1% Win Rate)
+- **Official Website**: https://dread-eleven-rewacricket.pages.dev
+- **RDCA Central Archive**: https://rewa-cricket-division.vercel.app/teams/dread-eleven/
+- **Key Domestic/IPL Stars**: Avesh Khan, Kuldeep Sen, Kumar Kartikeya, Yash Dubey, Saransh Jain, Mohd. Arham Aquil
+- **Registered Squad (43 Players)**: ${squads['dread-eleven'].map(p => `${p.name} (${p.role})`).join(', ')}
 
 ## All-Time Combined Player Leaderboards (Both Teams)
 ### Leading Run Scorers

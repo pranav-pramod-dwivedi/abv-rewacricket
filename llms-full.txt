@@ -15,6 +15,27 @@
   - Awadhesh Pratap Singh University (APSU) Stadium, Rewa
   - Martand School Ground No. 3, Rewa
 
+## The Marquee Derby Teams & Full Squad Rosters
+### 1. Destroyers Cricket Club (DES)
+- **Captain**: Pranav Dwivedi (All-Rounder)
+- **Home Ground**: Awadhesh Pratap Singh University (APSU) Stadium, Rewa
+- **Titles**: 3-time consecutive champions (2024, 2025, 2026 - Historic 3-Peat)
+- **Head-to-Head Derby Record**: 19 Wins in 34 Matches (55.9% Win Rate)
+- **Official Website**: https://destroyers-rewacricket.pages.dev
+- **RDCA Central Archive**: https://rewa-cricket-division.vercel.app/teams/destroyers/
+- **Key Domestic/IPL Stars**: Venkatesh Iyer, Rajat Patidar, Kulwant Khejroliya, Ajay Rohera, Aryan Deshmukh, Akshat Raghuwanshi
+- **Registered Squad (48 Players)**: Pranav Dwivedi (Captain & All-rounder), Aryan Deshmukh (Player), Shivam Shukla (Player), Anubhav Agarwal (Player), Venkatesh Iyer (Captain), Rahul Batham (Captain), Ajay Rohera (Wicketkeeper), Rohit Rajawat (Player), Shubham Sharma (Captain), Harsh Gawli (Player), Kanishk Dubey (Player), Atharv Mahajan (Player), Chanchal Rathore (Player), Ramveer Singh Gurjar (Player), Ritesh Shakya (Player), Rajat Patidar (Batsman), Sagar Pratap Singh (Player), Kumar Kartikeya (Player), Anant Verma (Wicketkeeper), Prabhanshu Shukla (Player), Subhranshu Senapati (Player), Mohd Arham Aquil (Player), Avesh Khan (Player), Radhakrishna Dwivedi (Player), Mohd Arshad Khan (Player), Jaydev Singh (Player), Aditya Shrivastava (Player), Kulwant Khejroliya (Player), Akshat Raghuwanshi (Player), Saransh Jain (Captain), Yash Dubey (Wicketkeeper), Ankit Singh Kushwaha (Player), Himanshu Mantri (Wicketkeeper), Arshad Khan (Captain), Naveen Singh Chouhan (Player), Ashwin Das (Player), Amarjeet Kumar Singh (Player), Sagar Solanki (Player), Saransh Surana (Player), Prithviraj Singh Tomar (Captain), Kuldeep Sen (Player), Somil Khan (Player), Sani Patel (Player), Avinash Sen (Player), Rohit Gupta (All-rounder), Atul Tiwari (Batter), Shivam Bansal (Player), Rishab Verma (Player)
+
+### 2. Dread Eleven (DE)
+- **Captain**: Akhil Mishra (Wicketkeeper-Batsman)
+- **Home Ground**: Martand School Ground No. 3, Rewa
+- **Titles**: 3-time champions (2021, 2022, 2023 - Inaugural 3-Peat)
+- **Head-to-Head Derby Record**: 15 Wins in 34 Matches (44.1% Win Rate)
+- **Official Website**: https://dread-eleven-rewacricket.pages.dev
+- **RDCA Central Archive**: https://rewa-cricket-division.vercel.app/teams/dread-eleven/
+- **Key Domestic/IPL Stars**: Avesh Khan, Kuldeep Sen, Kumar Kartikeya, Yash Dubey, Saransh Jain, Mohd. Arham Aquil
+- **Registered Squad (43 Players)**: Akhil Mishra (Top-Order All-Rounder & Captain), Ritesh Shakya (Player), Kuldeep Sen (Express Fast Bowler), Anubhav Agarwal (Player), Yash Dubey (Wicketkeeper), Saransh Jain (Captain), Prithviraj Singh Tomar (Captain), Anant Verma (Wicketkeeper), Naveen Singh Chouhan (Player), Avesh Khan (Player), Venkatesh Iyer (Captain), Subhranshu Senapati (Player), Ajay Rohera (Wicketkeeper), Radhakrishna Dwivedi (Player), Akshat Raghuwanshi (Player), Rohit Rajawat (Player), Himanshu Mantri (Wicketkeeper), Ramveer Singh Gurjar (Player), Shubham Sharma (Captain), Mohd Arshad Khan (Player), Kumar Kartikeya (Lead Spin Bowler), Rajat Patidar (Batsman), Arshad Khan (Captain), Saransh Surana (Player), Chanchal Rathore (Player), Mohd Arham Aquil (Player), Aryan Deshmukh (Player), Prabhanshu Shukla (Player), Rahul Batham (Captain), Aditya Shrivastava (Player), Jaydev Singh (Player), Ankit Singh Kushwaha (Player), Kulwant Khejroliya (Player), Sagar Pratap Singh (Player), Ashwin Das (Pace All-Rounder), Amarjeet Kumar Singh (Player), Atharv Mahajan (Player), Kanishk Dubey (Player), Shivam Shukla (Player), Harsh Gawli (Player), Sagar Solanki (Player), Aryan Shrivastava (Player), Aryan Dwivedi (Player)
+
 ## All-Time Combined Player Leaderboards (Both Teams)
 ### Leading Run Scorers
 1. **Pranav Dwivedi** (Destroyers CC): 1435 runs | Batting Avg: 57.4 | Strike Rate: 146.4 | Fifties: 14 | Hundreds: 1
